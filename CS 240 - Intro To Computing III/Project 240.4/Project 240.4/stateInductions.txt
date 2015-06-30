@@ -1,0 +1,84 @@
+3
+Delaware:December 7, 1787
+Pennsylvania:Decemeber 12, 1787
+New Jersey:December 18, 1787
+8
+Georgia:January 2, 1788
+Connecticut:January 9, 1788
+Massachusetts:February 6, 1788
+Maryland:April 28, 1788
+South Carolina:May 23, 1788
+New Hampshire:June 21, 1788
+Virginia:June 25, 1788
+New York:July 26, 1788
+1
+North Carolina:November 21, 1789
+1
+Rhode Island:May 28, 1790
+1
+Vermont:March 4, 1791
+1
+Kentucky:June 1, 1792
+1
+Tennessee:June 1, 1796
+1
+Ohio:March 1, 1803
+1
+Louisiana:April 30, 1812
+1
+Indiana:December 11, 1816
+1
+Mississippi:December 10, 1817
+1
+Illinois:December 3, 1818
+1
+Alabama:December 14, 1819
+1
+Maine:March 19, 1820
+1
+Missouri:August 10, 1821
+1
+Arkansas:June 15, 1836
+1
+Michigan:January 26, 1837
+2
+Florida:March 3, 1845
+Texas:December 29, 1845
+1
+Iowa:December 28, 1846
+1
+Wisconsin:May 29, 1848
+1
+California:September 9, 1850
+1
+Minnesota:May 11, 1858
+1
+Oregon:February 14, 1859
+1
+Kansas:January 29, 1861
+1
+West Virginia:June 20, 1863
+1
+Nevada:October 31, 1864
+1
+Nebraska:March 1, 1867
+1
+Colorado:August 1, 1876
+4
+North Dakota:November 2, 1889
+South Dakota:November 2, 1889
+Montana:November 8, 1889
+Washington:November 11, 1889
+2
+Idaho:July 3, 1890
+Wyoming:July 10, 1890
+1
+Utah:January 4, 1896
+1
+Oklahoma:November 16, 1907
+2
+New Mexico:January 6, 1912
+Arizona:February 14, 1912
+2
+Alaska:January 3, 1959
+Hawaii:August 21, 1959

@@ -1,0 +1,10 @@
+1 Adam Apple 45.5 12.90
+1 Ashton Asparagus 30.0 10.45
+2 Ben Berry 40.0 23.50
+1 Cathy Cat 49.0 12.75
+2 Ziggy Zag 40.0 15.90
+2 Mary Marceau 48.0 20.00
+1 Pete Pear 40.0 18.50
+2 Mike Milk 35.0 22.50
+2 Rose Red 45.0 19.50
+1 Car Nation 40.0 22.30
