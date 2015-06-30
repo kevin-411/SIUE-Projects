@@ -1,0 +1,132 @@
+****Synch.h****
+
+In synch.h we simply added in the the variables for the Lock and Condition Variables Structs.
+
+To the Lock synch struct we added: 
+
+	an inuse uint to mark if the lock is currently being used from the pool(array) of locks.
+
+	a mutex sem_t that gives us a handle to a semaphore that will act as our mutually exclusive lock/queue to specify if the lock is open or not.
+
+	a mypid int to hold the processid of the process using the lock currently. It is defaulted to -1.
+
+To the Cond Struct we added:
+
+	a lock lock_t variable that holds the index "handle" of a lock that it uses.
+	
+	an inuse uint to mark if the condition is currently being used from the pool(array) of conditions.
+
+	a sem sem_t that gives the condition variables a handle to a semaphore that they will utilize strictly as a queue.
+
+****Synch.c****
+
+From top to bottom we added:
+
+Declarations for the locks array and the conds array setting their sizes to the MAX_LOCKS and MAX_CONDS
+
+We then intialize both arrays as such:
+
+for all locks:
+	
+	mutex variables are all set to -1  to specify that they aren't in use.
+
+	mypid will be initialized by being set equal to -1 the current Process ID.
+
+	inuse variables are all set to 0 to specify they are available for use from the pool of locks. 
+	
+for all conds:
+
+	inuse variables are all set to 0 to specify they aren't in use.
+	
+	lock varaiables are all set to -1 to specify they aren't associated with any lock
+
+	sem variable are set to -1 to specify they haven't been initialized.
+
+	
+~LockCreate()
+We declare a lock_t called lock to act as our index in the locks array
+and then declare intrval as our inturrupt value to allow us to disable inturrupts while acquiring the lock
+
+We call DisableIntrs() to disable inturrupts and assign the return value to intrval
+
+We traverse the array until we find a lock that isn't being used and as soon as an open lock is found:
+
+	mutex is set equal to a SemCreate(1)
+	Note: by sending the semaphore count down as 1 it specifies that this semaphore will only allow 1 process to run at any given time and if any other process attempts to acquire the lock it will get pushed onto the queue this enforces mutual exclusion and is the semaphore is defined as a binary semaphore.
+
+	mypid will then get set to the current processid by calling GetCurrentPid()
+	
+If no lock is available then an INVALID_LOCK will be returned
+
+Otherwise the the index or "handle" of the lock will be returned given an open lock is encountered
+
+~LockHandleAquire(lock_t lock)
+After checking to see if lock is a valid lock by testing the handle, we check to see if the process that called LockHandleAcquire already owns the lock
+
+This is done by comparing the current Process ID to the lock's corresponding mutex
+
+If the two are equal, simply return 0 to report good                                                 
+
+Else if any other case provided the lock calling the Acquire is actually in use, we queue the calling process by call SemHandleWait(lock); this dequeues the next process waiting on the lock and we set the next process's id to the mypid of the lock.
+
+Otherwise, we return 1 to report the Acquire failed
+
+
+LockHandleRelease(lock_t lock)
+We check to see if the lock referred to by the handle,lock_t lock, is a valid lock
+
+If the lock is a valid lock, we check to see that the calling process is currently holding the lock.
+
+If this condition is also true, we set the pid of the current process  to -1 to make sure the process id is no longer associated with having ownership of the lock  and Call SemHandleRelease(locks[lock].mutex); to pop off the current running process and release the lock for the next process to obtain access to the monitor. then we return 0 to report a successful HandleRelease.
+
+Otherwise, we do not release the lock and return 1
+
+~CondCreate()
+We declare a cond_t called cond to act as our index in the conditions array
+
+We traverse the array until we find a conditon that isn't being used and as soon as an open condition is found:
+
+We set our sem handle equal to index the semaphore array to hold the queued processes waiting for a certain condition to be met.
+Note: we set this semaphore with a count of zero, meaning no processes will automatically run or attempt to queue on the lock queue. We don't want this to happen automatically because we want this to happen if and only if a condition has been met. Only then will the queue be signaled to pass the process id on to the lock queue.
+
+we then associate the condition variable with a specific lock whos handle is passed down to us and we set it equal to our handle.
+
+we then set the inuse variable to 1 so that no other processes can acquire this condtion variable from the conditions pool.
+
+If no cond is available then an INVALID_COND will be returned
+
+Otherwise the index or "handle" of the lock will be returned if an open lock is encountered
+
+~CondHandleWait()
+
+We first check to make sure the cond handle is within the array bounds of the pool.
+
+We then verify that the calling process is the owner of the lock
+
+Once this is verified the calling process lets go of the locks by calling LockHandleRelease this makes the lock available to the next process on the queue
+
+We then call SemHandleWait to put the current process on the conditions semaphore queue and it is put to sleep
+
+ We then call LockHandleAcquire and the lock will be acquired by the next available process on the condition queue and will queue on the Locks queue. This prompts the next process on the Locks queue to take the lock and begin running. 
+
+We return 0 to report a successful a successful operation
+
+Otherwise we report return 1 for failure
+
+~CondHandleSignal()
+
+We first check to make sure the cond handle is within the array bounds of the pool.
+
+This function simply sends a signal to a specific semaphore to wake up a process if that is on the condition queue.
+
+As long as the cond is within the array bound the operation will return successful
+
+~CondHandleBroadcast()
+
+We first check to make sure the cond handle is within the array bounds of the p ool.
+
+We then set up a nodeCount that is set equal to the current semaphore count. we then go into a while loop that calls SemHandle Signal until the count is incremented back to 0
+
+We return 0 based on a successful operation or 1 on an unsuccsessful operation.
+
+

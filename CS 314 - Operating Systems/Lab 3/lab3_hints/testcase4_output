@@ -1,0 +1,238 @@
+Got 3 arguments.
+Available memory: 0x18fa4 -> 0x200000.
+Argument count is 3.
+Argument 0 is -u.
+Argument 1 is testprog.dlx.obj.
+Argument 2 is 4.
+
+*****************************************************
+Inside testcase4!
+Setting number = 2
+
+*****************************************************
+sem is 1
+A0
+Starting next process!
+A1
+sem is 1
+B0
+B1
+Process 28 has run for 0.101 s
+Process 28 's priority is 50 
+Starting next process!
+A2
+B2
+B3
+B4
+Process 28 has run for 0.202 s
+Process 28 's priority is 50 
+A3
+B5
+B6
+Process 28 has run for 0.303 s
+Process 28 's priority is 50 
+A4
+B7
+B8
+B9
+Process 28 has run for 0.404 s
+Process 28 's priority is 50 
+A5
+B10
+B11
+B12
+Process 28 has run for 0.505 s
+Process 28 's priority is 51 
+A6
+B13
+B14
+Process 28 has run for 0.606 s
+Process 28 's priority is 50 
+A7
+B15
+B16
+B17
+Process 28 has run for 0.707 s
+Process 28 's priority is 50 
+A8
+B18
+B19
+B20
+Process 28 has run for 0.808 s
+Process 28 's priority is 50 
+A9
+B21
+B22
+Process 28 has run for 0.909 s
+Process 28 's priority is 51 
+A10
+B23
+B24
+B25
+Process 28 has run for 1.010 s
+Process 28 's priority is 51 
+A11
+B26
+B27
+B28
+Process 28 has run for 1.111 s
+Process 28 's priority is 51 
+A12
+B29
+B0
+Process 28 has run for 1.212 s
+Process 28 's priority is 51 
+A13
+A14
+A15
+A16
+A17
+A18
+A19
+A20
+A21
+A22
+A23
+A24
+A25
+A26
+A27
+A28
+A29
+Process 29 has run for 0.101 s
+Process 29 's priority is 50 
+B1
+Process 28 has run for 1.313 s
+Process 28 's priority is 52 
+A0
+Process 29 has run for 0.202 s
+Process 29 's priority is 50 
+B2
+Process 28 has run for 1.414 s
+Process 28 's priority is 51 
+A1
+B3
+B4
+Process 28 has run for 1.515 s
+Process 28 's priority is 51 
+Process 29 has run for 0.303 s
+Process 29 's priority is 50 
+B5
+Process 28 has run for 1.616 s
+Process 28 's priority is 51 
+A2
+B6
+B7
+Process 28 has run for 1.717 s
+Process 28 's priority is 51 
+Process 29 has run for 0.404 s
+Process 29 's priority is 50 
+B8
+Process 28 has run for 1.818 s
+Process 28 's priority is 51 
+A3
+B9
+B10
+Process 28 has run for 1.919 s
+Process 28 's priority is 51 
+Process 29 has run for 0.505 s
+Process 29 's priority is 50 
+B11
+Process 28 has run for 2.020 s
+Process 28 's priority is 51 
+A4
+B12
+B13
+Process 28 has run for 2.121 s
+Process 28 's priority is 51 
+Process 29 has run for 0.606 s
+Process 29 's priority is 50 
+B14
+Process 28 has run for 2.222 s
+Process 28 's priority is 52 
+A5
+Process 29 has run for 0.707 s
+Process 29 's priority is 50 
+B15
+Process 28 has run for 2.323 s
+Process 28 's priority is 52 
+A6
+Process 29 has run for 0.808 s
+Process 29 's priority is 50 
+B16
+Process 28 has run for 2.424 s
+Process 28 's priority is 52 
+A7
+Process 29 has run for 0.909 s
+Process 29 's priority is 50 
+B17
+Process 28 has run for 2.525 s
+Process 28 's priority is 52 
+A8
+Process 29 has run for 1.010 s
+Process 29 's priority is 50 
+B18
+Process 28 has run for 2.626 s
+Process 28 's priority is 51 
+A9
+B19
+B20
+Process 28 has run for 2.727 s
+Process 28 's priority is 51 
+Process 29 has run for 1.111 s
+Process 29 's priority is 50 
+B21
+Process 28 has run for 2.828 s
+Process 28 's priority is 51 
+A10
+B22
+B23
+Process 28 has run for 2.929 s
+Process 28 's priority is 51 
+Process 29 has run for 1.212 s
+Process 29 's priority is 50 
+B24
+Process 28 has run for 3.030 s
+Process 28 's priority is 51 
+A11
+B25
+B26
+Process 28 has run for 3.131 s
+Process 28 's priority is 51 
+Process 29 has run for 1.313 s
+Process 29 's priority is 50 
+B27
+Process 28 has run for 3.232 s
+Process 28 's priority is 51 
+A12
+B28
+B29
+Waiting on semaphore...!
+Process 28 has run for 3.333 s
+Process 28 's priority is 51 
+A13
+A14
+A15
+A16
+A17
+A18
+A19
+A20
+A21
+A22
+A23
+A24
+A25
+A26
+A27
+A28
+A29
+Waiting on semaphore...!
+Process 29 has run for 1.414 s
+Process 29 's priority is 50 
+No runnable processes - exiting!
+Exiting at program request.
+Instructions executed: 10438233
+Time simulated: 10.438 secs
+Real time elapsed: 0.753 secs
+Execution rate: 13.87M simulated instructions per real second.

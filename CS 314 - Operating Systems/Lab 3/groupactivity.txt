@@ -1,0 +1,17 @@
+What Worked?
+Brendan and I have a very good team dynamic and have already worked with eachother on past projects. Where one of us doesn't understand something the other can ussually have a good enough grasp to help understand concepts.
+
+What did not work?
+We learned not to second guess the software before second guessing ourselves. We also needed to code neater.
+
+What were you responsible for in the project?
+We didn't necessarily split up the tasks we just incrementally worked on it and kept eachother up to date but responsiblities were to some extent:
+
+Brian: Code
+Brendan: Pre-Lab questions and design. 
+
+However this was just a general idea and we equally disbursed between coding and questions/design.
+
+What could be done differently next time?
+
+Assume the error is your code before jumping to conclusions it's not your code. Neater code.

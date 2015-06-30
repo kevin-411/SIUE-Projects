@@ -1,0 +1,61 @@
+; Compiled by GCC
+.data
+	.align 2
+LC0:
+	.ascii "For some reason, putting this printf statement here makes it work...?\n"
+	.ascii "\000"
+	.align 2
+LC1:
+	.ascii "In Userprog1, Sum : %d\n\000"
+.text
+	.align 2
+.proc _main
+.global _main
+_main:
+;  Function 'main'; 0 bytes of locals, 0 regs to save.
+	sw	-4(r29),r30	; push fp
+	add	r30,r0,r29	; fp = sp
+	sw	-8(r29),r31	; push ret addr
+	subui	r29,r29,#8	; alloc local storage
+	jal	___main
+	nop	; not filled.
+	addi	r3,r0,(#0x0)&0xff
+	lhi	r4,#16
+	addui	r4,r4,#0
+	addi	r31,r0,#0
+	add	r2,r0,r4
+L16:
+	sb	(r2),r31
+	addi	r2,r2,#8196
+	addi	r31,r31,#1
+	slei	r1,r31,#11
+	bnez	r1,L16
+	nop	; not filled.
+	add	r31,r0,r4
+	lhi	r5,#1
+	addui	r5,r5,#24620
+	or	r2,r31,r5
+L21:
+	lb	r5,(r31)
+	add	r3,r5,r3
+	addi	r31,r31,#8196
+	sle	r1,r31,r2
+	bnez	r1,L21
+	nop	; not filled.
+	addi	r29,r29,#-8
+	lhi	r5,((LC0)>>16)&0xffff
+	addui	r5,r5,(LC0)&0xffff
+	sw	(r29),r5
+	jal	_Printf
+	nop	; not filled.
+	lhi	r5,((LC1)>>16)&0xffff
+	addui	r5,r5,(LC1)&0xffff
+	sw	(r29),r5
+	andi	r1,r3,#0x00ff
+	sw	4(r29),r1
+	jal	_Printf
+	nop	; not filled.
+	addi	r29,r29,#8
+	jal	_exit
+	nop
+.endproc _main

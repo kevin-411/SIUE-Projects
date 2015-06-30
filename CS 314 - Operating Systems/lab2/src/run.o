@@ -1,0 +1,159 @@
+; Compiled by GCC
+.data
+	.align 2
+LC0:
+	.ascii "producer.dlx.obj\000"
+	.align 2
+LC1:
+	.ascii "consumer.dlx.obj\000"
+.text
+	.align 2
+.proc _main
+.global _main
+_main:
+;  Function 'main'; 112 bytes of locals, 0 regs to save.
+	sw	-4(r29),r30	; push fp
+	add	r30,r0,r29	; fp = sp
+	sw	-8(r29),r31	; push ret addr
+	subui	r29,r29,#120	; alloc local storage
+	lw	r2,4(r30)
+	jal	___main
+	nop	; not filled.
+	addi	r29,r29,#-8
+	lw	r13,4(r2)
+	sw	(r29),r13
+	jal	_dstrtol
+	nop	; not filled.
+	add	r10,r0,r1
+	lw	r2,8(r2)
+	sw	(r29),r2
+	jal	_dstrtol
+	nop	; not filled.
+	add	r11,r0,r1
+	jal	_shmget
+	nop	; not filled.
+	add	r5,r0,r1
+	jal	_lock_create
+	nop	; not filled.
+	add	r2,r0,r1
+	sw	(r29),r2
+	jal	_cond_create
+	nop	; not filled.
+	add	r4,r0,r1
+	sw	(r29),r2
+	jal	_cond_create
+	nop	; not filled.
+	add	r3,r0,r1
+	addi	r13,r0,#0
+	sw	(r29),r13
+	jal	_sem_create
+	nop	; not filled.
+	add	r12,r0,r1
+	sw	(r29),r5
+	addi	r9,r30,#-24
+	sw	4(r29),r9
+	jal	_ditoa
+	nop	; not filled.
+	sw	(r29),r2
+	addi	r8,r30,#-56
+	sw	4(r29),r8
+	jal	_ditoa
+	nop	; not filled.
+	sw	(r29),r3
+	addi	r6,r30,#-120
+	sw	4(r29),r6
+	jal	_ditoa
+	nop	; not filled.
+	sw	(r29),r4
+	addi	r7,r30,#-72
+	sw	4(r29),r7
+	jal	_ditoa
+	nop	; not filled.
+	sw	(r29),r12
+	addi	r4,r30,#-40
+	sw	4(r29),r4
+	jal	_ditoa
+	nop	; not filled.
+	sw	(r29),r5
+	jal	_shmat
+	nop	; not filled.
+	sw	8(r1),r13
+	sw	12(r1),r13
+	sw	16(r1),r13
+	addi	r2,r0,#0
+	addi	r29,r29,#8
+	slt	r1,r2,r10
+	beqz	r1,L12
+	nop	; not filled.
+	addi	r3,r30,#-104
+	add	r5,r0,r7
+L5:
+	addi	r29,r29,#-8
+	sw	(r29),r2
+	sw	4(r29),r3
+	jal	_ditoa
+	nop	; not filled.
+	addi	r29,r29,#-24
+	lhi	r13,((LC0)>>16)&0xffff
+	addui	r13,r13,(LC0)&0xffff
+	sw	(r29),r13
+	sw	4(r29),r9
+	sw	8(r29),r8
+	sw	12(r29),r6
+	sw	16(r29),r5
+	sw	20(r29),r3
+	sw	24(r29),r4
+	addi	r13,r0,#0
+	sw	28(r29),r13
+	jal	_process_create
+	nop	; not filled.
+	addi	r29,r29,#32
+	addi	r2,r2,#1
+	slt	r1,r2,r10
+	bnez	r1,L5
+	nop	; not filled.
+	addi	r2,r0,#0
+L12:
+	slt	r1,r2,r11
+	beqz	r1,L8
+	nop	; not filled.
+	addi	r3,r30,#-88
+	addi	r8,r30,#-24
+	addi	r7,r30,#-56
+	addi	r6,r30,#-120
+	addi	r5,r30,#-72
+	addi	r4,r30,#-40
+L10:
+	addi	r29,r29,#-8
+	sw	(r29),r2
+	sw	4(r29),r3
+	jal	_ditoa
+	nop	; not filled.
+	addi	r29,r29,#-24
+	lhi	r13,((LC1)>>16)&0xffff
+	addui	r13,r13,(LC1)&0xffff
+	sw	(r29),r13
+	sw	4(r29),r8
+	sw	8(r29),r7
+	sw	12(r29),r6
+	sw	16(r29),r5
+	sw	20(r29),r3
+	sw	24(r29),r4
+	addi	r13,r0,#0
+	sw	28(r29),r13
+	jal	_process_create
+	nop	; not filled.
+	addi	r29,r29,#32
+	addi	r2,r2,#1
+	slt	r1,r2,r11
+	bnez	r1,L10
+	nop	; not filled.
+L8:
+	addi	r29,r29,#-8
+	sw	(r29),r12
+	jal	_sem_wait
+	nop	; not filled.
+	addi	r29,r29,#8
+	jal	_exit
+	nop
+.endproc _main

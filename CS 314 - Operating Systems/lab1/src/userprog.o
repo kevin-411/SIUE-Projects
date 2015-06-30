@@ -1,0 +1,70 @@
+; Compiled by GCC
+.data
+	.align 2
+LC0:
+	.ascii "Letters\000"
+	.align 2
+LC1:
+	.ascii "The process pid is %d\n\000"
+	.align 2
+LC2:
+	.ascii "This is a test (%d,0x%x)\n\000"
+	.align 2
+LC3:
+	.ascii "Process ID\000"
+.text
+	.align 2
+.proc _main
+.global _main
+_main:
+;  Function 'main'; 0 bytes of locals, 0 regs to save.
+	sw	-4(r29),r30	; push fp
+	add	r30,r0,r29	; fp = sp
+	sw	-8(r29),r31	; push ret addr
+	subui	r29,r29,#8	; alloc local storage
+	lw	r2,(r30)
+	jal	___main
+	nop	; not filled.
+	lhi	r3,((LC0)>>16)&0xffff
+	addui	r3,r3,(LC0)&0xffff
+	jal	_GetPid
+	nop	; not filled.
+	addi	r29,r29,#-8
+	lhi	r4,((LC1)>>16)&0xffff
+	addui	r4,r4,(LC1)&0xffff
+	sw	(r29),r4
+	sw	4(r29),r1
+	jal	_Printf
+	nop	; not filled.
+	addi	r29,r29,#-8
+	lhi	r4,((LC2)>>16)&0xffff
+	addui	r4,r4,(LC2)&0xffff
+	sw	(r29),r4
+	sw	4(r29),r2
+	sw	8(r29),r2
+	jal	_Printf
+	nop	; not filled.
+	lhi	r4,((LC3)>>16)&0xffff
+	addui	r4,r4,(LC3)&0xffff
+	sw	(r29),r4
+	sw	4(r29),r2
+	jal	_Open
+	nop	; not filled.
+	addi	r2,r0,(#0x61)&0xff
+	addi	r29,r29,#16
+L11:
+	addi	r29,r29,#-8
+	sw	(r29),r3
+	andi	r1,r2,#0x00ff
+	sw	4(r29),r1
+	jal	_Open
+	nop	; not filled.
+	addi	r29,r29,#8
+	addi	r2,r2,#1
+	andi	r1,r2,#0x00ff
+	sleui	r1,r1,#122
+	bnez	r1,L11
+	nop	; not filled.
+	jal	_exit
+	nop
+.endproc _main

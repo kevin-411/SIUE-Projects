@@ -1,0 +1,200 @@
+Hi Uday, How are you?
+Got 2 arguments.
+Available memory: 0x15014 -> 0x200000.
+Argument count is 2.
+Argument 0 is -u.
+Argument 1 is userprog2.dlx.obj.
+Setting up the L1 Page Table
+Allocating 3 Text/Data Pages
+tempAddress = 90112 
+tempAddress = 90112 
+tempAddress = 90112 
+Allocating User Stack
+Page:1	Offset:0	L1index:0	L2index:1
+Page:1	Offset:36	L1index:0	L2index:1
+Page:0	Offset:4096	L1index:0	L2index:0
+Page:0	Offset:4172	L1index:0	L2index:0
+Page:0	Offset:4252	L1index:0	L2index:0
+Page:0	Offset:4332	L1index:0	L2index:0
+Page:0	Offset:4412	L1index:0	L2index:0
+Page:0	Offset:4492	L1index:0	L2index:0
+Page:0	Offset:4572	L1index:0	L2index:0
+Page:0	Offset:4652	L1index:0	L2index:0
+Page:0	Offset:4732	L1index:0	L2index:0
+Page:0	Offset:4812	L1index:0	L2index:0
+Page:0	Offset:4892	L1index:0	L2index:0
+Page:0	Offset:4972	L1index:0	L2index:0
+Page:0	Offset:5052	L1index:0	L2index:0
+Page:0	Offset:5132	L1index:0	L2index:0
+Page:0	Offset:5212	L1index:0	L2index:0
+Page:0	Offset:5292	L1index:0	L2index:0
+Page:0	Offset:5372	L1index:0	L2index:0
+Page:0	Offset:5452	L1index:0	L2index:0
+Page:0	Offset:5532	L1index:0	L2index:0
+Page:0	Offset:5612	L1index:0	L2index:0
+Page:0	Offset:5692	L1index:0	L2index:0
+Page:0	Offset:5772	L1index:0	L2index:0
+Page:0	Offset:5852	L1index:0	L2index:0
+Page:0	Offset:5932	L1index:0	L2index:0
+Page:0	Offset:6012	L1index:0	L2index:0
+Page:0	Offset:6092	L1index:0	L2index:0
+Page:0	Offset:6172	L1index:0	L2index:0
+Page:0	Offset:6252	L1index:0	L2index:0
+Page:0	Offset:6332	L1index:0	L2index:0
+Page:0	Offset:6412	L1index:0	L2index:0
+Page:0	Offset:6492	L1index:0	L2index:0
+Page:0	Offset:6572	L1index:0	L2index:0
+Page:0	Offset:6652	L1index:0	L2index:0
+Page:0	Offset:6732	L1index:0	L2index:0
+Page:0	Offset:6812	L1index:0	L2index:0
+Page:0	Offset:6892	L1index:0	L2index:0
+Page:0	Offset:6972	L1index:0	L2index:0
+Page:2047	Offset:7168	L1index:31	L2index:63
+Page:2047	Offset:7156	L1index:31	L2index:63
+Now entering PageFaultHandler
+Now entering PageFaultHandler
+Now entering PageFaultHandler
+Now entering PageFaultHandler
+Now entering PageFaultHandler
+Now entering PageFaultHandler
+Page:2042	Offset:8100	L1index:31	L2index:58
+Page:1	Offset:0	L1index:0	L2index:1
+Page:2042	Offset:8100	L1index:31	L2index:58
+Page:1	Offset:36	L1index:0	L2index:1
+Page:1	Offset:37	L1index:0	L2index:1
+Page:1	Offset:38	L1index:0	L2index:1
+Page:1	Offset:39	L1index:0	L2index:1
+Page:1	Offset:40	L1index:0	L2index:1
+Page:1	Offset:41	L1index:0	L2index:1
+Page:1	Offset:42	L1index:0	L2index:1
+Page:1	Offset:43	L1index:0	L2index:1
+Page:1	Offset:44	L1index:0	L2index:1
+Page:1	Offset:45	L1index:0	L2index:1
+Page:1	Offset:46	L1index:0	L2index:1
+Page:1	Offset:47	L1index:0	L2index:1
+Page:1	Offset:48	L1index:0	L2index:1
+Page:1	Offset:49	L1index:0	L2index:1
+Page:1	Offset:50	L1index:0	L2index:1
+Page:1	Offset:51	L1index:0	L2index:1
+Page:1	Offset:52	L1index:0	L2index:1
+Page:1	Offset:53	L1index:0	L2index:1
+Page:1	Offset:54	L1index:0	L2index:1
+Page:1	Offset:55	L1index:0	L2index:1
+Page:1	Offset:56	L1index:0	L2index:1
+Page:1	Offset:57	L1index:0	L2index:1
+Page:1	Offset:58	L1index:0	L2index:1
+Page:1	Offset:59	L1index:0	L2index:1
+Page:1	Offset:60	L1index:0	L2index:1
+Page:1	Offset:61	L1index:0	L2index:1
+
+In Userprog2, Sum : 210
+
+No runnable processes - exiting!
+Exiting at program request.
+Instructions executed: 1098134
+Time simulated: 1.098 secs
+Real time elapsed: 0.085 secs
+Execution rate: 12.89M simulated instructions per real second.
+Hi Uday, How are you?
+Got 2 arguments.
+Available memory: 0x15060 -> 0x200000.
+Argument count is 2.
+Argument 0 is -u.
+Argument 1 is userprog2.dlx.obj.
+Setting up the L1 Page Table
+Allocating 3 Text/Data Pages
+tempAddress = 90112 
+tempAddress = 90112 
+tempAddress = 90112 
+Allocating User Stack
+Page:1	Offset:0	L1index:0	L2index:1
+Page:1	Offset:36	L1index:0	L2index:1
+Page:0	Offset:4096	L1index:0	L2index:0
+Page:0	Offset:4172	L1index:0	L2index:0
+Page:0	Offset:4252	L1index:0	L2index:0
+Page:0	Offset:4332	L1index:0	L2index:0
+Page:0	Offset:4412	L1index:0	L2index:0
+Page:0	Offset:4492	L1index:0	L2index:0
+Page:0	Offset:4572	L1index:0	L2index:0
+Page:0	Offset:4652	L1index:0	L2index:0
+Page:0	Offset:4732	L1index:0	L2index:0
+Page:0	Offset:4812	L1index:0	L2index:0
+Page:0	Offset:4892	L1index:0	L2index:0
+Page:0	Offset:4972	L1index:0	L2index:0
+Page:0	Offset:5052	L1index:0	L2index:0
+Page:0	Offset:5132	L1index:0	L2index:0
+Page:0	Offset:5212	L1index:0	L2index:0
+Page:0	Offset:5292	L1index:0	L2index:0
+Page:0	Offset:5372	L1index:0	L2index:0
+Page:0	Offset:5452	L1index:0	L2index:0
+Page:0	Offset:5532	L1index:0	L2index:0
+Page:0	Offset:5612	L1index:0	L2index:0
+Page:0	Offset:5692	L1index:0	L2index:0
+Page:0	Offset:5772	L1index:0	L2index:0
+Page:0	Offset:5852	L1index:0	L2index:0
+Page:0	Offset:5932	L1index:0	L2index:0
+Page:0	Offset:6012	L1index:0	L2index:0
+Page:0	Offset:6092	L1index:0	L2index:0
+Page:0	Offset:6172	L1index:0	L2index:0
+Page:0	Offset:6252	L1index:0	L2index:0
+Page:0	Offset:6332	L1index:0	L2index:0
+Page:0	Offset:6412	L1index:0	L2index:0
+Page:0	Offset:6492	L1index:0	L2index:0
+Page:0	Offset:6572	L1index:0	L2index:0
+Page:0	Offset:6652	L1index:0	L2index:0
+Page:0	Offset:6732	L1index:0	L2index:0
+Page:0	Offset:6812	L1index:0	L2index:0
+Page:0	Offset:6892	L1index:0	L2index:0
+Page:0	Offset:6972	L1index:0	L2index:0
+Page:2047	Offset:7168	L1index:31	L2index:63
+Page:2047	Offset:7156	L1index:31	L2index:63
+Got a page fault trap!
+Now entering PageFaultHandler
+Got a page fault trap!
+Now entering PageFaultHandler
+Got a page fault trap!
+Now entering PageFaultHandler
+Got a page fault trap!
+Now entering PageFaultHandler
+Got a page fault trap!
+Now entering PageFaultHandler
+Got a page fault trap!
+Now entering PageFaultHandler
+Page:2042	Offset:8100	L1index:31	L2index:58
+Page:1	Offset:0	L1index:0	L2index:1
+Page:2042	Offset:8100	L1index:31	L2index:58
+Page:1	Offset:36	L1index:0	L2index:1
+Page:1	Offset:37	L1index:0	L2index:1
+Page:1	Offset:38	L1index:0	L2index:1
+Page:1	Offset:39	L1index:0	L2index:1
+Page:1	Offset:40	L1index:0	L2index:1
+Page:1	Offset:41	L1index:0	L2index:1
+Page:1	Offset:42	L1index:0	L2index:1
+Page:1	Offset:43	L1index:0	L2index:1
+Page:1	Offset:44	L1index:0	L2index:1
+Page:1	Offset:45	L1index:0	L2index:1
+Page:1	Offset:46	L1index:0	L2index:1
+Page:1	Offset:47	L1index:0	L2index:1
+Page:1	Offset:48	L1index:0	L2index:1
+Page:1	Offset:49	L1index:0	L2index:1
+Page:1	Offset:50	L1index:0	L2index:1
+Page:1	Offset:51	L1index:0	L2index:1
+Page:1	Offset:52	L1index:0	L2index:1
+Page:1	Offset:53	L1index:0	L2index:1
+Page:1	Offset:54	L1index:0	L2index:1
+Page:1	Offset:55	L1index:0	L2index:1
+Page:1	Offset:56	L1index:0	L2index:1
+Page:1	Offset:57	L1index:0	L2index:1
+Page:1	Offset:58	L1index:0	L2index:1
+Page:1	Offset:59	L1index:0	L2index:1
+Page:1	Offset:60	L1index:0	L2index:1
+Page:1	Offset:61	L1index:0	L2index:1
+
+In Userprog2, Sum : 210
+
+No runnable processes - exiting!
+Exiting at program request.
+Instructions executed: 1098188
+Time simulated: 1.098 secs
+Real time elapsed: 0.085 secs
+Execution rate: 12.90M simulated instructions per real second.

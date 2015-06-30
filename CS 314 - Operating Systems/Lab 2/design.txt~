@@ -1,0 +1,53 @@
+****Synch.h****
+
+In synch.h we simply added in the the variables for the Lock and Condition Variables Structs.
+
+To the Lock synch struct we added: 
+
+	an inuse uint to mark if the structure is currently being used by some process or not.
+
+	a mutex int to specify if the lock is open or not.//do we need this and inuse? maybe get rid of uint
+
+	a mypid int to hold the processid of the process using the lock currently. It is defaulted to -1.
+
+To the Cond Struct we added:
+
+	a lock lock_t variable that holds the index of a lock that it uses
+	
+	an inuse variable to see if the condition variable is being used.
+
+****Synch.c****
+
+From top to bottome we added:
+
+Declarations for the locks array and the conds array setting their sizes to the MAX_LOCKS and MAX_CONDS
+
+We then intialize both arrays as such:
+
+for all locks:
+
+	inuse variables are all set to 0 to specify they aren't in use // still dunno if this is needed
+	
+	mutex variables are all set to 1 to leave all locks open
+	
+	mypid variables are all set to -1 to indicate that no process is using them
+	
+for all conds:
+
+	inuse variables are all set to 0 to specify they aren't in use
+	
+~LockCreate()
+We declare a lock_t called lock to act as our index in the locks array
+and then declare intrval as our inturrupt value to allow us to disable inturrupts while acquiring the lock
+
+We call DisableIntrs() to disable inturrupts and assign the return value to intrval
+
+We traverse the array until we find a lock that isn't being used and as soon as an open lock is found:
+
+	inuse is set to 1 to specify it's being used//dunno if we need this
+	mypid is set to the pid of the current process calling it
+	mutex is set to 0 to specify the lock is not open
+	
+If no lock is available then an INVALID_LOCK will be returned
+
+Otherwise the the index or "handle" of the lock will be returned if an open lock is encountered

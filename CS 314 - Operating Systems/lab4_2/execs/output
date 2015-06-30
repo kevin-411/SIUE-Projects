@@ -1,0 +1,102 @@
+Hi Uday, How are you?
+Got 2 arguments.
+Available memory: 0x15014 -> 0x200000.
+Argument count is 2.
+Argument 0 is -u.
+Argument 1 is userprog1.dlx.obj.
+Setting up the L1 Page Table
+Allocating 3 Text/Data Pages
+tempAddress = 90112 
+tempAddress = 90112 
+tempAddress = 90112 
+Allocating User Stack
+Page:1	Offset:0	L1index:0	L2index:1
+Page:1	Offset:70	L1index:0	L2index:1
+Page:1	Offset:72	L1index:0	L2index:1
+Page:0	Offset:4096	L1index:0	L2index:0
+Page:0	Offset:4172	L1index:0	L2index:0
+Page:0	Offset:4252	L1index:0	L2index:0
+Page:0	Offset:4332	L1index:0	L2index:0
+Page:0	Offset:4412	L1index:0	L2index:0
+Page:0	Offset:4492	L1index:0	L2index:0
+Page:0	Offset:4572	L1index:0	L2index:0
+Page:0	Offset:4652	L1index:0	L2index:0
+Page:0	Offset:4732	L1index:0	L2index:0
+Page:0	Offset:4812	L1index:0	L2index:0
+Page:0	Offset:4892	L1index:0	L2index:0
+Page:0	Offset:4972	L1index:0	L2index:0
+Page:0	Offset:5052	L1index:0	L2index:0
+Page:0	Offset:5132	L1index:0	L2index:0
+Page:0	Offset:5212	L1index:0	L2index:0
+Page:0	Offset:5292	L1index:0	L2index:0
+Page:0	Offset:5372	L1index:0	L2index:0
+Page:0	Offset:5452	L1index:0	L2index:0
+Page:0	Offset:5532	L1index:0	L2index:0
+Page:0	Offset:5612	L1index:0	L2index:0
+Page:0	Offset:5692	L1index:0	L2index:0
+Page:0	Offset:5772	L1index:0	L2index:0
+Page:0	Offset:5852	L1index:0	L2index:0
+Page:0	Offset:5932	L1index:0	L2index:0
+Page:0	Offset:6012	L1index:0	L2index:0
+Page:0	Offset:6092	L1index:0	L2index:0
+Page:0	Offset:6172	L1index:0	L2index:0
+Page:0	Offset:6252	L1index:0	L2index:0
+Page:0	Offset:6332	L1index:0	L2index:0
+Page:0	Offset:6412	L1index:0	L2index:0
+Page:0	Offset:6492	L1index:0	L2index:0
+Page:0	Offset:6572	L1index:0	L2index:0
+Page:0	Offset:6652	L1index:0	L2index:0
+Page:0	Offset:6732	L1index:0	L2index:0
+Page:0	Offset:6812	L1index:0	L2index:0
+Page:0	Offset:6892	L1index:0	L2index:0
+Page:0	Offset:6972	L1index:0	L2index:0
+Page:2047	Offset:7168	L1index:31	L2index:63
+Page:2047	Offset:7156	L1index:31	L2index:63
+Now entering PageFaultHandler
+Now entering PageFaultHandler
+Now entering PageFaultHandler
+Now entering PageFaultHandler
+Now entering PageFaultHandler
+Now entering PageFaultHandler
+Now entering PageFaultHandler
+Now entering PageFaultHandler
+Now entering PageFaultHandler
+Now entering PageFaultHandler
+Now entering PageFaultHandler
+Now entering PageFaultHandler
+Now entering PageFaultHandler
+Now entering PageFaultHandler
+Page:2047	Offset:7140	L1index:31	L2index:63
+Page:1	Offset:0	L1index:0	L2index:1
+Page:2047	Offset:7140	L1index:31	L2index:63
+Page:1	Offset:72	L1index:0	L2index:1
+Page:1	Offset:73	L1index:0	L2index:1
+Page:1	Offset:74	L1index:0	L2index:1
+Page:1	Offset:75	L1index:0	L2index:1
+Page:1	Offset:76	L1index:0	L2index:1
+Page:1	Offset:77	L1index:0	L2index:1
+Page:1	Offset:78	L1index:0	L2index:1
+Page:1	Offset:79	L1index:0	L2index:1
+Page:1	Offset:80	L1index:0	L2index:1
+Page:1	Offset:81	L1index:0	L2index:1
+Page:1	Offset:82	L1index:0	L2index:1
+Page:1	Offset:83	L1index:0	L2index:1
+Page:1	Offset:84	L1index:0	L2index:1
+Page:1	Offset:85	L1index:0	L2index:1
+Page:1	Offset:86	L1index:0	L2index:1
+Page:1	Offset:87	L1index:0	L2index:1
+Page:1	Offset:88	L1index:0	L2index:1
+Page:1	Offset:89	L1index:0	L2index:1
+Page:1	Offset:90	L1index:0	L2index:1
+Page:1	Offset:91	L1index:0	L2index:1
+Page:1	Offset:92	L1index:0	L2index:1
+Page:1	Offset:93	L1index:0	L2index:1
+Page:1	Offset:94	L1index:0	L2index:1
+Page:1	Offset:95	L1index:0	L2index:1
+In Userprog1, Sum : 66
+No runnable processes - exiting!
+Exiting at program request.
+Instructions executed: 1125655
+Time simulated: 1.126 secs
+Real time elapsed: 0.088 secs
+Execution rate: 12.82M simulated instructions per real second.

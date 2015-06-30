@@ -1,0 +1,25 @@
+Got 3 arguments.
+Available memory: 0x18fa4 -> 0x200000.
+Argument count is 3.
+Argument 0 is -u.
+Argument 1 is testprog.dlx.obj.
+Argument 2 is 2.
+
+*****************************************************
+Inside testcase2!
+
+***************************************
+Queue #->12 pid->31 priority->50.006500 estcpu->0.026012
+Sleep Queue #->-1 pid->29 priority->51.752167 estcpu->7.008686
+Sleep Queue #->-1 pid->28 priority->51.388489 estcpu->8.554031
+Sleep Queue #->-1 pid->27 priority->51.733856 estcpu->6.935528
+
+***************************************
+
+*****************************************************
+No runnable processes - exiting!
+Exiting at program request.
+Instructions executed: 15096270
+Time simulated: 15.096 secs
+Real time elapsed: 1.120 secs
+Execution rate: 13.48M simulated instructions per real second.

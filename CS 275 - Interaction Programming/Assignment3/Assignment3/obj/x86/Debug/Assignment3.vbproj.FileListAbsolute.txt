@@ -1,0 +1,11 @@
+c:\users\brian\documents\visual studio 2010\Projects\Assignment3\Assignment3\bin\Debug\Assignment3.exe
+c:\users\brian\documents\visual studio 2010\Projects\Assignment3\Assignment3\bin\Debug\Assignment3.pdb
+c:\users\brian\documents\visual studio 2010\Projects\Assignment3\Assignment3\bin\Debug\Assignment3.xml
+c:\users\brian\documents\visual studio 2010\Projects\Assignment3\Assignment3\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\brian\documents\visual studio 2010\Projects\Assignment3\Assignment3\obj\x86\Debug\Assignment3.TwentyOne.resources
+c:\users\brian\documents\visual studio 2010\Projects\Assignment3\Assignment3\obj\x86\Debug\Assignment3.Resources.resources
+c:\users\brian\documents\visual studio 2010\Projects\Assignment3\Assignment3\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\brian\documents\visual studio 2010\Projects\Assignment3\Assignment3\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\brian\documents\visual studio 2010\Projects\Assignment3\Assignment3\obj\x86\Debug\Assignment3.exe
+c:\users\brian\documents\visual studio 2010\Projects\Assignment3\Assignment3\obj\x86\Debug\Assignment3.xml
+c:\users\brian\documents\visual studio 2010\Projects\Assignment3\Assignment3\obj\x86\Debug\Assignment3.pdb

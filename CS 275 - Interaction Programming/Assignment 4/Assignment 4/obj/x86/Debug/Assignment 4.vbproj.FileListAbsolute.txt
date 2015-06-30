@@ -1,0 +1,16 @@
+c:\users\brian\documents\visual studio 2010\Projects\Assignment 4\Assignment 4\bin\Debug\Assignment 4.exe
+c:\users\brian\documents\visual studio 2010\Projects\Assignment 4\Assignment 4\bin\Debug\Assignment 4.pdb
+c:\users\brian\documents\visual studio 2010\Projects\Assignment 4\Assignment 4\bin\Debug\Assignment 4.xml
+c:\users\brian\documents\visual studio 2010\Projects\Assignment 4\Assignment 4\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\brian\documents\visual studio 2010\Projects\Assignment 4\Assignment 4\obj\x86\Debug\Assignment_4.Form1.resources
+c:\users\brian\documents\visual studio 2010\Projects\Assignment 4\Assignment 4\obj\x86\Debug\Assignment_4.Resources.resources
+c:\users\brian\documents\visual studio 2010\Projects\Assignment 4\Assignment 4\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\brian\documents\visual studio 2010\Projects\Assignment 4\Assignment 4\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\brian\documents\visual studio 2010\Projects\Assignment 4\Assignment 4\obj\x86\Debug\Assignment 4.exe
+c:\users\brian\documents\visual studio 2010\Projects\Assignment 4\Assignment 4\obj\x86\Debug\Assignment 4.xml
+c:\users\brian\documents\visual studio 2010\Projects\Assignment 4\Assignment 4\obj\x86\Debug\Assignment 4.pdb
+C:\Users\Brian\documents\visual studio 2010\Projects\Assignment 4\Assignment 4\obj\x86\Debug\Assignment_4.Form2.resources
+C:\Users\Brian\documents\visual studio 2010\Projects\Assignment 4\Assignment 4\obj\x86\Debug\Assignment_4.Dialog1.resources
+C:\Users\Brian\documents\visual studio 2010\Projects\Assignment 4\Assignment 4\obj\x86\Debug\Assignment_4.Form3.resources
+C:\Users\Brian\documents\visual studio 2010\Projects\Assignment 4\Assignment 4\obj\x86\Debug\Assignment_4.Form4.resources
+C:\Users\Brian\documents\visual studio 2010\Projects\Assignment 4\Assignment 4\obj\x86\Debug\Assignment_4.LoginForm2.resources

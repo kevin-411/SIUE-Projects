@@ -1,0 +1,44 @@
+	; Initially PC is set to 100
+	; Data section is right after the code section
+
+	.text 100
+	.global _main
+
+_main:
+	ADDI	R1, R0, #10	; init i
+	SW	R1, VAR_i(R0)	; store i
+FOR_0:
+	LW	R1, VAR_i(R0)
+	BLTZ	R1, END_FOR_0	; i >= 0?
+	SLL	R10, R1, #2	; get correct word boundary
+	LW	R3, A(R10)	; read A[i]
+	LW	R4, B(R10)	; read B[i]
+	LW 	R5, C(R0)	; read C
+	BLTZ	R3, ELSE_0	; A[i] >= 0 ?
+	SUB	R6, R4, R5	; B[i] - C
+	J	TAIL_0
+
+ELSE_0:
+	ADD	R6, R4, R5	; B[i] + C
+
+TAIL_0:
+	SW	R6, A(R10)	; rewrite A[i]
+	ADDI	R1, R1, #-1	; i--
+	SW	R1, VAR_i(R0)
+	J	FOR_0
+
+END_FOR_0:
+	BREAK
+
+A:
+	.word	-1, -2, -3, 1, 2, 3, 0, 0, 5, -5, 6
+B:
+	.word	0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+C:
+; let C be 1
+	.word	1
+VAR_i:
+; for var i
+	.word	0
+
+	

@@ -1,0 +1,61 @@
+void PrintAllQueues()
+{
+  int i=0,j=0;
+  Link *l;
+  PCB *pcb;
+
+  printf("\n***************************************\n");
+
+  for(i=0;i<NUM_OF_RUNQUEUE;i++)
+    if(!QueueEmpty(&runQueue[i])){
+      l = QueueFirst(&runQueue[i]);
+      for(j=0;j<QueueLength(&runQueue[i]);j++){
+	pcb = (PCB *)l->object;
+	printf("Queue #->%d",i);
+	printf(" pid->%d",(pcb-pcbs));
+	printf(" priority->%f",pcb->priority);
+	printf(" estcpu->%f",pcb->estcpu);
+	printf("\n");
+	/*
+	printf("Queue #->%d, pcb->%x priority->%f estcpu->%f \n",i,pcb,pcb->priority,pcb->estcpu);
+	*/
+	l = QueueNext(l);
+      }
+    }
+
+  if(!QueueEmpty(&waitQueue)){
+	  l = QueueFirst(&waitQueue);
+	  for(j=0;j<QueueLength(&waitQueue);j++){
+		  pcb = (PCB *)l->object;
+		  printf("Sleep Queue #->%d",-1);
+		  printf(" pid->%d",(pcb-pcbs));
+		  printf(" priority->%f",pcb->priority);
+		  printf(" estcpu->%f",pcb->estcpu);
+		  printf("\n");
+		  /*
+		  printf("Sleep Queue->%d: pcb->%x priority->%f estcpu->%f \n",-1,pcb,pcb->priority,pcb->estcpu);
+		  */
+		  l = QueueNext(l);
+	  }
+  }
+
+  if(!QueueEmpty(&zombieQueue)){
+	  l = QueueFirst(&zombieQueue);
+	  for(j=0;j<QueueLength(&zombieQueue);j++){
+		  pcb = (PCB *)l->object;
+		  printf("Zombie Queue:");
+		  printf(" pid->%d",(pcb-pcbs));
+		  printf(" priority->%f",pcb->priority);
+		  printf(" estcpu->%f",pcb->estcpu);
+		  printf("\n");
+		  /*
+		  printf("Zombie Queue: pcb->%x priority->%f estcpu->%f \n",pcb,pcb->priority,pcb->estcpu);
+		  */
+		  l = QueueNext(l);
+	  }
+  }
+
+
+  printf("\n***************************************\n");
+  return;
+}

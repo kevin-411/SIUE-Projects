@@ -1,0 +1,15 @@
+.proc _sleep
+.global _sleep
+_sleep:
+	trap	#0x410
+	jr	r31
+	nop
+.endproc _sleep
+
+.proc _printAllQueues
+.global _printAllQueues
+_printAllQueues:
+	trap	#0x465
+	jr	r31
+	nop
+.endproc _printAllQueues

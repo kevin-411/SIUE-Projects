@@ -1,0 +1,11 @@
+c:\users\brian\documents\visual studio 2010\Projects\Assignment6\Assignment6\bin\Debug\Assignment6.exe
+c:\users\brian\documents\visual studio 2010\Projects\Assignment6\Assignment6\bin\Debug\Assignment6.pdb
+c:\users\brian\documents\visual studio 2010\Projects\Assignment6\Assignment6\bin\Debug\Assignment6.xml
+c:\users\brian\documents\visual studio 2010\Projects\Assignment6\Assignment6\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\brian\documents\visual studio 2010\Projects\Assignment6\Assignment6\obj\x86\Debug\Assignment6.MainForm.resources
+c:\users\brian\documents\visual studio 2010\Projects\Assignment6\Assignment6\obj\x86\Debug\Assignment6.Resources.resources
+c:\users\brian\documents\visual studio 2010\Projects\Assignment6\Assignment6\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\brian\documents\visual studio 2010\Projects\Assignment6\Assignment6\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\brian\documents\visual studio 2010\Projects\Assignment6\Assignment6\obj\x86\Debug\Assignment6.exe
+c:\users\brian\documents\visual studio 2010\Projects\Assignment6\Assignment6\obj\x86\Debug\Assignment6.xml
+c:\users\brian\documents\visual studio 2010\Projects\Assignment6\Assignment6\obj\x86\Debug\Assignment6.pdb

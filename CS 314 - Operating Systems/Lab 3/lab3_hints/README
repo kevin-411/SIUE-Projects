@@ -1,0 +1,35 @@
+Instructions for hints:
+
+1) Add the following to your traps.h...
+
+#define TRAP_PRINT_QUEUE 0x465
+
+2) Add the following to your traps.c (immediately after the code for
+TRAP_COND_BROADCAST)...
+
+case TRAP_PRINT_QUEUE:
+PrintAllQueues();
+break;
+
+3) Add the contents of trap_helper to the end of usertraps.s
+
+4) Add the contents of helper to the end of process.c
+
+5) In your PCB, make sure you have a float/double field called estcpu
+   In your PCB, also make sure you have a float/double field called
+   priority.
+   Make the change in process.h
+
+6) Once you've completed steps 1-5, you're ready to go! Use the
+provided Makefile to get things rolling.
+
+
+7) To actually run the testcases, do the following...
+cd ../execs
+dlxsim -x os.dlx.obj -a -u testprog.dlx.obj <1,2,3 or 4>
+
+The numbers at the end specify which testcase you wish to run.
+
+You will also find my outputs for the 4 testcases in the archive.
+
+Toodles.

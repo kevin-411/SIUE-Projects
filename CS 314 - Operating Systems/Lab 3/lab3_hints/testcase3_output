@@ -1,0 +1,552 @@
+Got 3 arguments.
+Available memory: 0x18fa4 -> 0x200000.
+Argument count is 3.
+Argument 0 is -u.
+Argument 1 is testprog.dlx.obj.
+Argument 2 is 3.
+
+*****************************************************
+Inside testcase3!
+Setting number = 2
+
+*****************************************************
+Process 29 has run for 0.101 s
+Process 29 's priority is 50 
+A0
+Process 29 has run for 0.202 s
+Process 29 's priority is 50 
+Process 28 has run for 0.101 s
+Process 28 's priority is 50 
+Process 29 has run for 0.303 s
+Process 29 's priority is 50 
+B0
+Process 28 has run for 0.202 s
+Process 28 's priority is 50 
+A1
+Process 29 has run for 0.404 s
+Process 29 's priority is 50 
+A2
+Process 29 has run for 0.505 s
+Process 29 's priority is 50 
+Process 29 has run for 0.606 s
+Process 29 's priority is 50 
+A3
+Process 29 has run for 0.707 s
+Process 29 's priority is 50 
+A4
+Process 29 has run for 0.808 s
+Process 29 's priority is 50 
+Process 29 has run for 0.909 s
+Process 29 's priority is 51 
+A5
+Process 29 has run for 1.010 s
+Process 29 's priority is 51 
+A6
+Process 29 has run for 1.111 s
+Process 29 's priority is 51 
+Process 29 has run for 1.212 s
+Process 29 's priority is 51 
+Process 28 has run for 0.303 s
+Process 28 's priority is 52 
+A7
+Process 29 has run for 1.313 s
+Process 29 's priority is 51 
+A8
+Process 29 has run for 1.414 s
+Process 29 's priority is 51 
+Process 29 has run for 1.515 s
+Process 29 's priority is 51 
+A9
+Process 29 has run for 1.616 s
+Process 29 's priority is 51 
+B1
+Process 28 has run for 0.404 s
+Process 28 's priority is 52 
+A10
+Process 29 has run for 1.717 s
+Process 29 's priority is 52 
+B2
+Process 28 has run for 0.505 s
+Process 28 's priority is 53 
+Process 29 has run for 1.818 s
+Process 29 's priority is 52 
+Process 28 has run for 0.606 s
+Process 28 's priority is 53 
+A11
+Process 29 has run for 1.919 s
+Process 29 's priority is 52 
+B3
+Process 28 has run for 0.707 s
+Process 28 's priority is 53 
+A12
+Process 29 has run for 2.020 s
+Process 29 's priority is 52 
+B4
+Process 28 has run for 0.808 s
+Process 28 's priority is 53 
+Process 29 has run for 2.121 s
+Process 29 's priority is 52 
+Process 28 has run for 0.909 s
+Process 28 's priority is 53 
+A13
+Process 29 has run for 2.222 s
+Process 29 's priority is 52 
+B5
+Process 28 has run for 1.010 s
+Process 28 's priority is 53 
+A14
+Process 29 has run for 2.323 s
+Process 29 's priority is 52 
+B6
+Process 28 has run for 1.111 s
+Process 28 's priority is 53 
+Process 29 has run for 2.424 s
+Process 29 's priority is 52 
+Process 28 has run for 1.212 s
+Process 28 's priority is 53 
+A15
+Process 29 has run for 2.525 s
+Process 29 's priority is 52 
+B7
+Process 28 has run for 1.313 s
+Process 28 's priority is 54 
+A16
+Process 29 has run for 2.626 s
+Process 29 's priority is 52 
+B8
+Process 28 has run for 1.414 s
+Process 28 's priority is 54 
+Process 29 has run for 2.727 s
+Process 29 's priority is 52 
+Process 28 has run for 1.515 s
+Process 28 's priority is 54 
+A17
+Process 29 has run for 2.828 s
+Process 29 's priority is 52 
+B9
+Process 28 has run for 1.616 s
+Process 28 's priority is 54 
+A18
+Process 29 has run for 2.929 s
+Process 29 's priority is 53 
+B10
+Process 28 has run for 1.717 s
+Process 28 's priority is 54 
+Process 29 has run for 3.030 s
+Process 29 's priority is 52 
+Process 28 has run for 1.818 s
+Process 28 's priority is 54 
+A19
+Process 29 has run for 3.131 s
+Process 29 's priority is 52 
+B11
+Process 28 has run for 1.919 s
+Process 28 's priority is 54 
+A20
+Process 29 has run for 3.232 s
+Process 29 's priority is 52 
+B12
+Process 28 has run for 2.020 s
+Process 28 's priority is 54 
+Process 29 has run for 3.333 s
+Process 29 's priority is 53 
+Process 28 has run for 2.121 s
+Process 28 's priority is 55 
+A21
+Process 29 has run for 3.434 s
+Process 29 's priority is 53 
+B13
+Process 28 has run for 2.222 s
+Process 28 's priority is 54 
+A22
+Process 29 has run for 3.535 s
+Process 29 's priority is 52 
+B14
+Process 28 has run for 2.323 s
+Process 28 's priority is 54 
+Process 29 has run for 3.636 s
+Process 29 's priority is 52 
+Process 28 has run for 2.424 s
+Process 28 's priority is 54 
+A23
+Process 29 has run for 3.737 s
+Process 29 's priority is 52 
+B15
+Process 28 has run for 2.525 s
+Process 28 's priority is 55 
+Process 29 has run for 3.838 s
+Process 29 's priority is 52 
+B16
+Process 28 has run for 2.626 s
+Process 28 's priority is 55 
+A24
+Process 29 has run for 3.939 s
+Process 29 's priority is 52 
+Process 28 has run for 2.727 s
+Process 28 's priority is 54 
+A25
+Process 29 has run for 4.040 s
+Process 29 's priority is 52 
+B17
+Process 28 has run for 2.828 s
+Process 28 's priority is 54 
+Process 29 has run for 4.141 s
+Process 29 's priority is 52 
+B18
+Process 28 has run for 2.929 s
+Process 28 's priority is 55 
+A26
+Process 29 has run for 4.242 s
+Process 29 's priority is 52 
+Process 28 has run for 3.030 s
+Process 28 's priority is 55 
+A27
+Process 29 has run for 4.343 s
+Process 29 's priority is 52 
+B19
+Process 28 has run for 3.131 s
+Process 28 's priority is 55 
+Process 29 has run for 4.444 s
+Process 29 's priority is 52 
+B20
+Process 28 has run for 3.232 s
+Process 28 's priority is 54 
+A28
+Process 29 has run for 4.545 s
+Process 29 's priority is 52 
+Process 28 has run for 3.333 s
+Process 28 's priority is 55 
+A29
+Process 29 has run for 4.646 s
+Process 29 's priority is 52 
+B21
+Process 28 has run for 3.434 s
+Process 28 's priority is 55 
+Process 29 has run for 4.747 s
+Process 29 's priority is 52 
+B22
+Process 28 has run for 3.535 s
+Process 28 's priority is 55 
+A0
+Process 29 has run for 4.848 s
+Process 29 's priority is 52 
+Process 28 has run for 3.636 s
+Process 28 's priority is 55 
+A1
+Process 29 has run for 4.949 s
+Process 29 's priority is 53 
+B23
+Process 28 has run for 3.737 s
+Process 28 's priority is 55 
+Process 29 has run for 5.050 s
+Process 29 's priority is 52 
+Process 28 has run for 3.838 s
+Process 28 's priority is 55 
+A2
+Process 29 has run for 5.151 s
+Process 29 's priority is 52 
+B24
+Process 28 has run for 3.939 s
+Process 28 's priority is 55 
+A3
+Process 29 has run for 5.252 s
+Process 29 's priority is 52 
+B25
+Process 28 has run for 4.040 s
+Process 28 's priority is 55 
+Process 29 has run for 5.353 s
+Process 29 's priority is 53 
+A4
+Process 29 has run for 5.454 s
+Process 29 's priority is 53 
+A5
+Process 29 has run for 5.555 s
+Process 29 's priority is 53 
+Process 28 has run for 4.141 s
+Process 28 's priority is 54 
+Process 29 has run for 5.656 s
+Process 29 's priority is 52 
+B26
+Process 28 has run for 4.242 s
+Process 28 's priority is 54 
+A6
+Process 29 has run for 5.757 s
+Process 29 's priority is 52 
+B27
+Process 28 has run for 4.343 s
+Process 28 's priority is 54 
+A7
+Process 29 has run for 5.858 s
+Process 29 's priority is 52 
+Process 28 has run for 4.444 s
+Process 28 's priority is 54 
+Process 29 has run for 5.959 s
+Process 29 's priority is 52 
+B28
+Process 28 has run for 4.545 s
+Process 28 's priority is 55 
+A8
+Process 29 has run for 6.060 s
+Process 29 's priority is 52 
+B29
+Process 28 has run for 4.646 s
+Process 28 's priority is 55 
+A9
+Process 29 has run for 6.161 s
+Process 29 's priority is 52 
+Process 29 has run for 6.262 s
+Process 29 's priority is 52 
+Process 28 has run for 4.747 s
+Process 28 's priority is 55 
+B0
+Process 28 has run for 4.848 s
+Process 28 's priority is 55 
+Process 29 has run for 6.363 s
+Process 29 's priority is 52 
+A10
+Process 29 has run for 6.464 s
+Process 29 's priority is 52 
+Process 28 has run for 4.949 s
+Process 28 's priority is 55 
+B1
+Process 28 has run for 5.050 s
+Process 28 's priority is 55 
+Process 29 has run for 6.565 s
+Process 29 's priority is 52 
+A11
+Process 29 has run for 6.666 s
+Process 29 's priority is 52 
+Process 28 has run for 5.151 s
+Process 28 's priority is 55 
+B2
+Process 28 has run for 5.252 s
+Process 28 's priority is 55 
+Process 29 has run for 6.767 s
+Process 29 's priority is 52 
+A12
+Process 29 has run for 6.868 s
+Process 29 's priority is 52 
+Process 28 has run for 5.353 s
+Process 28 's priority is 55 
+B3
+Process 28 has run for 5.454 s
+Process 28 's priority is 55 
+Process 29 has run for 6.969 s
+Process 29 's priority is 52 
+A13
+Process 29 has run for 7.070 s
+Process 29 's priority is 52 
+Process 28 has run for 5.555 s
+Process 28 's priority is 55 
+B4
+Process 28 has run for 5.656 s
+Process 28 's priority is 55 
+Process 29 has run for 7.171 s
+Process 29 's priority is 52 
+A14
+Process 29 has run for 7.272 s
+Process 29 's priority is 52 
+Process 28 has run for 5.757 s
+Process 28 's priority is 55 
+B5
+Process 28 has run for 5.858 s
+Process 28 's priority is 55 
+Process 29 has run for 7.373 s
+Process 29 's priority is 52 
+A15
+Process 29 has run for 7.474 s
+Process 29 's priority is 52 
+Process 28 has run for 5.959 s
+Process 28 's priority is 55 
+B6
+Process 28 has run for 6.060 s
+Process 28 's priority is 55 
+Process 29 has run for 7.575 s
+Process 29 's priority is 52 
+A16
+Process 29 has run for 7.676 s
+Process 29 's priority is 52 
+Process 28 has run for 6.161 s
+Process 28 's priority is 55 
+B7
+Process 28 has run for 6.262 s
+Process 28 's priority is 55 
+Process 29 has run for 7.777 s
+Process 29 's priority is 52 
+A17
+Process 29 has run for 7.878 s
+Process 29 's priority is 52 
+Process 28 has run for 6.363 s
+Process 28 's priority is 55 
+B8
+Process 28 has run for 6.464 s
+Process 28 's priority is 55 
+Process 29 has run for 7.979 s
+Process 29 's priority is 52 
+A18
+Process 29 has run for 8.080 s
+Process 29 's priority is 52 
+Process 28 has run for 6.565 s
+Process 28 's priority is 55 
+B9
+Process 28 has run for 6.666 s
+Process 28 's priority is 55 
+Process 29 has run for 8.181 s
+Process 29 's priority is 52 
+A19
+Process 29 has run for 8.282 s
+Process 29 's priority is 52 
+Process 28 has run for 6.767 s
+Process 28 's priority is 55 
+B10
+Process 28 has run for 6.868 s
+Process 28 's priority is 55 
+Process 29 has run for 8.383 s
+Process 29 's priority is 52 
+A20
+Process 29 has run for 8.484 s
+Process 29 's priority is 53 
+Process 28 has run for 6.969 s
+Process 28 's priority is 55 
+B11
+Process 28 has run for 7.070 s
+Process 28 's priority is 55 
+Process 29 has run for 8.585 s
+Process 29 's priority is 53 
+A21
+Process 29 has run for 8.686 s
+Process 29 's priority is 52 
+Process 28 has run for 7.171 s
+Process 28 's priority is 55 
+B12
+Process 28 has run for 7.272 s
+Process 28 's priority is 55 
+Process 29 has run for 8.787 s
+Process 29 's priority is 52 
+A22
+Process 29 has run for 8.888 s
+Process 29 's priority is 52 
+Process 28 has run for 7.373 s
+Process 28 's priority is 55 
+B13
+Process 28 has run for 7.474 s
+Process 28 's priority is 55 
+Process 29 has run for 8.989 s
+Process 29 's priority is 52 
+A23
+Process 29 has run for 9.090 s
+Process 29 's priority is 52 
+Process 28 has run for 7.575 s
+Process 28 's priority is 55 
+B14
+Process 28 has run for 7.676 s
+Process 28 's priority is 55 
+Process 29 has run for 9.191 s
+Process 29 's priority is 52 
+A24
+Process 29 has run for 9.292 s
+Process 29 's priority is 53 
+Process 28 has run for 7.777 s
+Process 28 's priority is 55 
+B15
+Process 28 has run for 7.878 s
+Process 28 's priority is 55 
+Process 29 has run for 9.393 s
+Process 29 's priority is 53 
+A25
+Process 29 has run for 9.494 s
+Process 29 's priority is 53 
+Process 28 has run for 7.979 s
+Process 28 's priority is 55 
+B16
+Process 28 has run for 8.080 s
+Process 28 's priority is 55 
+Process 29 has run for 9.595 s
+Process 29 's priority is 53 
+A26
+Process 29 has run for 9.696 s
+Process 29 's priority is 52 
+Process 28 has run for 8.181 s
+Process 28 's priority is 55 
+B17
+Process 28 has run for 8.282 s
+Process 28 's priority is 55 
+Process 29 has run for 9.797 s
+Process 29 's priority is 52 
+A27
+Process 29 has run for 9.898 s
+Process 29 's priority is 52 
+Process 28 has run for 8.383 s
+Process 28 's priority is 55 
+B18
+Process 28 has run for 8.484 s
+Process 28 's priority is 56 
+Process 29 has run for 9.999 s
+Process 29 's priority is 52 
+A28
+Process 29 has run for 10.100 s
+Process 29 's priority is 52 
+Process 28 has run for 8.585 s
+Process 28 's priority is 56 
+B19
+Process 28 has run for 8.686 s
+Process 28 's priority is 55 
+Process 29 has run for 10.201 s
+Process 29 's priority is 52 
+A29
+Process 29 has run for 10.302 s
+Process 29 's priority is 52 
+Process 28 has run for 8.787 s
+Process 28 's priority is 55 
+B20
+Process 28 has run for 8.888 s
+Process 28 's priority is 55 
+Process 28 has run for 8.989 s
+Process 28 's priority is 55 
+B21
+Process 28 has run for 9.090 s
+Process 28 's priority is 55 
+B22
+Process 28 has run for 9.191 s
+Process 28 's priority is 55 
+Process 28 has run for 9.292 s
+Process 28 's priority is 55 
+B23
+Process 28 has run for 9.393 s
+Process 28 's priority is 55 
+B24
+Process 28 has run for 9.494 s
+Process 28 's priority is 55 
+Process 28 has run for 9.595 s
+Process 28 's priority is 55 
+B25
+Process 28 has run for 9.696 s
+Process 28 's priority is 55 
+B26
+Process 28 has run for 9.797 s
+Process 28 's priority is 55 
+Process 28 has run for 9.898 s
+Process 28 's priority is 56 
+B27
+Process 28 has run for 9.999 s
+Process 28 's priority is 56 
+B28
+Process 28 has run for 10.100 s
+Process 28 's priority is 56 
+Process 28 has run for 10.201 s
+Process 28 's priority is 56 
+B29
+
+***************************************
+Queue #->14 pid->28 priority->57.558594 estcpu->22.234451
+Sleep Queue #->-1 pid->29 priority->52.922302 estcpu->12.689301
+
+***************************************
+Process 28 has run for 10.302 s
+Process 28 's priority is 57 
+No runnable processes - exiting!
+Exiting at program request.
+Instructions executed: 23992050
+Time simulated: 23.992 secs
+Real time elapsed: 1.811 secs
+Execution rate: 13.25M simulated instructions per real second.

@@ -1,0 +1,145 @@
+Got 2 arguments.
+Available memory: 0x13fb4 -> 0x200000.
+Argument count is 2.
+Argument 0 is -u.
+Argument 1 is userprog1.dlx.obj.
+Allocating User Stack
+Allocating sysStack
+page: 1      Process ID: 519552330
+page: 0      Process ID: 519552330
+page: 0      Process ID: 519552330
+page: 0      Process ID: 519552330
+page: 0      Process ID: 519552330
+page: 0      Process ID: 519552330
+page: 0      Process ID: 519552330
+page: 0      Process ID: 519552330
+page: 0      Process ID: 519552330
+page: 0      Process ID: 519552330
+page: 0      Process ID: 519552330
+page: 0      Process ID: 519552330
+page: 0      Process ID: 519552330
+page: 0      Process ID: 519552330
+page: 0      Process ID: 519552330
+page: 0      Process ID: 519552330
+page: 0      Process ID: 519552330
+page: 0      Process ID: 519552330
+page: 0      Process ID: 519552330
+page: 0      Process ID: 519552330
+page: 0      Process ID: 519552330
+page: 0      Process ID: 519552330
+page: 0      Process ID: 519552330
+page: 0      Process ID: 519552330
+page: 0      Process ID: 519552330
+page: 0      Process ID: 519552330
+page: 0      Process ID: 519552330
+page: 0      Process ID: 519552330
+page: 0      Process ID: 519552330
+page: 0      Process ID: 519552330
+page: 0      Process ID: 519552330
+page: 0      Process ID: 519552330
+page: 0      Process ID: 519552330
+page: 0      Process ID: 519552330
+page: 0      Process ID: 519552330
+page: 0      Process ID: 519552330
+page: 0      Process ID: 519552330
+page: 63      Process ID: 519552330
+page: 63      Process ID: 519552330
+Process id: 31	Page fault address: 0x6000	Physical page number: 15
+Process id: 31	Page fault address: 0x8000	Physical page number: 16
+Process id: 31	Page fault address: 0xa000	Physical page number: 17
+Process id: 31	Page fault address: 0xc000	Physical page number: 18
+Process id: 31	Page fault address: 0xe000	Physical page number: 19
+Process id: 31	Page fault address: 0x10000	Physical page number: 20
+Process id: 31	Page fault address: 0x12000	Physical page number: 21
+Process id: 31	Page fault address: 0x14000	Physical page number: 22
+Process id: 31	Page fault address: 0x16000	Physical page number: 23
+Process id: 31	Page fault address: 0x18000	Physical page number: 24
+Process id: 31	Page fault address: 0x1a000	Physical page number: 25
+Process id: 31	Page fault address: 0x1c000	Physical page number: 26
+page: 63      Process ID: 31
+page: 1      Process ID: 31
+page: 1      Process ID: 31
+page: 1      Process ID: 31
+page: 1      Process ID: 31
+page: 1      Process ID: 31
+page: 1      Process ID: 31
+page: 1      Process ID: 31
+page: 1      Process ID: 31
+page: 1      Process ID: 31
+page: 1      Process ID: 31
+page: 1      Process ID: 31
+page: 1      Process ID: 31
+page: 1      Process ID: 31
+page: 1      Process ID: 31
+page: 1      Process ID: 31
+page: 1      Process ID: 31
+page: 1      Process ID: 31
+page: 1      Process ID: 31
+page: 1      Process ID: 31
+page: 1      Process ID: 31
+page: 1      Process ID: 31
+page: 1      Process ID: 31
+page: 1      Process ID: 31
+page: 1      Process ID: 31
+page: 1      Process ID: 31
+page: 1      Process ID: 31
+page: 1      Process ID: 31
+
+
+In Userprog1, Sum : 66
+
+Before freeing resource,  npages: 16
+Freed page 0xa, 230 remaining.
+After freeing resource, npages: 15
+Before freeing resource,  npages: 15
+Freed page 0xb, 231 remaining.
+After freeing resource, npages: 14
+Before freeing resource,  npages: 14
+Freed page 0xc, 232 remaining.
+After freeing resource, npages: 13
+Before freeing resource,  npages: 13
+Freed page 0xf, 233 remaining.
+After freeing resource, npages: 12
+Before freeing resource,  npages: 12
+Freed page 0x10, 234 remaining.
+After freeing resource, npages: 11
+Before freeing resource,  npages: 11
+Freed page 0x11, 235 remaining.
+After freeing resource, npages: 10
+Before freeing resource,  npages: 10
+Freed page 0x12, 236 remaining.
+After freeing resource, npages: 9
+Before freeing resource,  npages: 9
+Freed page 0x13, 237 remaining.
+After freeing resource, npages: 8
+Before freeing resource,  npages: 8
+Freed page 0x14, 238 remaining.
+After freeing resource, npages: 7
+Before freeing resource,  npages: 7
+Freed page 0x15, 239 remaining.
+After freeing resource, npages: 6
+Before freeing resource,  npages: 6
+Freed page 0x16, 240 remaining.
+After freeing resource, npages: 5
+Before freeing resource,  npages: 5
+Freed page 0x17, 241 remaining.
+After freeing resource, npages: 4
+Before freeing resource,  npages: 4
+Freed page 0x18, 242 remaining.
+After freeing resource, npages: 3
+Before freeing resource,  npages: 3
+Freed page 0x19, 243 remaining.
+After freeing resource, npages: 2
+Before freeing resource,  npages: 2
+Freed page 0x1a, 244 remaining.
+After freeing resource, npages: 1
+Before freeing resource,  npages: 1
+Freed page 0xd, 245 remaining.
+After freeing resource, npages: 0
+Freed page 0xe, 246 remaining.
+No runnable processes - exiting!
+Exiting at program request.
+Instructions executed: 1035750
+Time simulated: 1.036 secs
+Real time elapsed: 0.083 secs
+Execution rate: 12.41M simulated instructions per real second.

@@ -1,0 +1,12 @@
+c:\users\brian\documents\visual studio 2010\Projects\Assignment 5\Assignment 5\bin\Debug\Assignment 5.exe
+c:\users\brian\documents\visual studio 2010\Projects\Assignment 5\Assignment 5\bin\Debug\Assignment 5.pdb
+c:\users\brian\documents\visual studio 2010\Projects\Assignment 5\Assignment 5\bin\Debug\Assignment 5.xml
+c:\users\brian\documents\visual studio 2010\Projects\Assignment 5\Assignment 5\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\brian\documents\visual studio 2010\Projects\Assignment 5\Assignment 5\obj\x86\Debug\Assignment_5.Resources.resources
+c:\users\brian\documents\visual studio 2010\Projects\Assignment 5\Assignment 5\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\brian\documents\visual studio 2010\Projects\Assignment 5\Assignment 5\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\brian\documents\visual studio 2010\Projects\Assignment 5\Assignment 5\obj\x86\Debug\Assignment 5.exe
+c:\users\brian\documents\visual studio 2010\Projects\Assignment 5\Assignment 5\obj\x86\Debug\Assignment 5.xml
+c:\users\brian\documents\visual studio 2010\Projects\Assignment 5\Assignment 5\obj\x86\Debug\Assignment 5.pdb
+c:\users\brian\documents\visual studio 2010\Projects\Assignment 5\Assignment 5\obj\x86\Debug\Assignment_5.WordFinder.resources
+C:\Users\Brian\documents\visual studio 2010\Projects\Assignment 5\Assignment 5\obj\x86\Debug\Assignment_5.winNotification.resources

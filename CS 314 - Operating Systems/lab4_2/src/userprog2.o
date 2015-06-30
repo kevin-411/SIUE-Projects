@@ -1,0 +1,62 @@
+; Compiled by GCC
+.data
+	.align 2
+LC0:
+	.ascii "This print statement is magical?\n\000"
+	.align 2
+LC1:
+	.ascii "\nIn Userprog2, Sum : %d\n\n\000"
+.text
+	.align 2
+.proc _main
+.global _main
+_main:
+;  Function 'main'; 40000 bytes of locals, 0 regs to save.
+	sw	-4(r29),r30	; push fp
+	add	r30,r0,r29	; fp = sp
+	sw	-8(r29),r31	; push ret addr
+	subui	r29,r29,#40008	; alloc local storage
+	jal	___main
+	nop	; not filled.
+	addi	r4,r0,#0
+	addi	r2,r0,#1
+	lhi	r5,#-1
+	addui	r5,r5,#25536
+	addi	r31,r30,#-8
+	addui	r3,r31,#39996
+L16:
+	add	r1,r31,r5
+	sw	(r1),r2
+	addi	r2,r2,#1
+	addi	r31,r31,#2000
+	sle	r1,r31,r3
+	bnez	r1,L16
+	nop	; not filled.
+	lhi	r3,#-1
+	addui	r3,r3,#25536
+	addi	r31,r30,#-8
+	addui	r2,r31,#39996
+L21:
+	add	r1,r31,r3
+	lw	r1,(r1)
+	add	r4,r4,r1
+	addi	r31,r31,#2000
+	sle	r1,r31,r2
+	bnez	r1,L21
+	nop	; not filled.
+	addi	r29,r29,#-8
+	lhi	r6,((LC0)>>16)&0xffff
+	addui	r6,r6,(LC0)&0xffff
+	sw	(r29),r6
+	jal	_Printf
+	nop	; not filled.
+	lhi	r6,((LC1)>>16)&0xffff
+	addui	r6,r6,(LC1)&0xffff
+	sw	(r29),r6
+	sw	4(r29),r4
+	jal	_Printf
+	nop	; not filled.
+	addi	r29,r29,#8
+	jal	_exit
+	nop
+.endproc _main

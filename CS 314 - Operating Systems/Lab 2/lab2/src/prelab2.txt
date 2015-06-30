@@ -1,0 +1,25 @@
+Brendan Lehman
+Brian Olsen
+CS314 Lab/Project2
+
+
+
+1)
+	Q: How many semaphores are available in DLXOS?
+	A: 32 semaphores are availale in DLXOS
+
+2)
+	Q: How many locks are available in DLXOS?
+	A: 64 locks are available in DLXOS. 32 locks for semaphores and 32 for conditions
+
+3)
+	Q: How is a semaphore created in DLXOS?
+	A: Semaphores are created by the method SemCreate. SemCreate atomically grabs a semaphore that is not in use (determined by 		   checking to see if the inuse data member of the structure Sem is 0) by first declaring an index of type sem_t called sem. 		   It then disables interrupts and looks inside the array of semaphores called sems (which is of size MAX_SEMS) for a 		   semaphore that is not in use. Once a semaphore that is not in use has been found, if it is found at all, the inuse data 		   member is set to 1 and interrupts are restored. If sem is equal to MAX_SEMS ,32 in this case, INVALID_SEM, -1 in this 		   case, is returned. Otherwise, initialize the semaphore by calling SemInit and then return the index, sem.
+
+4)
+	Q: Explain how SemSignal and SemWait work.
+	A: Everything in both SemWait and SemSignal is done atomically by disabling interrupts until the the operation has been completed. Queues hold process ids. When a process makes a call to SemWait, the number of processes that are in the queue is decremented by 1. The process is put to sleep if the number of processes is less than or equal to 0. Contrastingly, if a process makes a call to SemSignal, the count in the semaphore is incremented by 1. The next process is woken up.
+
+5)
+	Q: What is a handle and how is it used to access semaphores in DLXOS?
+	A: A handle is an index that accesses an array of semaphores. It is found by searching the array for the first semaphore that 		   has an inuse data member indicating it is free.
