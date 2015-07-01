@@ -1,0 +1,17 @@
+Lindsey i'm not sure how you wanted us to do the PSP files so i'm goint to with giving you my individual times and planned times so you can do the SPMP I know that in the end we need to put all of our files together anyways so Linds it's up to you however you want to organize the teams Documents we can just have everyone add to my current documents or we can keep all of our stuff individual and mix it together before we submit everything...If you need anything else let Brendan and I know. Below are the updated Task Types...
+
+01 	Team Meeting
+02 	Planning Documentation (PSP)
+03 	Team Documentation (i.e. Glossary)
+04 	Use Case Diagram (Updates)
+05 	Use Case Description (Updates)
+06 	Post Mortem
+07 	Troubleshooting
+08	Class Diagrams
+09	Class State Charts
+10	Communication Diagram
+11	Scenarios
+12	Sequence Diagrams
+13	SPMP Documentation
+
+Just to be clear not every person is going to use all these tasks so for instance since Lindsey is doing the SPMP Brendan and I do not include that on our planning doc's since they will just be 0 anyways...I'm

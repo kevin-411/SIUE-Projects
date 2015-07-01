@@ -1,0 +1,1 @@
+We were unable to add the input dialog since it was given to us too late to submit...we are putting the unfinished work (the Input Processor) in the main folder but it will not be a part of the Input Dialog and Output Dialog that is currently within the .jar file.
