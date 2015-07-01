@@ -1,0 +1,2 @@
+1:<gml:LineString srsName="EPSG:54004" xmlns:gml="http://www.opengis.net/gml"><gml:coordinates cs="," decimal="." ts=" ">200,200 100,200 100,300 200,300 </gml:coordinates></gml:LineString>
+1:<gml:LineString srsName="EPSG:54004" xmlns:gml="http://www.opengis.net/gml"><gml:coordinates cs="," decimal="." ts=" ">200,200 300,200 200,300 </gml:coordinates></gml:LineString>

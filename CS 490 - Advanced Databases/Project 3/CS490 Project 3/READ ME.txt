@@ -1,0 +1,21 @@
+To run this just do the same as you would in your plotter
+
+	project3.py [lines file] [optional points file]
+
+the output for the updated lines is labeled outputLines.txt
+
+so you can look at the updated files as
+
+	plotter.py outputLines.txt points_out.txt
+
+I have all the training sets included so just copy them from their respective folders
+
+If you want to look at the test sets to address specific bugs map under BUGS and under each folder
+
+there should be test.txt and testPoints.txt files use the test.txt run them as
+
+	project3.py test.txt testPoints.txt
+
+the output is still outputLines.txt
+
+Happy Grading.
