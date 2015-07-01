@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="createClassPane" prefHeight="360.0000999999975" prefWidth="515.0" styleClass="root" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.CreateClassController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Separator layoutX="123.0" layoutY="69.0" orientation="VERTICAL" prefHeight="238.0" prefWidth="14.0" />
+    <Separator layoutX="137.0" layoutY="67.0" prefWidth="322.0" />
+    <RadioButton fx:id="createClassRadio" layoutX="14.0" layoutY="100.0" mnemonicParsing="false" text="Create A Class" />
+    <RadioButton fx:id="selectClassRadio" layoutX="14.0" layoutY="140.0" mnemonicParsing="false" onAction="#selectFired" text="Select A Class" />
+    <ComboBox fx:id="courseCombo" layoutX="153.0" layoutY="96.0" prefHeight="21.0" prefWidth="108.0" promptText="Course">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <ComboBox fx:id="semesterCombo" layoutX="280.0" layoutY="95.0" prefHeight="21.0" prefWidth="81.0" promptText="Semester">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <ComboBox fx:id="yearCombo" layoutX="385.0" layoutY="96.0" prefHeight="21.0" prefWidth="81.0" promptText="Year">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <Label layoutX="153.0" layoutY="156.0" text="Select a class roster...">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </Label>
+    <TextField fx:id="rosterTextBox" layoutX="153.0" layoutY="172.0" prefWidth="200.0" />
+    <Button fx:id="browseButton" layoutX="361.0" layoutY="172.0" mnemonicParsing="false" onAction="#browseFired" text="Browse" />
+    <Button fx:id="createButton" layoutX="271.0" layoutY="231.0" mnemonicParsing="false" onAction="#createFired" text="Create" />
+    <Button fx:id="homeButton" layoutX="18.0" layoutY="286.0" mnemonicParsing="false" onAction="#homeFired" text="Return Home" />
+    <Label layoutX="239.0" layoutY="23.0" prefWidth="152.0" text="Create A Class">
+      <font>
+        <Font size="20.0" />
+      </font>
+    </Label>
+    <Label layoutX="222.0" layoutY="307.0" prefWidth="177.0" text="Class was added succesfully." />
+  </children>
+  <stylesheets>
+    <URL value="@application.css" />
+  </stylesheets>
+</AnchorPane>

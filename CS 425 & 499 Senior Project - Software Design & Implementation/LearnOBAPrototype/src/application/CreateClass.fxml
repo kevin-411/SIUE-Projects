@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="createClassPane" prefHeight="725.0" prefWidth="800.0" styleClass="root" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.CreateClassController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <ComboBox fx:id="courseCombo" layoutX="345.0" layoutY="65.0" prefHeight="21.0" prefWidth="108.0" promptText="Course" styleClass="label">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Biology 111" />
+          <String fx:value="Biology 150" />
+          <String fx:value="Physics 111" />
+          <String fx:value="Physics 151" />
+          <String fx:value="Physics 234" />
+          <String fx:value="Physics 400" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <ComboBox fx:id="semesterCombo" layoutX="209.0" layoutY="65.0" prefHeight="21.0" prefWidth="81.0" promptText="Semester" styleClass="label">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Fall" />
+          <String fx:value="Spring" />
+          <String fx:value="Summer" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <ComboBox fx:id="yearCombo" layoutX="69.0" layoutY="65.0" prefHeight="21.0" prefWidth="81.0" promptText="Year" styleClass="label">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="2009" />
+          <String fx:value="2010" />
+          <String fx:value="2011" />
+          <String fx:value="2012" />
+          <String fx:value="2013" />
+          <String fx:value="2014" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <Label layoutX="49.0" layoutY="118.0" text="Select a class roster...">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </Label>
+    <TextField fx:id="rosterTextBox" layoutX="49.0" layoutY="134.0" prefWidth="200.0" />
+    <Button fx:id="browseButton" layoutX="286.0" layoutY="134.0" mnemonicParsing="false" onAction="#browseFired" text="Browse" />
+    <Button fx:id="createButton" layoutX="228.0" layoutY="174.0" mnemonicParsing="false" onAction="#createFired" text="Create" />
+    <Label layoutX="228.0" layoutY="24.0" prefWidth="108.0" text="Create A Class">
+      <font>
+        <Font size="20.0" />
+      </font>
+    </Label>
+    <Label fx:id="successLabel" layoutX="175.0" layoutY="224.0" prefWidth="177.0" text="Class was added succesfully." visible="false" />
+  </children>
+  <stylesheets>
+    <URL value="@application.css" />
+  </stylesheets>
+</AnchorPane>

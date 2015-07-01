@@ -1,0 +1,47 @@
+Project Documentation Heirarchy:
+Planning
+   |
+   Project Specification
+	|
+	*Project Specification (LOBA-SPEC R1.2.docx)
+	*Agile Use Cases (LOBA-AUC R1.1.docx)
+	*Project Requirements(LOBA-REQ R1.2.docx)
+   |
+   Project Plan
+	|
+	*Project Plan (LOBA-PP R1.3.docx)
+	*Class Diagrams (LOBA-PP-CLASS R1.0.docx)
+	*Sequence Diagrams (LOBA-PP-SEQUENCE R1.0.docx)
+	*Database Diagrams (LOBA-PP-DATABASE R1.0.docx)
+	*Risk Document (LOBA-PP R 1.4.docx & LOBA-PP R 1.4.xlsm)
+	*TestPlan (LOBA-PP-TEST-PLAN R 1.0.docx)
+	*Test Results (LOBA-PP-TEST-RESULTS R1.0.docx)
+	*Overall Project Meeting Minutes (Meeting Notes.docx)
+	*Product Backlog (Product Backlog.docx)
+Sprints
+   |
+   *Status Report 1 (LOBA-SR01.docx)
+   *Status Report 1 Graphs (LOBA-SR01-Graphs.docx)
+   |
+   Sprint [1 - 7]
+	|
+	*Sprint [1 - 7] Plan (Sprint [1 - 7] Plan.docx)
+	*Sprint [1 - 7] Backlog (SprintBacklog.xlsx)
+	*Sprint [1 - 7] Meeting Minutes (Meeting Notes.docx)
+	*Sprint [1 - 7] Graphs (Sprint[1 - 7]Charts.pdf)
+	*Sprint [1 - 7] Post Mortem (Post Mortem.docx)
+   *Sprint Overall Hours Breakdown (OverallGraphBreakdown.xlsx)
+
+Source Code
+   |
+   (Latest Bitbucket SourceCode)
+
+Archived Documents
+   |
+   (Previous Versions of Documents)
+
+Software Distributions
+   |
+   *LearnOBA-1.0.tar (Linux Users)
+   *LearnOBA-1.0.exe (Windows Users)
+   *LearnOBA.dmg (Mac Users)

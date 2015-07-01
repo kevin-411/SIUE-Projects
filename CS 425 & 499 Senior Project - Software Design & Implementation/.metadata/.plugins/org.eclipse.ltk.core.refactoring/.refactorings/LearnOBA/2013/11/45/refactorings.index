@@ -1,0 +1,7 @@
+1383518997842	Rename field 'connection'
+1383519015551	Rename field 'statement'
+1383534120284	Rename type 'Semester'
+1383620740381	Rename field 'semester'
+1383680015568	Rename field 'taskId'
+1383680057655	Rename field 'userId'
+1383682120845	Rename method 'insertScore'

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="editSkillsPane" prefHeight="407.0" prefWidth="501.0" styleClass="root" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.EditSkillsController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Label layoutX="202.0" layoutY="19.0" text="Edit Skills">
+      <font>
+        <Font size="20.0" />
+      </font>
+    </Label>
+    <Label fx:id="questionLabel" layoutX="27.0" layoutY="51.0" text="Question 1:" />
+    <Label fx:id="solutionLabel" layoutX="27.0" layoutY="82.0" text="Solution:" />
+    <Label fx:id="selectedQuestionLabel" layoutX="95.0" layoutY="51.0" text="What is my favorite food?" />
+    <Label fx:id="selectedSolutionLabel" layoutX="95.0" layoutY="82.0" text="Steak and Ribs" />
+    <ListView fx:id="allSkillsListView" layoutX="14.0" layoutY="149.0" prefHeight="200.0" prefWidth="200.0" />
+    <ListView fx:id="skillsForQuestionListView" layoutX="285.0" layoutY="149.0" prefHeight="200.0" prefWidth="200.0" />
+    <Button fx:id="addButton" layoutX="229.0" layoutY="204.0" mnemonicParsing="false" onAction="#addSkillsFired" text="&gt;&gt;" />
+    <Button fx:id="deleteButton" layoutX="229.0" layoutY="267.0" mnemonicParsing="false" onAction="#removeSkillsFired" text="&lt;&lt;" />
+    <Label fx:id="skillsForQuestionLabel" layoutX="332.0" layoutY="130.0" text="Skills for Question 1" />
+    <Label fx:id="allSkillsLabel" layoutX="81.0" layoutY="133.0" text="All Skills" />
+    <Button fx:id="saveButton" layoutX="225.0" layoutY="378.0" mnemonicParsing="false" onAction="#saveFired" text="Save" />
+  </children>
+  <stylesheets>
+    <URL value="@application.css" />
+  </stylesheets>
+</AnchorPane>

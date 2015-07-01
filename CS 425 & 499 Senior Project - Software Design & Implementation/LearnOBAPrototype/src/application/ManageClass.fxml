@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="manageClassPane" prefHeight="725.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.ManageClassController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Label fx:id="optionLabel" layoutX="14.0" layoutY="136.0" text="Please Select an Option Below:">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </Label>
+    <RadioButton fx:id="addRadio" layoutX="14.0" layoutY="193.0" mnemonicParsing="false" onAction="#addClassFired" styleClass="label" text="Add a Class">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </RadioButton>
+    <RadioButton fx:id="selectRadio" layoutX="14.0" layoutY="230.0" mnemonicParsing="false" onAction="#selectClassFired" styleClass="label" text="Select a Class">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </RadioButton>
+    <AnchorPane fx:id="optionAnchor" layoutX="187.0" layoutY="46.0" prefHeight="562.0" prefWidth="634.0" />
+  </children>
+</AnchorPane>

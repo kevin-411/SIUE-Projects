@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 5 elements to &apos;LearnOBA/resources&apos;&#x0D;&#x0A;- Original project: &apos;LearnOBA&apos;&#x0D;&#x0A;- Destination element: &apos;LearnOBA/resources&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     Expand-Icon.png&#x0D;&#x0A;     LearnobaBlue.png&#x0D;&#x0A;     Collapse-Icon.png&#x0D;&#x0A;     LOBAIcon.png&#x0D;&#x0A;     Header.png&#x0D;&#x0A;- Update references to refactored element" description="Move files" destination="/resources" element1="resources/images/Expand-Icon.png" element2="resources/images/LearnobaBlue.png" element3="resources/images/Collapse-Icon.png" element4="resources/images/LOBAIcon.png" element5="resources/images/Header.png" files="5" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1396326677727" units="0" version="1.0"/>
+</session>

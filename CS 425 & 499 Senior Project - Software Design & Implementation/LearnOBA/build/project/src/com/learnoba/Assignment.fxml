@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="manageAssignmentsAnchorPane" prefHeight="504.0" prefWidth="900.0" styleClass="root1" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.learnoba.assignment.AssignmentController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Label fx:id="manageLabel" layoutX="357.0" layoutY="20.0" styleClass="title" text="Manage Assignments" />
+    <ListView fx:id="assignmentListView" layoutX="11.0" layoutY="101.0" onMouseClicked="#assignmentClickedFired" onTouchPressed="#showEditQuestionFired" prefHeight="230.0" prefWidth="141.9998779296875" />
+    <ListView fx:id="questionListView" layoutX="163.0" layoutY="101.0" onMouseClicked="#questionClickedFired" prefHeight="230.0" prefWidth="142.0" />
+    <Label fx:id="assignmentLabel" layoutX="11.0" layoutY="76.0" styleClass="label1" text="Assignment:" />
+    <Label id="questionLabel" fx:id="initalQuestionLabel" layoutX="174.0" layoutY="76.0" styleClass="label1" text="Questions:" />
+    <Label fx:id="nameLabel" layoutX="546.0" layoutY="190.0" styleClass="label1" text="Name:" />
+    <Label fx:id="questionLabel" layoutX="546.0" layoutY="216.0" styleClass="label1" text="Question:" />
+    <Label fx:id="solutionLabel" layoutX="546.0" layoutY="322.0" styleClass="label1" text="Solution:" />
+    <Label fx:id="typeLabel" layoutX="736.0" layoutY="187.0" styleClass="label1" text="Type:" />
+    <TextArea fx:id="solutionTextArea" layoutX="546.0" layoutY="351.0" prefHeight="95.0" prefWidth="320.0" text="" wrapText="true" />
+    <TextArea fx:id="questionTextArea" layoutX="546.0" layoutY="255.0" prefHeight="68.0" prefWidth="319.0" text="" wrapText="true" />
+    <TextField fx:id="nameTextField" layoutX="602.0" layoutY="187.0" prefWidth="115.0" text="" />
+    <ComboBox fx:id="typeComboBox" layoutX="777.0" layoutY="184.0" prefHeight="21.0" prefWidth="99.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <Label id="detailsLabel" fx:id="detailLabel" layoutX="666.0" layoutY="147.0" prefWidth="111.0" styleClass="label1" text="Question Details" />
+    <Button fx:id="saveButton" layoutX="694.0" layoutY="453.0" mnemonicParsing="false" styleClass="button1" text="Save" />
+    <Label fx:id="nameAssignLabel" layoutX="545.0" layoutY="191.0" styleClass="label1" text="Name:" />
+    <TextField id="nameTextField" fx:id="nameAssignTextField" layoutX="591.0" layoutY="188.0" prefWidth="163.0" />
+    <Label fx:id="typeAssignLabel" layoutX="546.0" layoutY="235.0" styleClass="label1" text="Type:" />
+    <Button fx:id="saveAssignButton" layoutX="659.0" layoutY="286.0" mnemonicParsing="false" styleClass="button1" text="Save Assignment" />
+    <ComboBox fx:id="typeAssignComboBox" layoutX="591.0" layoutY="234.0" prefHeight="21.0" prefWidth="142.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <Label layoutX="325.0" layoutY="76.0" styleClass="label1" text="Skills:" />
+    <Label fx:id="selectLabel" layoutX="531.0" layoutY="101.0" styleClass="label1" text="Select an Option:" />
+    <ComboBox fx:id="optionComboBox" layoutX="649.0" layoutY="99.0" onAction="#optionSelectedFired" prefHeight="21.0" prefWidth="156.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Select an Option..." />
+          <String fx:value="Add Assignment" />
+          <String fx:value="Add Question" />
+          <String fx:value="Edit Question" />
+          <String fx:value="Manage Skills" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <TreeView fx:id="allSkillsTreeView" layoutX="606.0" layoutY="173.0" prefHeight="200.0" prefWidth="202.0" />
+    <Label fx:id="allSkillsLabel" layoutX="685.0" layoutY="147.0" styleClass="label1" text="All Skills" />
+    <Button fx:id="addSkillButton" layoutX="686.0" layoutY="382.0" mnemonicParsing="false" onAction="#addSkillsFired" styleClass="button1" text="Add Skill" />
+    <Button fx:id="deleteSkillButton" disable="true" layoutX="373.0" layoutY="341.0" mnemonicParsing="false" onAction="#removeSkillsFired" styleClass="button1" text="Delete Skill" />
+    <Button id="deleteButton" fx:id="deleteAssignButton" disable="true" layoutX="22.0" layoutY="341.0" mnemonicParsing="false" styleClass="button1" text="Delete Assignment" />
+    <Button fx:id="deleteQuestionButton" disable="true" layoutX="190.0" layoutY="341.0" mnemonicParsing="false" styleClass="button1" text="Delete Question" />
+    <TreeView fx:id="skillsTreeView" layoutX="315.0" layoutY="102.0" prefHeight="230.0" prefWidth="200.0" />
+  </children>
+  <stylesheets>
+    <URL value="@application.css" />
+  </stylesheets>
+</AnchorPane>

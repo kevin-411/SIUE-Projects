@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="editAssignmentPanel" prefHeight="600.0" prefWidth="900.0" styleClass="root" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.EditAssignmentController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Label layoutX="367.0" layoutY="14.0" text="Edit Assignment">
+      <font>
+        <Font size="20.0" />
+      </font>
+    </Label>
+    <Label fx:id="nameLabel" layoutX="277.0" layoutY="46.0" text="Name:" />
+    <Label fx:id="typeLabel" layoutX="475.0" layoutY="46.0" text="Type:" />
+    <Label fx:id="selectedTypeLabel" layoutX="528.0" layoutY="46.0" text="Exam" />
+    <Label id="actualNameLabel" fx:id="selectedNameLabel" layoutX="326.0" layoutY="46.0" text="Midterm" />
+    <Label fx:id="questionsLabel" layoutX="44.0" layoutY="91.0" text="Questions:" />
+    <ListView fx:id="questionsListView" layoutX="35.0" layoutY="114.0" prefHeight="283.0" prefWidth="200.0" styleClass="label" />
+    <RadioButton fx:id="addQuestionRadio" layoutX="258.0" layoutY="227.0" mnemonicParsing="false" onAction="#addQuestionFired" styleClass="label" text="Add Question">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </RadioButton>
+    <Label fx:id="hiddenNameLabel" layoutX="432.0" layoutY="147.0" text="Name:" visible="false" />
+    <Label fx:id="hiddenTypeLabel" layoutX="605.0" layoutY="144.0" text="Type:" visible="false" />
+    <Label fx:id="questionLabel" layoutX="430.0" layoutY="179.0" text="Question:" visible="false" />
+    <Label fx:id="solutionLabel" layoutX="432.0" layoutY="295.0" text="Solution:" visible="false" />
+    <TextArea fx:id="questionTextBox" layoutX="431.0" layoutY="201.0" prefHeight="84.0" prefWidth="348.0" visible="false" wrapText="true" />
+    <TextField fx:id="nameTextBox" layoutX="475.0" layoutY="141.0" prefWidth="93.0" visible="false" />
+    <Button fx:id="deleteQuestionButton" layoutX="532.0" layoutY="287.0" mnemonicParsing="false" onAction="#deleteQuestionFired" text="Delete Question" visible="false" />
+    <TextArea id="questionTextBox" fx:id="solutionTextBox" layoutX="431.0" layoutY="313.0" prefHeight="84.0" prefWidth="348.0" visible="false" wrapText="true" />
+    <Button fx:id="createQuestionButton" layoutX="535.0" layoutY="416.0" mnemonicParsing="false" onAction="#createQuestionFired" text="Create Question" visible="false" />
+    <Label id="hiddenNameLabel" fx:id="initialNameLabel" layoutX="455.0" layoutY="166.0" text="Name:" visible="false" />
+    <Label id="hiddenTypeLabel" fx:id="initialTypeLabel" layoutX="620.0" layoutY="166.0" text="Type:" visible="false" />
+    <Label id="questionLabel" fx:id="initialQuestionLabel" layoutX="453.0" layoutY="202.0" text="Question:" visible="false" />
+    <Label id="solutionLabel" fx:id="initialSolutionLabel" layoutX="455.0" layoutY="237.0" text="Solution:" visible="false" />
+    <Label fx:id="initialQuestionLabel2" layoutX="532.0" layoutY="202.0" text="What are the factors affecting force?" visible="false" />
+    <Label fx:id="initialSolutionLabel2" layoutX="532.0" layoutY="237.0" text="Mass and Acceleration" visible="false" />
+    <Label id="initialQuestionLabel" fx:id="initialNameLabel2" layoutX="528.0" layoutY="166.0" text="Question 1" visible="false" />
+    <Label id="initialShortAnswerLabel" fx:id="initialTyperLabel2" layoutX="663.0" layoutY="166.0" text="Short Answer" visible="false" />
+    <RadioButton id="addQuestionRadio" fx:id="viewRadioButton" disable="true" layoutX="258.0" layoutY="163.0" mnemonicParsing="false" onAction="#viewQuestionsFired" styleClass="label" text="View Question Details">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </RadioButton>
+    <ComboBox fx:id="typeComboBox" layoutX="645.0" layoutY="142.0" prefHeight="21.0" prefWidth="111.0" styleClass="label" visible="false">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Multiple Choice" />
+          <String fx:value="True or False" />
+          <String fx:value="Short Answer" />
+          <String fx:value="Essay" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <Label fx:id="shortLabel" layoutX="658.0" layoutY="166.0" text="Short Answer" visible="false" />
+  </children>
+  <stylesheets>
+    <URL value="@application.css" />
+  </stylesheets>
+</AnchorPane>

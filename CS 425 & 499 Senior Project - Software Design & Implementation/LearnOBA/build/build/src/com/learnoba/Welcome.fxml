@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="welcomeScreenAnchorPane" maxHeight="-1.0" maxWidth="-1.0" prefHeight="504.0" prefWidth="900.0" styleClass="root1" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.learnoba.welcome.WelcomeController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Label id="WelcomeTitle" fx:id="welcomeTitle" layoutX="326.0" layoutY="21.0" styleClass="title" text="LearnOBA Grading System" textFill="#04356c">
+      <font>
+        <Font name="System Bold" size="20.0" />
+      </font>
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </Label>
+    <Label id="quickLinksLabel" fx:id="quickLinks" layoutX="74.0" layoutY="65.0" text="Quick Links" underline="false">
+      <font>
+        <Font name="System Bold" size="14.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label fx:id="addClassLabel" layoutX="85.0" layoutY="108.0" onMouseClicked="#addClassClick" styleClass="hyperlink3" text="Add a Class...">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </Label>
+    <Label fx:id="selectClassLabel" layoutX="85.0" layoutY="134.0" onMouseClicked="#selectClassClick" styleClass="hyperlink3" text="Select a Class...">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </Label>
+    <Label fx:id="recentClasses" font="$x1" layoutX="71.0" layoutY="188.0" text="Recent Classes" underline="false" />
+    <Separator id="separatorTwo" fx:id="separator2" layoutX="50.0" layoutY="215.0" prefWidth="200.0" styleClass="separator1">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </Separator>
+    <Label id="addClassLabel" fx:id="recentClassOne" layoutX="85.0" layoutY="228.0" styleClass="hyperlink3" text="Class1">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </Label>
+    <Label id="selectClassLabel" fx:id="recentClassTwo" layoutX="85.0" layoutY="254.0" styleClass="hyperlink3" text="Class2">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </Label>
+    <Label id="selectClassLabel" fx:id="recentClassThree" layoutX="85.0" layoutY="280.0" styleClass="hyperlink3" text="Class3">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </Label>
+    <Label id="quickLinksLabel" fx:id="whatLabel" font="$x1" layoutX="356.0" layoutY="89.0" text="What is LearnOBA?" underline="false">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </Label>
+    <Separator id="separatorOne" layoutX="50.0" layoutY="92.0" prefWidth="200.0">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </Separator>
+    <Label id="quickLinksLabel" fx:id="howLabel" font="$x1" layoutX="356.0" layoutY="211.0" text="How Does it Work?" underline="false">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </Label>
+    <TextArea fx:id="howTextArea" editable="false" layoutX="389.0" layoutY="233.0" prefHeight="105.0" prefWidth="477.0" styleClass="textarea1, root1" text="LearnOBA keeps track of a students mastery of a pre-defined set of skills.  This system helps students by tracking their progress towards mastery and providing them with details on how close or far away they are mastering a skill.  The key focus here is on mastery, not behaviors." wrapText="true">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </TextArea>
+    <TextArea fx:id="whatTextArea" editable="false" focusTraversable="true" layoutX="389.0" layoutY="113.0" prefHeight="91.0" prefWidth="477.0" styleClass="textarea1, root1" text="LearnOBA is a grading system that allows instructors to manage their classes, keep track of their coursework, and record their students progress.  It is based upon a grading schema called Learning Outcomes Based assessment which focuses on the mastering of skills." wrapText="true">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </TextArea>
+    <Label id="quickLinksLabel" fx:id="whereLabel" font="$x1" layoutX="356.0" layoutY="351.0" text="Where Do I Start?" underline="false">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </Label>
+    <TextArea fx:id="whereTextArea" editable="false" layoutX="373.0" layoutY="373.0" prefHeight="105.0" prefWidth="477.0" styleClass="textarea1, root1" text="The first step to managing your classes is to add a class to the roster.  Either click on the &quot;Add a Class...&quot; quick link to the left, or the &quot;Manage Classes&quot; tab at the top of the page.  " wrapText="true">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </TextArea>
+  </children>
+  <stylesheets>
+    <URL value="@application.css" />
+  </stylesheets>
+</AnchorPane>

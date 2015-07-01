@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="skillsAnchorPane" prefHeight="504.0" prefWidth="900.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.learnoba.skills.SkillsController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Label fx:id="editSkillsTitle" layoutX="14.0" layoutY="21.0" styleClass="title" text="Manage Skills">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </Label>
+    <Label fx:id="skillsLabel" layoutX="28.0" layoutY="61.0" styleClass="label2" text="All Skills">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </Label>
+    <TreeView fx:id="skillsTreeView" editable="false" focusTraversable="true" layoutX="14.0" layoutY="89.0" onMousePressed="#selectSkill" prefHeight="359.0" prefWidth="250.0" showRoot="false">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </TreeView>
+    <Button id="createCategoryButton" fx:id="deleteSkillButton" layoutX="23.0" layoutY="455.0" maxWidth="-1.0" mnemonicParsing="false" onMouseClicked="#deleteSkill" prefHeight="28.0" prefWidth="115.0" styleClass="button1" text="Delete Skill">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </Button>
+    <Button fx:id="expandButton" layoutX="193.0" layoutY="455.0" maxHeight="25.0" maxWidth="25.0" minHeight="25.0" minWidth="25.0" mnemonicParsing="false" onMouseClicked="#expandSkills" prefHeight="25.0" prefWidth="25.0" text="">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+      <tooltip>
+        <Tooltip text="Expand All Skills" fx:id="expandTooltip" />
+      </tooltip>
+    </Button>
+    <Button fx:id="collapseButton" layoutX="229.0" layoutY="455.0" maxHeight="25.0" maxWidth="25.0" minHeight="25.0" minWidth="25.0" mnemonicParsing="false" onMouseClicked="#collapseSkills" prefHeight="25.0" prefWidth="25.0" text="">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+      <tooltip>
+        <Tooltip text="Collapse All Skills" fx:id="collapseTooltip" />
+      </tooltip>
+    </Button>
+    <Label id="skillsLabel" fx:id="editSkillLabel" layoutX="295.0" layoutY="83.0" styleClass="label2" text="Edit Skill">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </Label>
+    <Pane fx:id="editSkillPane" layoutX="281.0" layoutY="112.0" prefHeight="204.0" prefWidth="295.0" styleClass="box1">
+      <children>
+        <Label id="skillNameLabel" fx:id="editSkillNameLabel" layoutX="16.0" layoutY="14.0" styleClass="label1" text="Skill Name">
+          <stylesheets>
+            <URL value="@application.css" />
+          </stylesheets>
+        </Label>
+        <TextField id="skillTextField" fx:id="editSkillTextBox" layoutX="16.0" layoutY="33.0" prefHeight="30.0" prefWidth="250.0" />
+        <Label id="skillParentLabel" fx:id="editSkillParentLabel" layoutX="16.0" layoutY="73.0" styleClass="label1" text="Parent Skill">
+          <stylesheets>
+            <URL value="@application.css" />
+          </stylesheets>
+        </Label>
+        <ComboBox fx:id="editSkillParentComboBox" layoutX="16.0" layoutY="92.0" prefHeight="30.0" prefWidth="250.0">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Item 1" />
+              <String fx:value="Item 2" />
+              <String fx:value="Item 3" />
+            </FXCollections>
+          </items>
+        </ComboBox>
+        <Button id="skillUpdateButton" fx:id="updateSkillButton" layoutX="166.0" layoutY="162.0" mnemonicParsing="false" onMouseClicked="#updateSkill" prefHeight="28.0" prefWidth="115.0" styleClass="button1" text="Update" textAlignment="LEFT" wrapText="false">
+          <stylesheets>
+            <URL value="@application.css" />
+          </stylesheets>
+        </Button>
+        <Label id="skillParentLabel" fx:id="editSkillOutcomeLabel" layoutX="16.0" layoutY="134.0" styleClass="label1" text="Outcome Value">
+          <stylesheets>
+            <URL value="@application.css" />
+          </stylesheets>
+        </Label>
+        <ComboBox id="" fx:id="editSkillOutcomeComboBox" layoutX="16.0" layoutY="153.0" minWidth="49.0" prefHeight="30.0" prefWidth="105.0">
+          <items>
+            <FXCollections fx:factory="observableArrayList" />
+          </items>
+        </ComboBox>
+      </children>
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </Pane>
+    <Label id="skillsLabel" fx:id="newSkillLabel" layoutX="605.0" layoutY="83.0" styleClass="label2" text="Create Skill">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </Label>
+    <Pane fx:id="createSkillPane" layoutX="591.0" layoutY="112.0" prefHeight="204.0" prefWidth="295.0" styleClass="box1">
+      <children>
+        <Label id="skillNameLabel" fx:id="newSkillNameLabel" layoutX="16.0" layoutY="14.0" styleClass="label1" text="Skill Name">
+          <stylesheets>
+            <URL value="@application.css" />
+          </stylesheets>
+        </Label>
+        <TextField id="skillTextField" fx:id="newSkillTextBox" layoutX="16.0" layoutY="33.0" prefHeight="30.0" prefWidth="250.0" />
+        <Label id="skillParentLabel" fx:id="newSkillParentLabel" layoutX="16.0" layoutY="73.0" styleClass="label1" text="Parent Skill">
+          <stylesheets>
+            <URL value="@application.css" />
+          </stylesheets>
+        </Label>
+        <ComboBox fx:id="newSkillParentComboBox" layoutX="16.0" layoutY="92.0" prefHeight="30.0" prefWidth="250.0">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Item 1" />
+              <String fx:value="Item 2" />
+              <String fx:value="Item 3" />
+            </FXCollections>
+          </items>
+        </ComboBox>
+        <Button fx:id="createSkillButton" layoutX="166.0" layoutY="162.0" maxWidth="-1.0" mnemonicParsing="false" onMouseClicked="#insertSkill" prefHeight="28.0" prefWidth="115.0" styleClass="button1" text="Create Skill">
+          <stylesheets>
+            <URL value="@application.css" />
+          </stylesheets>
+        </Button>
+        <Label id="skillParentLabel" fx:id="createSkillOutcomeLabel" layoutX="16.0" layoutY="134.0" styleClass="label1" text="Outcome Value">
+          <stylesheets>
+            <URL value="@application.css" />
+          </stylesheets>
+        </Label>
+        <ComboBox id="" fx:id="createSkillOutcomeComboBox" layoutX="16.0" layoutY="153.0" minWidth="49.0" prefHeight="30.0" prefWidth="105.0">
+          <items>
+            <FXCollections fx:factory="observableArrayList" />
+          </items>
+        </ComboBox>
+      </children>
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </Pane>
+    <Pane fx:id="uploadPane" layoutX="281.0" layoutY="340.0" prefHeight="127.0" prefWidth="605.0" styleClass="box1">
+      <children>
+        <TextArea fx:id="uploadInstructions" disable="false" editable="false" focusTraversable="false" layoutX="21.0" layoutY="7.0" opacity="1.0" pickOnBounds="false" prefHeight="112.9999831054738" prefWidth="400.0" styleClass="textarea1" text="To upload a file of skills, simply click the &quot;Upload Skills&quot; button to the right and navigate to your file.  Only text files are accepted.  To indicate that a skill is a child of the one above it, insert a tab before the name." visible="true" wrapText="true">
+          <stylesheets>
+            <URL value="@application.css" />
+          </stylesheets>
+        </TextArea>
+        <Button fx:id="uploadButton" layoutX="459.0" layoutY="46.0" mnemonicParsing="false" onMouseClicked="#uploadFile" prefHeight="40.0" prefWidth="125.0" styleClass="button1" text="Upload Skills...">
+          <stylesheets>
+            <URL value="@application.css" />
+          </stylesheets>
+        </Button>
+      </children>
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </Pane>
+  </children>
+</AnchorPane>

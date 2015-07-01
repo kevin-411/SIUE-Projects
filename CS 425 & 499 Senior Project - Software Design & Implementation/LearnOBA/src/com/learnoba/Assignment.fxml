@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="manageAssignmentsAnchorPane" prefHeight="504.0" prefWidth="909.0" styleClass="root1" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.learnoba.assignment.AssignmentController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Label fx:id="manageLabel" layoutX="14.0" layoutY="20.0" styleClass="title" text="Manage Assignments" />
+    <Label fx:id="assignmentLabel" layoutX="35.0" layoutY="72.0" styleClass="label1" text="Assignments" />
+    <Pane fx:id="firstPane" layoutX="8.0" layoutY="95.0" prefHeight="274.0" prefWidth="156.0" styleClass="box1">
+      <children>
+        <ListView fx:id="assignmentListView" editable="false" layoutX="7.0" layoutY="6.0" onMousePressed="#assignmentClickedFired" prefHeight="230.0" prefWidth="141.9998779296875" styleClass="listView">
+          <stylesheets>
+            <URL value="@application.css" />
+          </stylesheets>
+        </ListView>
+        <Button id="deleteButton" fx:id="deleteAssignButton" disable="true" layoutX="18.0" layoutY="243.0" mnemonicParsing="false" onAction="#deleteAssignmentFired" prefHeight="24.62109375" prefWidth="124.0" styleClass="button3" text="Delete Assignment" />
+      </children>
+    </Pane>
+    <Label id="questionLabel" fx:id="initalQuestionLabel" layoutX="204.0" layoutY="72.0" styleClass="label1" text="Questions" />
+    <Pane id="firstPane" fx:id="secondPane" layoutX="169.0" layoutY="95.0" prefHeight="274.0" prefWidth="156.0" styleClass="box1">
+      <children>
+        <ListView fx:id="questionListView" layoutX="7.0" layoutY="6.0" onMouseClicked="#questionClickedFired" prefHeight="230.0" prefWidth="137.0" styleClass="listView">
+          <stylesheets>
+            <URL value="@application.css" />
+          </stylesheets>
+        </ListView>
+        <Button fx:id="deleteQuestionButton" disable="true" layoutX="14.0" layoutY="242.0" minHeight="17.0" mnemonicParsing="false" onAction="#deleteTask" prefHeight="24.0" prefWidth="124.0" styleClass="button2" text="Delete Question" />
+      </children>
+    </Pane>
+    <Label layoutX="415.0" layoutY="72.0" styleClass="label1" text="Skills" />
+    <Pane fx:id="thirdPane" layoutX="331.0" layoutY="95.0" prefHeight="274.0" prefWidth="220.0" styleClass="box1">
+      <children>
+        <TreeView fx:id="skillsTreeView" layoutX="10.0" layoutY="7.0" onMouseClicked="#skillClickedFired" prefHeight="230.0" prefWidth="200.0" styleClass="treeView">
+          <stylesheets>
+            <URL value="@application.css" />
+          </stylesheets>
+        </TreeView>
+        <Button fx:id="deleteSkillButton" disable="true" layoutX="48.0" layoutY="242.0" mnemonicParsing="false" onAction="#deleteSkillFired" prefHeight="24.62109375" prefWidth="124.0" styleClass="button2" text="Delete Skill" />
+      </children>
+    </Pane>
+    <Label fx:id="selectLabel" layoutX="686.0" layoutY="63.0" styleClass="label1" text="Select an Option" />
+    <Label fx:id="allSkillsLabel" layoutX="699.0" layoutY="128.0" styleClass="label1" text="All Skills" />
+    <Label id="detailsLabel" fx:id="detailLabel" layoutX="561.0" layoutY="147.0" prefWidth="262.0" styleClass="label1" text="Question Details" />
+    <Label fx:id="questionLabel" layoutX="565.0" layoutY="214.0" styleClass="label1" text="Question:" />
+    <Label fx:id="solutionLabel" layoutX="565.0" layoutY="320.0" styleClass="label1" text="Solution:" />
+    <Label fx:id="typeLabel" disable="false" layoutX="564.0" layoutY="189.0" styleClass="label1" text="Type:" visible="true" />
+    <Label fx:id="nameAssignLabel" layoutX="561.0" layoutY="189.0" styleClass="label1" text="Name:" />
+    <TextField id="nameTextField" fx:id="nameAssignTextField" layoutX="615.0" layoutY="186.0" prefWidth="142.0" />
+    <TextArea fx:id="questionTextArea" layoutX="568.0" layoutY="233.0" prefHeight="68.0" prefWidth="319.0" styleClass="textarea2" text="" wrapText="true">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </TextArea>
+    <TextArea fx:id="solutionTextArea" layoutX="565.0" layoutY="339.0" prefHeight="95.0" prefWidth="320.0" styleClass="textarea2" text="" wrapText="true">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </TextArea>
+    <ComboBox fx:id="typeComboBox" layoutX="615.0" layoutY="188.0" prefHeight="21.0" prefWidth="169.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList" />
+      </items>
+    </ComboBox>
+    <Button fx:id="saveAssignButton" layoutX="633.0" layoutY="243.0" mnemonicParsing="false" onAction="#addAssignmentFired" styleClass="button3" text="Save Assignment" />
+    <Button fx:id="saveButton" layoutX="685.0" layoutY="460.0" mnemonicParsing="false" onAction="#addTask" prefWidth="84.0001220703125" styleClass="button1" text="Add Task" />
+    <Button fx:id="addSkillButton" layoutX="685.0" layoutY="460.0" mnemonicParsing="false" onAction="#addSkillToQuestionFired" prefHeight="-1.0" prefWidth="-1.0" styleClass="button1" text="Add Skill" />
+    <Button fx:id="saveTaskButton" layoutX="685.0" layoutY="460.0" mnemonicParsing="false" onAction="#updateTaskFired" styleClass="button1" text="Save Task" />
+    <Button fx:id="assignmentButton" layoutX="556.0" layoutY="90.0" mnemonicParsing="false" onAction="#AssignmentButtonClicked" prefHeight="25.0" prefWidth="109.0" styleClass="button3" text="Add Assignment" />
+    <Button fx:id="questionButton" disable="true" layoutX="670.0" layoutY="90.0" mnemonicParsing="false" onAction="#QuestionButtonClicked" prefHeight="25.0" prefWidth="109.0" styleClass="button2" text="Add Question" />
+    <Button fx:id="skillButton" disable="true" layoutX="784.0" layoutY="90.0" mnemonicParsing="false" onAction="#SkillButtonClicked" prefHeight="25.0" prefWidth="109.0" styleClass="button2" text="Add Skills" />
+    <Label fx:id="addAssignmentLabel" layoutX="659.0" layoutY="147.0" styleClass="label1" text="Add Assignment" />
+    <TreeView fx:id="allSkillsTreeView" layoutX="567.0" layoutY="147.0" prefHeight="293.0" prefWidth="320.0" styleClass="treeView">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </TreeView>
+  </children>
+  <stylesheets>
+    <URL value="@application.css" />
+  </stylesheets>
+</AnchorPane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="createAnchorPane" prefHeight="402.0" prefWidth="728.0" styleClass="root1" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.learnoba.classes.create.CreateClassController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Label fx:id="rosterLabel" layoutX="117.0" layoutY="222.0" styleClass="label1" text="Please Select a Class Roster..." />
+    <TextField fx:id="rosterTextField" layoutX="119.0" layoutY="251.0" prefWidth="279.0" />
+    <Button fx:id="browseButton" layoutX="410.0" layoutY="252.0" mnemonicParsing="false" onAction="#browseButtonFired" styleClass="button1" text="Browse" />
+    <Button fx:id="createButton" layoutX="265.0" layoutY="299.0" mnemonicParsing="false" onAction="#createButtonFired" prefHeight="30.0" prefWidth="117.0" styleClass="button1" text="Create" />
+    <Label fx:id="nameLabel" layoutX="25.0" layoutY="124.0" styleClass="label1" text="Course Title:" />
+    <Label fx:id="nameLabel" layoutX="25.0" layoutY="64.0" styleClass="label1" text="Year:" />
+    <Label fx:id="semesterLabel" layoutX="150.0" layoutY="64.0" styleClass="label1" text="Semester:" />
+    <Label fx:id="scoreLabel" layoutX="307.0" layoutY="124.0" styleClass="label1" text="Max Score for Skills:" />
+    <TextField fx:id="nameTextField" layoutX="119.0" layoutY="122.0" prefWidth="160.0" />
+    <ChoiceBox fx:id="yearChoiceBox" layoutX="69.0" layoutY="62.0" prefWidth="74.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList" />
+      </items>
+    </ChoiceBox>
+    <ChoiceBox fx:id="semesterChoiceBox" layoutX="223.0" layoutY="62.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Fall" />
+          <String fx:value="Spring" />
+          <String fx:value="Summer" />
+        </FXCollections>
+      </items>
+    </ChoiceBox>
+    <ChoiceBox fx:id="scoreChoiceBox" layoutX="467.0" layoutY="124.0" prefWidth="62.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList" />
+      </items>
+    </ChoiceBox>
+    <Label fx:id="classInfoLabel" layoutX="25.0" layoutY="26.0" styleClass="label2" text="Class Information:" />
+    <Label id="classInfoLabel" fx:id="rosterTitleLabel" layoutX="25.0" layoutY="190.0" styleClass="label2" text="Loading Roster:" />
+  </children>
+  <stylesheets>
+    <URL value="@application.css" />
+  </stylesheets>
+</AnchorPane>

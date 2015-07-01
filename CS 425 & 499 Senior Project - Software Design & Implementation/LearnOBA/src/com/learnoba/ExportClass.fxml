@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="exportAnchorPane" prefHeight="504.0" prefWidth="900.0" styleClass="root1" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.learnoba.export.ExportClassController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Label id="editSkillsTitle" fx:id="exportClassLabel" layoutX="35.0" layoutY="10.0" styleClass="title" text="Export Files">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </Label>
+    <Label id="exportLabel" layoutX="302.0" layoutY="244.0" styleClass="label1" text="Choose one of the following output files:">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </Label>
+    <Pane fx:id="optionsPane" layoutX="35.0" layoutY="57.0" prefHeight="387.0" prefWidth="831.0" styleClass="box1">
+      <children>
+        <Pane fx:id="exportPane" layoutX="31.0" layoutY="22.0" prefHeight="163.00002207031503" prefWidth="769.0" styleClass="box3">
+          <children>
+            <RadioButton id="excelSpreadsheetRadio" fx:id="pdfFileRadio" layoutX="7.0" layoutY="5.0" mnemonicParsing="false" selected="true" styleClass="label1" text="Create Student Assignment PDF File">
+              <stylesheets>
+                <URL value="@application.css" />
+              </stylesheets>
+              <toggleGroup>
+                <ToggleGroup fx:id="filetypeGroup" />
+              </toggleGroup>
+            </RadioButton>
+            <Label id="exportLabel" layoutX="78.0" layoutY="32.0" styleClass="label1" text="Student Quantity:" underline="true">
+              <stylesheets>
+                <URL value="@application.css" />
+              </stylesheets>
+            </Label>
+            <Pane fx:id="filePane" layoutX="56.0" layoutY="53.0" prefHeight="99.0" prefWidth="182.0">
+              <children>
+                <RadioButton id="textFileRadio" fx:id="allStudentsRadio" layoutX="38.0" layoutY="5.0" mnemonicParsing="false" onAction="#quantityRadioButtonClick" selected="true" styleClass="label1" text="All Students">
+                  <stylesheets>
+                    <URL value="@application.css" />
+                  </stylesheets>
+                  <toggleGroup>
+                    <ToggleGroup fx:id="studentQuantityGroup" />
+                  </toggleGroup>
+                </RadioButton>
+                <RadioButton id="excelSpreadsheetRadio" fx:id="oneStudentRadio" layoutX="38.0" layoutY="41.0" mnemonicParsing="false" onAction="#quantityRadioButtonClick" selected="false" styleClass="label1" text="One Student" toggleGroup="$studentQuantityGroup">
+                  <stylesheets>
+                    <URL value="@application.css" />
+                  </stylesheets>
+                </RadioButton>
+              </children>
+              <stylesheets>
+                <URL value="@application.css" />
+              </stylesheets>
+            </Pane>
+            <ListView id="selectStudent" fx:id="selectStudentListView" disable="true" layoutX="285.0" layoutY="53.0" prefHeight="99.0" prefWidth="200.0" />
+            <Label id="exportLabel" layoutX="285.0" layoutY="32.0" styleClass="label1" text="Select Student:" underline="true">
+              <stylesheets>
+                <URL value="@application.css" />
+              </stylesheets>
+            </Label>
+            <ListView fx:id="selectAssignmentListView" layoutX="535.0" layoutY="53.0" prefHeight="99.0" prefWidth="200.0" />
+            <Label id="exportLabel" layoutX="535.0" layoutY="32.0" styleClass="label1" text="Select Assignment:" underline="true">
+              <stylesheets>
+                <URL value="@application.css" />
+              </stylesheets>
+            </Label>
+          </children>
+          <stylesheets>
+            <URL value="@application.css" />
+          </stylesheets>
+        </Pane>
+        <Pane id="exportPane" layoutX="31.0" layoutY="200.0" prefHeight="163.0001220703125" prefWidth="769.0" styleClass="box3">
+          <children>
+            <RadioButton id="textFileRadio" fx:id="blackboardFileRadio" layoutX="6.0" layoutY="5.0" mnemonicParsing="false" styleClass="label1" text="Create BlackBoard Delimited File" toggleGroup="$filetypeGroup">
+              <stylesheets>
+                <URL value="@application.css" />
+              </stylesheets>
+            </RadioButton>
+            <Label id="exportLabel" layoutX="108.0" layoutY="32.0" styleClass="label1" text="Delimiter Value:" underline="true">
+              <stylesheets>
+                <URL value="@application.css" />
+              </stylesheets>
+            </Label>
+            <Pane id="format" layoutX="118.0" layoutY="53.0" prefHeight="99.0" prefWidth="217.0">
+              <children>
+                <RadioButton id="commaDelimitedRadio" fx:id="csvRadio" layoutX="18.0" layoutY="4.0" mnemonicParsing="false" selected="true" styleClass="label1" text="Comma Delimited (CSV)">
+                  <stylesheets>
+                    <URL value="@application.css" />
+                  </stylesheets>
+                  <toggleGroup>
+                    <ToggleGroup fx:id="delimiterGroup" />
+                  </toggleGroup>
+                </RadioButton>
+                <RadioButton id="tabDelimitedRadio" fx:id="tsvRadio" layoutX="18.0" layoutY="40.0" mnemonicParsing="false" styleClass="label1" text="Tab Delimited (TSV)" toggleGroup="$delimiterGroup">
+                  <stylesheets>
+                    <URL value="@application.css" />
+                  </stylesheets>
+                </RadioButton>
+              </children>
+              <stylesheets>
+                <URL value="@application.css" />
+              </stylesheets>
+            </Pane>
+            <Label id="exportLabel" layoutX="443.0" layoutY="32.0" styleClass="label1" text="Outcome Operation:" underline="true">
+              <stylesheets>
+                <URL value="@application.css" />
+              </stylesheets>
+            </Label>
+            <Pane id="filePane" layoutX="430.0" layoutY="53.0" prefHeight="88.99997792968497" prefWidth="188.0">
+              <children>
+                <RadioButton id="excelSpreadsheetRadio" fx:id="averageRadio" layoutX="41.0" layoutY="4.0" mnemonicParsing="false" selected="true" styleClass="label1" text="Average">
+                  <stylesheets>
+                    <URL value="@application.css" />
+                  </stylesheets>
+                  <toggleGroup>
+                    <ToggleGroup fx:id="operationGroup" />
+                  </toggleGroup>
+                </RadioButton>
+                <RadioButton id="textFileRadio" fx:id="sumRadio" layoutX="41.0" layoutY="35.0" mnemonicParsing="false" styleClass="label1" text="Sum" toggleGroup="$operationGroup">
+                  <stylesheets>
+                    <URL value="@application.css" />
+                  </stylesheets>
+                </RadioButton>
+                <RadioButton id="textFileRadio" fx:id="top3AverageRadio" layoutX="41.0" layoutY="66.0" mnemonicParsing="false" styleClass="label1" text="Top 3 Average" toggleGroup="$operationGroup">
+                  <stylesheets>
+                    <URL value="@application.css" />
+                  </stylesheets>
+                </RadioButton>
+              </children>
+              <stylesheets>
+                <URL value="@application.css" />
+              </stylesheets>
+            </Pane>
+          </children>
+          <stylesheets>
+            <URL value="@application.css" />
+          </stylesheets>
+        </Pane>
+      </children>
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </Pane>
+    <Button fx:id="exportButton" layoutX="751.0" layoutY="455.0" mnemonicParsing="false" onAction="#exportClick" prefHeight="35.0" prefWidth="115.0" styleClass="button1, medium-text" text="Export">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </Button>
+  </children>
+  <stylesheets>
+    <URL value="@application.css" />
+  </stylesheets>
+</AnchorPane>

@@ -1,0 +1,76 @@
+General Problem Solving Skills	
+	draw a picture
+	identify target variable
+	identify useful concepts
+	decompose problem correctly
+		start each part with fundamental principle
+		logical solution path
+		solution has documentation
+	correct arithmetic
+	correct algebra
+	correct calculus
+	checked answer vs scale
+		checked work using units, limits, etc.
+		checked answer for completeness
+	units on answer
+	problem answered
+
+Kinematics heuristics	
+	coordinate system defined
+	accelerations identified
+	objects identified
+	variables correctly defined
+	correct definitions used
+	accelleration and velocity differentiated
+	centripetal acceleration correct
+	change is (final) - (initial)
+
+Newtons Laws heuristics	
+	system defined
+	forces identified
+	motion defined
+	complete free body diagram
+		correct free body diagram
+		coordinate system chosen
+		forces decomposed along c.s.
+		forces summed along c.s.
+			force answer is vector or required vectors
+			force definition used correctly
+
+Torque 
+	system defined
+	forces identified
+	motion defined
+	complete free body diagram
+	correct free body diagram
+	coordinate system chosen
+	torques decomposed along c.s.
+	torques summed along axis
+		torque answer is vector or required vectors
+		torque definition used correctly
+	Moment of interia defined
+	Center of mass defined
+
+Conservation of energy	
+	system defined
+	correct energy bar chart
+	external forces identified
+	internal energies identified
+	variables correctly defined
+	correct definitions used
+
+Conservation of momentum	
+	system defined
+	correct momentum bar chart
+	external forces identified
+	internal momentums identified
+	variables correctly defined
+	correct definitions used
+
+Conservation of angular momentum	
+	system defined
+	correct momentum bar chart
+	external torques identified
+	internal momentums identified
+	variables correctly defined
+	correct definitions used

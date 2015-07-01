@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="createAnchorPane" prefHeight="402.0" prefWidth="809.0" styleClass="root1" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.learnoba.classes.create.CreateClassController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Pane id="firstAnchorPAne" fx:id="firstPane" layoutX="20.0" layoutY="55.0" prefHeight="280.0" prefWidth="319.0" styleClass="box1">
+      <children>
+        <Label fx:id="nameLabel" layoutX="7.0" layoutY="33.0" styleClass="label1" text="Year:" />
+        <Label fx:id="semesterLabel" layoutX="137.0" layoutY="33.0" styleClass="label1" text="Semester:" />
+        <Label fx:id="nameLabel" layoutX="7.0" layoutY="99.0" styleClass="label1" text="Course Title:" />
+        <Label fx:id="scoreLabel" layoutX="7.0" layoutY="153.0" styleClass="label1" text="Max Score for Skills:" />
+        <ChoiceBox fx:id="yearChoiceBox" layoutX="48.0" layoutY="29.0" prefWidth="80.0">
+          <items>
+            <FXCollections fx:factory="observableArrayList" />
+          </items>
+          <stylesheets>
+            <URL value="@application.css" />
+          </stylesheets>
+        </ChoiceBox>
+        <ChoiceBox fx:id="semesterChoiceBox" layoutX="210.0" layoutY="29.0" prefWidth="100.0">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Fall" />
+              <String fx:value="Spring" />
+              <String fx:value="Summer" />
+            </FXCollections>
+          </items>
+          <stylesheets>
+            <URL value="@application.css" />
+          </stylesheets>
+        </ChoiceBox>
+        <TextField fx:id="nameTextField" layoutX="92.0" layoutY="96.0" prefWidth="216.0">
+          <stylesheets>
+            <URL value="@application.css" />
+          </stylesheets>
+        </TextField>
+        <ComboBox fx:id="scoreComboBox" layoutX="144.0" layoutY="149.0" maxWidth="-1.0" prefHeight="27.0" prefWidth="60.0">
+          <items>
+            <FXCollections fx:factory="observableArrayList" />
+          </items>
+        </ComboBox>
+      </children>
+    </Pane>
+    <Pane id="secondAnchorPane" fx:id="secondPane" layoutX="364.0" layoutY="55.0" prefHeight="146.0" prefWidth="431.0" styleClass="box1">
+      <children>
+        <Label fx:id="rosterLabel" layoutX="14.0" layoutY="14.0" styleClass="label1" text="Please Select a Class Roster..." />
+        <TextField fx:id="rosterTextField" disable="true" focusTraversable="false" layoutX="14.0" layoutY="40.0" prefWidth="403.0">
+          <stylesheets>
+            <URL value="@application.css" />
+          </stylesheets>
+        </TextField>
+        <Button fx:id="browseButton" layoutX="180.0" layoutY="95.0" mnemonicParsing="false" onAction="#browseButtonFired" prefHeight="28.0" styleClass="button1" text="Browse" />
+      </children>
+    </Pane>
+    <Label fx:id="classInfoLabel" layoutX="25.0" layoutY="26.0" styleClass="label2" text="Class Information:" />
+    <Label id="classInfoLabel" fx:id="rosterTitleLabel" layoutX="364.0" layoutY="26.0" styleClass="label2" text="Loading Roster:" />
+    <Button fx:id="createButton" layoutX="521.0" layoutY="275.0" mnemonicParsing="false" onAction="#createButtonFired" prefHeight="30.0" prefWidth="117.0" styleClass="button1" text="Create Class" />
+  </children>
+  <stylesheets>
+    <URL value="@application.css" />
+  </stylesheets>
+</AnchorPane>

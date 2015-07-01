@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="selectClassPane" prefHeight="725.0" prefWidth="800.0" styleClass="root" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.SelectClassController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <ComboBox fx:id="semesterCombo" layoutX="255.0" layoutY="46.0" prefHeight="21.0" prefWidth="140.0" promptText="Semester" styleClass="label">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Fall" />
+          <String fx:value="Spring" />
+          <String fx:value="Summer" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <ComboBox fx:id="yearCombo" layoutX="108.0" layoutY="46.0" prefHeight="21.0" prefWidth="106.0" promptText="Year" styleClass="label">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="2009" />
+          <String fx:value="2010" />
+          <String fx:value="2011" />
+          <String fx:value="2012" />
+          <String fx:value="2013" />
+          <String fx:value="2014" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <ComboBox fx:id="courseCombo" layoutX="437.0" layoutY="46.0" prefHeight="21.0" prefWidth="172.0" promptText="Course" styleClass="label">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Biology 111" />
+          <String fx:value="Biology 150" />
+          <String fx:value="Physics 111" />
+          <String fx:value="Physics 151" />
+          <String fx:value="Physics 234" />
+          <String fx:value="Physics 400" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <Label layoutX="299.0" layoutY="6.0" prefWidth="127.5" styleClass="title" text="Select Class">
+      <font>
+        <Font size="20.0" />
+      </font>
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </Label>
+    <Label layoutX="24.0" layoutY="85.0" text="">
+      <font>
+        <Font size="14.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label font="$x1" layoutX="26.0" layoutY="94.0" text="Roster" />
+    <ListView fx:id="rosterList" layoutX="26.0" layoutY="117.0" prefHeight="149.0" prefWidth="240.0" styleClass="label" />
+    <RadioButton fx:id="addStudentRadio" layoutX="26.0" layoutY="291.0" mnemonicParsing="false" onAction="#addStudentFired" styleClass="label" text="Add Student">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </RadioButton>
+    <TextField fx:id="firstTextBox" layoutX="63.0" layoutY="335.0" prefWidth="107.0" visible="false" />
+    <TextField fx:id="lastTextBox" layoutX="212.0" layoutY="335.0" prefWidth="128.0" visible="false" />
+    <TextField fx:id="idTextBox" layoutX="112.0" layoutY="370.0" prefWidth="200.0" visible="false" />
+    <Label fx:id="lastLabel" layoutX="182.0" layoutY="338.0" text="Last:" visible="false" />
+    <Label fx:id="firstLabel" layoutX="31.0" layoutY="338.0" text="First:" visible="false" />
+    <Label fx:id="idLabel" layoutX="31.0" layoutY="373.0" text="University ID:" visible="false" />
+    <ListView fx:id="courseworkList" layoutX="413.0" layoutY="118.0" prefHeight="149.0" prefWidth="240.0" styleClass="label" />
+    <Label font="$x1" layoutX="426.0" layoutY="97.0" text="Coursework" />
+    <RadioButton fx:id="createAssignmentRadio" layoutX="427.0" layoutY="291.0" mnemonicParsing="false" onAction="#createAssignmentFired" styleClass="label" text="Create Assignment" visible="true">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </RadioButton>
+    <Label fx:id="assignmentNameLabel" layoutX="426.0" layoutY="334.0" text="Name:" visible="false" />
+    <TextField fx:id="assignmentNameTextBox" layoutX="472.0" layoutY="331.0" prefWidth="107.0" visible="false" />
+    <Label fx:id="typeLabel" layoutX="427.0" layoutY="370.0" text="Type:" visible="false" />
+    <ComboBox fx:id="typeComboBox" layoutX="472.0" layoutY="368.0" prefHeight="21.0" prefWidth="128.0" visible="false">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Exam" />
+          <String fx:value="In-Class Assignment" />
+          <String fx:value="Homework" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <RadioButton fx:id="deleteStudentRadioButton" disable="true" layoutX="146.0" layoutY="291.0" mnemonicParsing="false" onAction="#deleteStudentFired" styleClass="label" text="Delete Student">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </RadioButton>
+    <RadioButton fx:id="deleteAssignmentRadioButton" disable="true" layoutX="561.0" layoutY="291.0" mnemonicParsing="false" onAction="#deleteAssignmentFired" styleClass="label" text="Delete Assignment">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </RadioButton>
+    <Button fx:id="saveStudentButton" layoutX="86.0" layoutY="405.0" mnemonicParsing="false" onAction="#saveStudentFired" text="Save Student" visible="false" />
+    <Button fx:id="saveAssignmentButton" layoutX="494.0" layoutY="405.0" mnemonicParsing="false" onAction="#saveAssignmentFired" text="Save Assignment" visible="false" />
+  </children>
+  <stylesheets>
+    <URL value="@application.css" />
+  </stylesheets>
+</AnchorPane>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="welcomeScreenAnchorPane" maxHeight="-1.0" maxWidth="-1.0" prefHeight="504.0" prefWidth="900.0" styleClass="root1" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.learnoba.welcome.WelcomeController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Pane layoutX="0.0" layoutY="0.0" prefHeight="56.0" prefWidth="900.0" styleClass="pane" />
+    <Pane layoutX="0.0" layoutY="0.0" prefHeight="504.0" prefWidth="301.0" styleClass="pane3">
+      <children>
+        <Pane layoutX="53.0" layoutY="59.0" prefHeight="129.0" prefWidth="200.0" styleClass="pane">
+          <children>
+            <Hyperlink id="addClassLink" fx:id="selectClassLink" layoutX="36.0" layoutY="81.0" onAction="#selectClassClick" styleClass="hyperlink3" text="Select a Class...">
+              <stylesheets>
+                <URL value="@application.css" />
+              </stylesheets>
+            </Hyperlink>
+            <Hyperlink fx:id="addClassLink" layoutX="36.0" layoutY="40.0" onAction="#addClassClick" styleClass="hyperlink3" text="Add a Class...">
+              <stylesheets>
+                <URL value="@application.css" />
+              </stylesheets>
+            </Hyperlink>
+            <Separator id="separatorOne" layoutX="0.0" layoutY="37.0" prefWidth="200.0" styleClass="separator2">
+              <stylesheets>
+                <URL value="@application.css" />
+              </stylesheets>
+            </Separator>
+            <Label id="quickLinksLabel" fx:id="quickLinks" layoutX="14.0" layoutY="10.0" styleClass="label3" text="Quick Links" underline="false">
+              <font>
+                <Font name="System Bold" size="14.0" fx:id="x1" />
+              </font>
+            </Label>
+          </children>
+        </Pane>
+        <Pane layoutX="53.0" layoutY="259.0" prefHeight="146.0" prefWidth="200.0" styleClass="pane">
+          <children>
+            <Hyperlink id="addClassLink" fx:id="recentClassOne" layoutX="40.0" layoutY="48.0" onAction="#recentClassOneClick" styleClass="hyperlink3" text="Class1">
+              <stylesheets>
+                <URL value="@application.css" />
+              </stylesheets>
+            </Hyperlink>
+            <Hyperlink id="addClassLink" fx:id="recentClassTwo" layoutX="40.0" layoutY="73.0" onAction="#recentClassTwoClick" styleClass="hyperlink3" text="Class2">
+              <stylesheets>
+                <URL value="@application.css" />
+              </stylesheets>
+            </Hyperlink>
+            <Hyperlink id="addClassLink" fx:id="recentClassThree" layoutX="40.0" layoutY="98.0" onAction="#recentClassThreeClick" styleClass="hyperlink3" text="Class3">
+              <stylesheets>
+                <URL value="@application.css" />
+              </stylesheets>
+            </Hyperlink>
+            <Label fx:id="recentClasses" font="$x1" layoutX="14.0" layoutY="10.0" styleClass="label3" text="Recent Classes" underline="false" />
+            <Separator id="separatorTwo" fx:id="separator2" layoutX="0.0" layoutY="35.0" prefWidth="200.0" styleClass="separator2">
+              <stylesheets>
+                <URL value="@application.css" />
+              </stylesheets>
+            </Separator>
+          </children>
+        </Pane>
+      </children>
+    </Pane>
+    <Label id="WelcomeTitle" fx:id="welcomeTitle" layoutX="415.0" layoutY="7.0" styleClass="title" text="LearnOBA Grading System" textFill="#001066">
+      <font>
+        <Font name="System Bold" size="20.0" />
+      </font>
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </Label>
+    <Label id="quickLinksLabel" fx:id="whatLabel" font="$x1" layoutX="356.0" layoutY="80.0" text="What is LearnOBA?" underline="false">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </Label>
+    <Label id="quickLinksLabel" fx:id="howLabel" font="$x1" layoutX="356.0" layoutY="227.0" text="How Does it Work?" underline="false">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </Label>
+    <TextArea fx:id="howTextArea" editable="false" layoutX="373.0" layoutY="254.0" prefHeight="126.0" prefWidth="477.0" styleClass="textarea1, root1" text="LearnOBA keeps track of a students mastery of a pre-defined set of skills.  This system helps students by tracking their progress towards mastery and providing them with details on how close or far away they are mastering a skill.  The key focus here is on mastery, not behaviors." wrapText="true">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </TextArea>
+    <TextArea fx:id="whatTextArea" editable="false" focusTraversable="true" layoutX="366.0" layoutY="102.0" prefHeight="129.0" prefWidth="477.0" styleClass="textarea1, root1" text="LearnOBA is a grading system that allows instructors to manage their classes, keep track of their coursework, and record their students progress.  It is based upon a grading schema called Learning Outcomes Based assessment which focuses on the mastering of skills." wrapText="true">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </TextArea>
+    <Label id="quickLinksLabel" fx:id="whereLabel" font="$x1" layoutX="356.0" layoutY="374.0" text="Where Do I Start?" underline="false">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </Label>
+    <TextArea fx:id="whereTextArea" editable="false" layoutX="373.0" layoutY="393.0" prefHeight="88.0" prefWidth="477.0" styleClass="textarea1, root1" text="The first step to managing your classes is to add a class to the roster.  Either click on the &quot;Add a Class...&quot; quick link to the left, or the &quot;Manage Classes&quot; tab at the top of the page.  " wrapText="true">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </TextArea>
+    <Separator layoutX="301.0" layoutY="59.0" orientation="VERTICAL" prefHeight="436.0" prefWidth="13.0" styleClass="separator2" />
+  </children>
+  <stylesheets>
+    <URL value="@application.css" />
+  </stylesheets>
+</AnchorPane>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Encapsulate field &apos;com.learnoba.UserSettings.workingDirectory&apos; in &apos;com.learnoba.UserSettings&apos;&#x0D;&#x0A;- Original project: &apos;LearnOBA&apos;&#x0D;&#x0A;- Original element: &apos;com.learnoba.UserSettings.workingDirectory&apos;&#x0D;&#x0A;- Getter method name: &apos;getWorkingDirectory&apos;&#x0D;&#x0A;- Setter method name: &apos;setWorkingDirectory&apos;&#x0D;&#x0A;- Field visibility: &apos;public&apos;&#x0D;&#x0A;- Use getter and setter methods in declaring type&#x0D;&#x0A;- Generate method comments" comments="true" declaring="true" description="Encapsulate field &apos;workingDirectory&apos;" flags="589830" getter="getWorkingDirectory" id="org.eclipse.jdt.ui.self.encapsulate" input="/src&lt;com.learnoba{UserSettings.java[UserSettings^workingDirectory" insertion="5" setter="setWorkingDirectory" stamp="1395524069263" version="1.0" visibility="1"/>
+</session>

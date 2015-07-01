@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="manageClassesAnchorPane" prefHeight="504.0" prefWidth="900.0" styleClass="root1" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.learnoba.classes.manage.ManageClassController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Label fx:id="manageLabel" layoutX="22.0" layoutY="14.0" styleClass="title" text="Managing Your Classes" />
+    <Label fx:id="optionLabel" layoutX="408.0" layoutY="22.0" styleClass="label1" text="Please Select an Option:" />
+    <AnchorPane fx:id="switchAnchorPane" layoutX="14.0" layoutY="79.0" prefHeight="398.0" prefWidth="872.0" />
+    <ComboBox fx:id="optionComboBox" layoutX="579.0" layoutY="21.0" onAction="#selectionFired" prefHeight="21.0" prefWidth="158.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Please Select To..." />
+          <String fx:value="Select An Existing Class" />
+          <String fx:value="Create A New Class" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+  </children>
+  <stylesheets>
+    <URL value="@application.css" />
+  </stylesheets>
+</AnchorPane>

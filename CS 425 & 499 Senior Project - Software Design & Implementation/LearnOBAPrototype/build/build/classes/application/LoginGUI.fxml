@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="login" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="312.0" prefWidth="559.0" snapToPixel="true" styleClass="root" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.LoginController">
+  <children>
+    <VBox id="VBox" alignment="CENTER" layoutX="81.0" layoutY="95.0" spacing="5.0">
+      <children>
+        <Label fx:id="loginInstruction" text="Login if you have an existing account." textAlignment="CENTER" />
+        <HBox id="HBox" alignment="CENTER" depthTest="INHERIT" spacing="5.0">
+          <children>
+            <VBox id="VBox" alignment="CENTER" prefHeight="72.0" spacing="5.0">
+              <children>
+                <Label text="Username">
+                  <font>
+                    <Font name="Book Antiqua" size="16.0" fx:id="x1" />
+                  </font>
+                  <VBox.margin>
+                    <Insets bottom="10.0" top="10.0" fx:id="x2" />
+                  </VBox.margin>
+                </Label>
+                <Label font="$x1" text="Password" VBox.margin="$x2" />
+              </children>
+            </VBox>
+            <VBox id="VBox" alignment="CENTER" spacing="5.0">
+              <children>
+                <TextField fx:id="username" prefWidth="322.0" VBox.margin="$x2" />
+                <PasswordField fx:id="password" cache="false" mouseTransparent="false" prefWidth="311.0" VBox.margin="$x2" />
+              </children>
+            </VBox>
+          </children>
+          <padding>
+            <Insets fx:id="x3" />
+          </padding>
+        </HBox>
+      </children>
+    </VBox>
+    <GridPane id="GridPane" layoutX="294.0" layoutY="233.0">
+      <children>
+        <HBox id="HBox" alignment="CENTER" padding="$x3" spacing="5.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+          <children>
+            <Button fx:id="cancelButton" maxWidth="-1.0" mnemonicParsing="false" onAction="#cancelFired" prefHeight="36.0" prefWidth="90.0" text="Cancel">
+              <HBox.margin>
+                <Insets left="10.0" right="10.0" fx:id="x4" />
+              </HBox.margin>
+            </Button>
+            <Button fx:id="loginButton" mnemonicParsing="false" onAction="#loginFired" prefHeight="36.0" prefWidth="90.0" text="Login" HBox.margin="$x4" />
+          </children>
+        </HBox>
+        <Hyperlink fx:id="newAccountLink" onAction="#newAccountLoginScreenToggleFired" text="Don't already have an account? Click Here." textFill="#0029ff" GridPane.columnIndex="0" GridPane.rowIndex="1">
+          <GridPane.margin>
+            <Insets top="10.0" />
+          </GridPane.margin>
+        </Hyperlink>
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+    <Pane id="" layoutX="0.0" layoutY="0.0" prefHeight="79.0" prefWidth="559.0" style="" styleClass="header">
+      <children>
+        <ImageView fx:id="logo" fitHeight="84.84000740215596" fitWidth="385.6363830566406" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@../../resources/Logo%20(inverted).png" />
+          </image>
+        </ImageView>
+      </children>
+    </Pane>
+  </children>
+  <padding>
+    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+  </padding>
+  <stylesheets>
+    <URL value="@application.css" />
+  </stylesheets>
+</AnchorPane>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="enterScoresPane" prefHeight="504.0" prefWidth="900.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.learnoba.scores.ScoresController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Label id="editSkillsTitle" fx:id="editScoresLabel" layoutX="399.0" layoutY="21.0" styleClass="title" text="Edit Scores">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </Label>
+    <ListView id="studentsListBox" fx:id="studentsListView" layoutX="14.0" layoutY="126.0" prefHeight="364.0" prefWidth="231.0" />
+    <Label fx:id="studentsLabel" layoutX="24.0" layoutY="97.0" styleClass="label2" text="Students">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </Label>
+    <Pane fx:id="studentInfoPane" layoutX="269.0" layoutY="402.0" prefHeight="88.0" prefWidth="617.0" styleClass="box1">
+      <children>
+        <TextField id="firstNameTextBox" fx:id="firstNameTextField" disable="false" editable="false" focusTraversable="false" layoutX="14.0" layoutY="14.0" prefHeight="27.0" prefWidth="184.0" styleClass="textbox1" text="Frodo">
+          <stylesheets>
+            <URL value="@application.css" />
+          </stylesheets>
+        </TextField>
+        <TextField id="lastNameTextBox" fx:id="lastNameTextField" disable="false" editable="false" focusTraversable="false" layoutX="419.0" layoutY="14.0" prefHeight="27.0" prefWidth="184.0" styleClass="textbox1" text="Baggins">
+          <stylesheets>
+            <URL value="@application.css" />
+          </stylesheets>
+        </TextField>
+        <TextField id="middleNameTextBox" fx:id="middleNameTextField" disable="true" editable="false" focusTraversable="false" layoutX="217.0" layoutY="14.0" prefHeight="27.0" prefWidth="184.0" styleClass="textbox1" text="">
+          <stylesheets>
+            <URL value="@application.css" />
+          </stylesheets>
+        </TextField>
+        <TextField id="studentIDTextBox" fx:id="studentIDTextField" disable="false" editable="false" focusTraversable="false" layoutX="14.0" layoutY="52.0" prefHeight="27.0" prefWidth="184.0" styleClass="textbox1" text="800428519">
+          <stylesheets>
+            <URL value="@application.css" />
+          </stylesheets>
+        </TextField>
+        <TextField id="emailTextBox" fx:id="emailTextField" disable="false" editable="false" focusTraversable="false" layoutX="217.0" layoutY="52.0" prefHeight="27.0" prefWidth="386.0" styleClass="textbox1" text="Fbaggin@siue.edu">
+          <stylesheets>
+            <URL value="@application.css" />
+          </stylesheets>
+        </TextField>
+      </children>
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </Pane>
+    <ListView id="studentsListBox" fx:id="assignmentsListView" layoutX="269.0" layoutY="126.0" prefHeight="259.0" prefWidth="231.0" />
+    <Label id="studentsLabel" fx:id="assignmentsLabel" layoutX="279.0" layoutY="97.0" styleClass="label2" text="Assignments">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </Label>
+    <Label id="studentsLabel" fx:id="tasksLabel" layoutX="548.0" layoutY="97.0" styleClass="label2" text="Tasks">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </Label>
+    <Accordion expandedPane="$null" layoutX="99.0" layoutY="14.0" />
+    <TreeView fx:id="tasksTreeView" layoutX="523.0" layoutY="126.0" prefHeight="259.0" prefWidth="363.0" styleClass="treeView">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </TreeView>
+  </children>
+</AnchorPane>

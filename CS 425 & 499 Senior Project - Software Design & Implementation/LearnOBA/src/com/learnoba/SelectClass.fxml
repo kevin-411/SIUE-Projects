@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="selectAnchorPane" prefHeight="412.0" prefWidth="684.0" styleClass="root1" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.learnoba.classes.select.SelectClassController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Label fx:id="mainLabel" layoutX="23.0" layoutY="6.0" styleClass="label2" text="Select a Class..." />
+    <Pane fx:id="secondPane" layoutX="23.0" layoutY="28.0" prefHeight="46.0" prefWidth="638.0" styleClass="box1">
+      <children>
+        <Label fx:id="yearLabel" layoutX="12.0" layoutY="13.0" styleClass="label1" text="Year:" />
+        <ComboBox fx:id="yearComboBox" layoutX="52.0" layoutY="8.0" onAction="#populateSemesters" prefHeight="28.0" prefWidth="115.0">
+          <items>
+            <FXCollections fx:factory="observableArrayList" />
+          </items>
+          <stylesheets>
+            <URL value="@application.css" />
+          </stylesheets>
+        </ComboBox>
+        <Label fx:id="semesterLabel" layoutX="183.0" layoutY="13.0" styleClass="label1" text="Semester:" />
+        <ComboBox fx:id="semesterComboBox" disable="true" layoutX="257.0" layoutY="8.0" onAction="#populateCourses" prefHeight="28.0" prefWidth="115.0">
+          <items>
+            <FXCollections fx:factory="observableArrayList" />
+          </items>
+          <stylesheets>
+            <URL value="@application.css" />
+          </stylesheets>
+        </ComboBox>
+        <Label fx:id="courseLabel" layoutX="390.0" layoutY="13.0" styleClass="label1" text="Course Title:" />
+        <ComboBox id="titleComboBox" fx:id="courseComboBox" disable="true" layoutX="479.0" layoutY="8.0" onAction="#populateStudents" prefHeight="28.0" prefWidth="115.0">
+          <items>
+            <FXCollections fx:factory="observableArrayList" />
+          </items>
+          <stylesheets>
+            <URL value="@application.css" />
+          </stylesheets>
+        </ComboBox>
+      </children>
+    </Pane>
+    <Label fx:id="rosterLabel" layoutX="23.0" layoutY="89.0" styleClass="label1" text="Roster" />
+    <ListView fx:id="rosterListView" disable="true" layoutX="14.0" layoutY="108.0" onMouseClicked="#deleteStudentFired" prefHeight="293.0" prefWidth="239.0">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </ListView>
+    <Pane fx:id="firstPane" disable="false" layoutX="271.0" layoutY="168.0" prefHeight="200.0" prefWidth="390.0" styleClass="box1">
+      <children>
+        <Button fx:id="deleteClassButton" disable="true" focusTraversable="false" layoutX="11.0" layoutY="23.0" mnemonicParsing="false" onAction="#deleteClassFired" prefHeight="28.0" prefWidth="113.999755859375" styleClass="button1" text="Delete Class" />
+        <Button fx:id="newStudentButton" disable="true" layoutX="137.0" layoutY="23.0" mnemonicParsing="false" onAction="#showItemsFired" prefHeight="28.0" prefWidth="113.9998779296875" styleClass="button1" text="Add Student" />
+        <Button fx:id="deleteStudentButton" disable="true" layoutX="261.0" layoutY="23.0" mnemonicParsing="false" onAction="#deleteStudents" prefHeight="28.0" prefWidth="113.9998779296875" styleClass="button2" text="Delete Student">
+          <stylesheets>
+            <URL value="@application.css" />
+          </stylesheets>
+        </Button>
+        <Label fx:id="firstLabel" layoutX="14.0" layoutY="79.0" styleClass="label1" text="First:" />
+        <TextField fx:id="firstTextField" layoutX="55.0" layoutY="76.0" prefWidth="120.0">
+          <stylesheets>
+            <URL value="@application.css" />
+          </stylesheets>
+        </TextField>
+        <Label fx:id="lastLabel" layoutX="192.0" layoutY="79.0" styleClass="label1" text="Last:" />
+        <TextField fx:id="lastTextField" layoutX="233.0" layoutY="76.0" prefWidth="120.0">
+          <stylesheets>
+            <URL value="@application.css" />
+          </stylesheets>
+        </TextField>
+        <Label fx:id="idLabel" layoutX="14.0" layoutY="123.0" styleClass="label1" text="University ID:" />
+        <TextField fx:id="idTextField" layoutX="111.0" layoutY="120.0" prefWidth="242.0">
+          <stylesheets>
+            <URL value="@application.css" />
+          </stylesheets>
+        </TextField>
+        <Button fx:id="saveButton" layoutX="133.0" layoutY="158.0" mnemonicParsing="false" onAction="#addStudentFired" prefHeight="28.0" styleClass="button1" text="Save Student" />
+      </children>
+    </Pane>
+    <Label fx:id="errorLabel" layoutX="320.0" layoutY="378.0" text="*All fields must be filled out to add a student" textFill="RED" visible="false">
+      <font>
+        <Font name="System Bold" size="14.0" />
+      </font>
+    </Label>
+  </children>
+  <stylesheets>
+    <URL value="@application.css" />
+  </stylesheets>
+</AnchorPane>

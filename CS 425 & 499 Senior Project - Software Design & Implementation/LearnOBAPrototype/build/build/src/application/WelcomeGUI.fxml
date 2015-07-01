@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="welcomePane" prefHeight="414.0" prefWidth="540.0" styleClass="root" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.WelcomeController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Label layoutX="217.0" layoutY="16.0" prefWidth="220.0" text="Welcome to LearnOBA!">
+      <font>
+        <Font size="20.0" />
+      </font>
+    </Label>
+    <TextArea layoutX="170.0" layoutY="72.0" prefHeight="307.0" prefWidth="301.0" styleClass="label, root" text="Welcome to the LearnOBA software system! A &#10;&#10;system not for points but a system in which &#10;&#10;students develop knowledge to become a &#10;&#10;Master! LearnOBA is based upon the Learning &#10;&#10;Outcomes Based grading schema and allows &#10;&#10;instructors to manage their classes, keep &#10;&#10;track of coursework, and record their &#10;&#10;students progress.  Select an option to &#10;&#10;begin!" wrapText="true" />
+    <Button fx:id="exitButton" layoutX="14.0" layoutY="358.0" mnemonicParsing="false" text="Exit LearnOBA" />
+    <Separator layoutX="134.0" layoutY="55.0" orientation="VERTICAL" prefHeight="324.0" prefWidth="9.0" />
+    <Separator layoutX="139.0" layoutY="51.0" prefHeight="14.0" prefWidth="332.0" />
+    <RadioButton fx:id="createClassRadio" layoutX="19.0" layoutY="128.0" mnemonicParsing="false" onAction="#createFired" text="Create A Class" />
+    <RadioButton fx:id="selectClassRadio" layoutX="19.0" layoutY="199.0" mnemonicParsing="false" onAction="#selectFired" text="Select A Class" />
+  </children>
+  <stylesheets>
+    <URL value="@application.css" />
+  </stylesheets>
+</AnchorPane>

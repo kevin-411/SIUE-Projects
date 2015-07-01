@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane fx:id="mainTab" prefHeight="650.0" prefWidth="900.0" styleClass="root2" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.MainTabController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <TabPane layoutX="0.0" layoutY="98.0" prefHeight="650.0" prefWidth="900.0" tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+        <Tab fx:id="welcomeTab" styleClass="label" text="Welcome Screen">
+          <content>
+            <AnchorPane id="Content" fx:id="welcomePane" minHeight="0.0" minWidth="0.0" prefHeight="650.0" prefWidth="900.0" styleClass="root">
+              <stylesheets>
+                <URL value="@application.css" />
+              </stylesheets>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab fx:id="manageClassTab" styleClass="label" text="Manage Classes">
+          <content>
+            <AnchorPane id="Content" fx:id="manageClassPane" minHeight="0.0" minWidth="0.0" prefHeight="650.0" prefWidth="900.0" styleClass="root">
+              <stylesheets>
+                <URL value="@application.css" />
+              </stylesheets>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab fx:id="editAssignTab" styleClass="label" text="Edit Assignment">
+          <content>
+            <AnchorPane id="Content" fx:id="editAssignPane" minHeight="0.0" minWidth="0.0" prefHeight="650.0" prefWidth="900.0" styleClass="root">
+              <stylesheets>
+                <URL value="@application.css" />
+              </stylesheets>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab fx:id="editSkillsTab" styleClass="label" text="Edit Skills">
+          <content>
+            <AnchorPane id="Content" fx:id="editSkillsPane" minHeight="0.0" minWidth="0.0" prefHeight="650.0" prefWidth="900.0" styleClass="root">
+              <stylesheets>
+                <URL value="@application.css" />
+              </stylesheets>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab fx:id="enterScoresTab" styleClass="label" text="Enter Scores">
+          <content>
+            <AnchorPane id="Content" fx:id="enterScoresPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="root">
+              <stylesheets>
+                <URL value="@application.css" />
+              </stylesheets>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+    <ImageView fx:id="learnobaImage" fitHeight="74.92453002929688" fitWidth="320.2419393642856" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../../resources/images/Header.png" />
+      </image>
+    </ImageView>
+    <Hyperlink fx:id="helpLink" layoutX="500.0" layoutY="40.0" text="Help" textFill="#001899" />
+    <Hyperlink fx:id="contactLink" layoutX="558.0" layoutY="40.0" text="Contact Us">
+      <textFill>
+        <Color blue="0.600" green="0.094" red="0.000" fx:id="x1" />
+      </textFill>
+    </Hyperlink>
+    <Hyperlink fx:id="exitLink" layoutX="642.0" layoutY="40.0" text="Exit" textFill="$x1" />
+  </children>
+  <stylesheets>
+    <URL value="@application.css" />
+  </stylesheets>
+</AnchorPane>

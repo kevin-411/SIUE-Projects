@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="tabPane" fx:id="tabAnchorPane" prefHeight="638.0" prefWidth="900.0000610351562" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.learnoba.tab.TabController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <ImageView fx:id="headerImageView" fitHeight="116.0439605176954" fitWidth="900.0000610351562" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../../../resources/Header.png" />
+      </image>
+    </ImageView>
+    <Hyperlink fx:id="helpLink" layoutX="771.0" layoutY="54.0" onAction="#showManualPDF" styleClass="hyperlink1" text="Help">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </Hyperlink>
+    <Hyperlink id="helpLink" fx:id="logOutLink" layoutX="825.0" layoutY="54.0" onAction="#performLogout" styleClass="hyperlink1" text="Log Out">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </Hyperlink>
+    <TabPane fx:id="mainTabPane" layoutX="0.0" layoutY="106.0" prefHeight="532.0" prefWidth="900.0" tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+        <Tab fx:id="welcomeTab" styleClass="label1" text="Welcome">
+          <content>
+            <AnchorPane id="Content" fx:id="welcomeAnchorPane" minHeight="0.0" minWidth="0.0" prefHeight="561.0" prefWidth="900.0" styleClass="root1">
+              <stylesheets>
+                <URL value="@application.css" />
+              </stylesheets>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab fx:id="ManageClassTab" styleClass="label1" text="Manage Classes">
+          <content>
+            <AnchorPane id="Content" fx:id="manageClassAnchorPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="root1">
+              <stylesheets>
+                <URL value="@application.css" />
+              </stylesheets>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab fx:id="skillsTab" styleClass="label1" text="Manage Skills">
+          <content>
+            <AnchorPane id="Content" fx:id="skillsPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="root1" />
+          </content>
+        </Tab>
+        <Tab fx:id="editAssignmentTab" onSelectionChanged="#tabChangeRefreshChildren" styleClass="label1" text="Edit Assignment">
+          <content>
+            <AnchorPane id="Content" fx:id="editAssignmentAnchorPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="root1" />
+          </content>
+        </Tab>
+        <Tab fx:id="enterScoresTab" onSelectionChanged="#tabChangeRefreshChildren" styleClass="label1" text="Enter Outcomes">
+          <content>
+            <AnchorPane id="Content" fx:id="enterScoresAnchorPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="root1" />
+          </content>
+        </Tab>
+        <Tab id="exportClassTab" fx:id="exportClassTab" onSelectionChanged="#tabChangeRefreshChildren" styleClass="label1" text="Export Files">
+          <content>
+            <AnchorPane id="Content" fx:id="exportClassAnchorPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="root1">
+              <stylesheets>
+                <URL value="@application.css" />
+              </stylesheets>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+    <Label layoutX="516.0" layoutY="14.0" styleClass="label4" text="Class:" textFill="WHITE">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </Label>
+    <Label fx:id="classNameLabel" layoutX="561.0" layoutY="14.0" styleClass="label4" text="(No Class Selected)" textFill="WHITE">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </Label>
+    <Label layoutX="756.0" layoutY="14.0" styleClass="label4" text="Welcome" textFill="WHITE">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </Label>
+    <Label fx:id="usernameLabel" layoutX="828.0" layoutY="14.0" styleClass="label4" text="tfoster" textFill="WHITE">
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </Label>
+  </children>
+  <stylesheets>
+    <URL value="@application.css" />
+  </stylesheets>
+</AnchorPane>

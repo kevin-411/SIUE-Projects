@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="loadingAnchorPane" minHeight="-1.0" prefHeight="120.0" prefWidth="320.0" styleClass="header1" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.learnoba.loading.LoadingController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Pane layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="300.0" styleClass="box2">
+      <children>
+        <Label fx:id="loadingLabel" layoutX="53.0" layoutY="25.0" prefHeight="50.0" prefWidth="220.0" text="Loading, please wait..." underline="false">
+          <font>
+            <Font size="20.0" />
+          </font>
+          <stylesheets>
+            <URL value="@application.css" />
+          </stylesheets>
+        </Label>
+      </children>
+      <stylesheets>
+        <URL value="@application.css" />
+      </stylesheets>
+    </Pane>
+  </children>
+  <stylesheets>
+    <URL value="@application.css" />
+  </stylesheets>
+</AnchorPane>
