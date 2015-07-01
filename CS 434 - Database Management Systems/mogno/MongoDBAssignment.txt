@@ -1,0 +1,119 @@
+Brian Olsen bolsen@siue.edu
+Bill Stimson wstimso@siue.edu
+Brendan Lehman blehman@siue.edu
+
+Query 1:
+
+var map = function() { emit(1, 1); }
+var red = function( key, values ) {
+    var count = 0;
+    values.forEach(function(v) {
+            count +=v;
+    });
+
+    return count;
+}
+
+db.plots.mapReduce(map, red, {out: "bolsen_query1", query:{price:{$gt:9000}}});
+db.bolsen_query1.find()
+
+Query 1 (Extra Credit):
+
+db.plots.aggregate([ {$match:{price:{$gt:9000}}}, 
+                     {$group:{_id:null,count:{$sum:1}}}
+] );
+
+Query 2:
+
+var map2 = function(){
+    emit(this.city, this.price);
+    };
+var red2 = function(key, values){
+    var total = 0;
+    values.forEach(function(v) {
+    total+=v;
+    });
+    return total;
+    }
+db.plots.mapReduce(map2, red2, {out: "bolsen_query2"});
+db.bolsen_query2.find()
+
+Query 2 (Extra Credit):
+
+db.plots.aggregate(
+	{$group:{_id:"$city",sumOfPrices :{$sum : "$price"}}}
+ );
+
+Query 3:
+
+var map3 = function() { 
+	var area = Math.abs(( (( this.cy))+(this.bx*(this.cy-this.ay))+(this.cx*(this.ay-this.by)))/2 );
+emit(this.code, area); 
+};
+var red3 = function( key, values ) {
+    return 1;
+};
+db.plots.mapReduce(map3, red3, {out: "bolsen_query3", query:{price:{$gt:9000}}});
+db.bolsen_query3.find()
+
+Query 3 (Extra Credit):
+
+db.plots.aggregate({$match:{price:{$gt:9000}}},
+{$project: {plotId: "$code", area: 
+{$cond : [
+{$gte: [{$divide : [{$add : [
+{$multiply : ["$ax", {$subtract : ["$by", "$cy"]}]},
+{$multiply : ["$bx", {$subtract : ["$cy", "$ay"]}]},
+{$multiply : ["$cx", {$subtract : ["$ay", "$by"]}]}]},2]}, 0]}
+,
+//true positive
+{$divide : [{$add : [
+{$multiply : ["$ax", {$subtract : ["$by", "$cy"]}]},
+{$multiply : ["$bx", {$subtract : ["$cy", "$ay"]}]},
+{$multiply : ["$cx", {$subtract : ["$ay", "$by"]}]}]},2]}
+, 
+//false negative
+{$multiply : [
+{$divide : [{$add : [
+{$multiply : ["$ax", {$subtract : ["$by", "$cy"]}]},
+{$multiply : ["$bx", {$subtract : ["$cy", "$ay"]}]},
+{$multiply : ["$cx", {$subtract : ["$ay", "$by"]}]}]},2]}, -1
+]}
+
+]}//end cond
+}}//end proj
+);
+
+Query 4:
+
+var map4 = function(){
+    emit(this.city, this.price);
+    };
+var red4 = function(key, values){ 
+    return Math.max.apply( Math, values );
+};
+db.plots.mapReduce(map4, red4, {out: "bolsen_query4"});
+db.bolsen_query4.find()
+
+Query 4 (Extra Credit):
+
+db.plots.aggregate(
+	{$group:{_id:"$city",sumOfPrices :{$max : "$price"}}}
+ );
+ 
+//**********************************************************************************
+//We might need this later
+//This was the content from inside the map reduce function in Query 3
+//inside the map:
+//	var value = {
+//		ax: this.ax,
+//		ay: this.ay,
+//		bx: this.bx,
+//		by: this.by,
+//		cx: this.cx,
+//		cy: this.cy
+//	};
+// emit(this.code, value); 
+//inside the reduce:
+//var area = Math.abs( ((values[0].ax*(values[0].by-values[0].cy))+(values[0].bx*(values[0].cy-values[0].ay))+(values[0].cx*(values[0].ay-values[0].by)))/2 );
+//return{id: key, areaOfPlot: area}

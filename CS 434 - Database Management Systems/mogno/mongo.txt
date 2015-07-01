@@ -1,0 +1,239 @@
+This document provides a working example of an SQL database structure, a MongoDB structure that represents the same data, Sample data for both structure, and sample queries for both structures.
+Examples for simple queries, aggregate queries, and mapReduce queries are provided.
+The mongo examples are working examples.  Copy and paste the insert statements into a mongoDB shell to create the database.  Copy and paste queries to see the results
+
+#Mongo Aggregate framework reference
+http://docs.mongodb.org/manual/reference/aggregation/#aggregation-expression-operators
+
+#SQL VS Mongo Aggregate Syntax Examples
+http://docs.mongodb.org/manual/reference/sql-aggregation-comparison/
+
+
+# This tutorial assumes 2 SQL tables: orders, order_lineitem
+# tables join on orders.id, order_lineitem.order_id
+#The schemas for the tables are:
+#order( int id, int cust_id, int ord_date, char status, int price)
+#order_lineitem( int order_id, varchar sku, int qty, int price)
+# The order instance we are using:
+1, 1, 20140315, A, 50
+2, 1, 20130317, A, 125
+3, 2, 20130319, A, 30
+4, 3, 20130312, A, 300
+5, 1, 20130319, A, 305
+
+# The order_lineitem instance we are using:
+1, xxx, 25, 1
+1, yyy, 25, 1
+2, xxx, 25, 1
+2, yyy, 25, 2
+2, zzz, 25, 2
+3, zzz, 10, 2
+3, yyy, 10, 1
+4, xxx, 100, 1
+4, yyy, 50, 2
+4, zzz, 50, 2
+5, xxx, 105, 1
+5, yyy, 50, 2
+5, qqq, 2, 50
+
+# Mongo data stores are collections of documents.  Documents do not have to adhere
+# to any schema, and can be altered freely. 
+#Mongo DB document structure follows the prototypes given in the following insert statments: 
+#note that the items for a particular order from a subdocument in the order document
+
+#Mongo insert statements for the data given above
+#CREATE A DATABASE TO PUT THIS DATA IN!! the following line does this
+>use MYUSERNAME   
+
+#  !!! Copy and paste into a MongoDB shell
+db.orders.insert({
+				cust_id: 1, 
+				ord_date: 20130315, 
+				status: 'A',
+				price: 50, 
+				items: [
+							  { sku: "xxx", qty: 25, price: 1 },
+								 { sku: "yyy", qty: 25, price: 1 } 
+								 ] } )
+db.orders.insert({
+				cust_id: 1, 
+				ord_date: 20130317, 
+				status: 'A',
+				price: 125, 
+				items: [
+							  { sku: "xxx", qty: 25, price: 1 },
+								 { sku: "yyy", qty: 25, price: 2 },
+								 { sku: "zzz", qty: 25, price: 2 } 
+								 ] } )
+db.orders.insert({
+				cust_id: 2, 
+				ord_date: 20130319, 
+				status: 'A',
+				price: 30, 
+				items: [
+							  { sku: "zzz", qty: 10, price: 2 },
+								 { sku: "yyy", qty: 10, price: 1 } 
+								 ] } )
+db.orders.insert({
+				cust_id: 3, 
+				ord_date: 20130312, 
+				status: 'A',
+				price: 300, 
+				items: [
+							  { sku: "xxx", qty: 100, price: 1 },
+								 { sku: "yyy", qty: 50, price: 2 },
+								 { sku: "zzz", qty: 50, price: 2 } 
+								 ] } )
+db.orders.insert({
+				cust_id: 1, 
+				ord_date: 20130319, 
+				status: 'A',
+				price: 305, 
+				items: [
+							  { sku: "xxx", qty: 105, price: 1 },
+								 { sku: "yyy", qty: 50, price: 2 },
+								 { sku: "qqq", qty: 2, price: 50 } 
+								 ] } )
+
+# The following are queries over the mongoDB as inserted in the previous step
+# Equivalent SQL, mongoDB, and (sometimes) mongoDB mapReduce queries are given 
+# As an excersice, try to determine what each query does before running it!
+
+#standard queries
+#0. select everything
+db.orders.find()
+
+#1 find orders with custID = 1
+SELECT *
+FROM orders
+WHERE cust_id = 1
+
+db.orders.find( {cust_id:1}, { items:0} )
+
+#2 find orders costing more than 250
+# find takes a query document, and a project document
+# the project document has boolean values to indicate what gets projected
+SELECT * FROM orders
+WHERE price > 250
+
+db.orders.find( {price:{$gt:250}},{items:0})
+(-- to find price > 250 and status = 'A' do: db.orders.find( {price:{$gt:250}, status:'A'},{items:0}) --)
+
+#3. find all items ordered
+# Note that this uses the aggregate pipeline mechanism.
+# Each operation in the aggregate array is executed on a document in order
+# This allows us to do all kinds of transformations and value computations on documents
+# _id is projected by default, so we turn it off for this output
+# distinct is an alternative way to do this
+SELECT DISTINCT sku FROM order_lineitem 
+
+db.orders.aggregate([
+				{$unwind: '$items'},
+				{$project:{_id:0, itemname:'$items.sku'}},
+				{$group:{_id:'$itemname'}} ])
+
+db.orders.distinct( 'items.sku' )
+
+#Aggregate queries, mongo equivalents:
+
+#1. 
+SELECT COUNT(*) AS count
+FROM orders
+
+db.orders.aggregate( [
+   { $group: { _id: null,
+               count: { $sum: 1 } } }
+] )
+
+#2. 
+SELECT SUM(price) AS total
+FROM orders
+
+db.orders.aggregate( [
+   { $group: { _id: null,
+               total: { $sum: "$price" } } }
+] )
+
+#3.
+SELECT cust_id,
+       SUM(price) AS total
+FROM orders
+GROUP BY cust_id
+
+db.orders.aggregate( [
+   { $group: { _id: "$cust_id",
+               total: { $sum: "$price" } } }
+] )
+
+#4.
+SELECT cust_id,
+       SUM(price) AS total
+FROM orders
+GROUP BY cust_id
+ORDER BY total
+
+db.orders.aggregate( [
+   { $group: { _id: "$cust_id",
+               total: { $sum: "$price" } } },
+   { $sort: { total: 1 } }
+] )
+var mapper1 = function() {
+		emit( this.cust_id, this.price )
+};
+var reducer1 = function( keyval, pricesArray ) {
+		return Array.sum( pricesArray )
+};
+db.orders.mapReduce( mapper1, reducer1, {out:"custPrice"} )
+db.custPrice.find()
+
+#5.
+SELECT cust_id,
+       ord_date,
+       SUM(price) AS total
+FROM orders
+GROUP BY cust_id, ord_date
+HAVING total > 250
+
+db.orders.aggregate( [
+   { $group: { _id: { cust_id: "$cust_id",
+                      ord_date: "$ord_date" },
+               total: { $sum: "$price" } } },
+   { $match: { total: { $gt: 250 } } }
+] )
+
+#6. 
+SELECT cust_id,
+       SUM(li.qty) as qty
+FROM orders o,
+     order_lineitem li
+WHERE li.order_id = o.id
+GROUP BY cust_id
+
+db.orders.aggregate( [
+   { $unwind: "$items" },
+   { $group: { _id: "$cust_id",
+               qty: { $sum: "$items.qty" } } }
+] )
+
+#items is a dict of dicts (it is a subdocument in our schema)
+var mapper2 = function() {
+		for ( key in this.items ) {
+				emit(this.cust_id, this.items[key]['qty'])
+		}
+};
+var reducer2 = function( keyval, qtyArray ) {
+		return Array.sum( qtyArray )
+};
+db.orders.mapReduce( mapper2, reducer2, {out:"custQty"} )
+db.custQty.find()
+
+
+#Don't forget the availability if the finalize() function.
+# finalize(), if specified,  will be run after the reducers complete
+http://docs.mongodb.org/manual/tutorial/map-reduce-examples/
+
+
+reminders:
+remove all docs from orders:
+db.orders.remove()
+

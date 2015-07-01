@@ -1,0 +1,116 @@
+Big Data Project -- MongoDB fun!
+
+-----------------------------------
+This project will require you to use MongoDB to implement some MapReduce queries, and some mongo style queries.  MongoDB is a noSQL style database that stores documents in a JSON format (actually BSON, since the data is stored in binary form).  It is very easy to install, create databases, create data, and query the data.  You should read the intro material on the mogoDB website (http://docs.mongodb.org/manual/tutorial/getting-started/)
+
+MongoDb data stores store items structured as documents.  Therefore, there is no notion of a schema.  Instead, the user posing queries must know the structure of the items they are looking for (at least partially)
+ 
+#Some references.  Use google for more.
+#The MongoDB documentation is quite good
+
+#Aggregate framework reference
+http://docs.mongodb.org/manual/reference/aggregation/#aggregation-expression-operators
+
+#SQL to Aggregation Framework Mapping Chart
+http://docs.mongodb.org/manual/reference/sql-aggregation-comparison/
+
+#Map Reduce Examples
+http://docs.mongodb.org/manual/tutorial/map-reduce-examples/
+
+A MongoDB instance is installed on turnip.cs.siue.edu.  Log in and type 'mongo' for the mongo shell.
+**************************
+Note that ALL users have ALL access to ALL data stores on this instance.  
+!!DO NOT CREATE HUGE DATABASES/COLLECTIONS. you could fill up the HD and crash the server
+!!if you create a SMALL database for testing -- GIVE IT A NAME THAT OTHER PEOPLE WON"T USE (so you don't clobber someone elses database.  USE YOU USERID AS A PREFIX to any database you create, or any collection you create in the assignment database
+!! DO NOT DELETE SOMEONE ELSES DATABASE OR COLLECTION
+!!ALL ACTIVITY IS BEING LOGGED, in a place where you do not have write permissions.  If you mess this up for everyone else, we will all know who did it!
+***************************
+-------------------------------------------
+
+The data for this assignment is already in the database called "assignment"
+When you start the mongo shell, type:
+		 "use assignment"
+to switch to that database
+The collection with all the data is called "plots"
+type "show collections" to see all avialble collections.
+DO NOT MAKE ANY CHANGES TO THE plots COLLECTION! just run queries on it
+-------------------------------------------
+
+In this assignment, you will create some mapReduce queries and aggregat queries for our datastore. The data store and desired queries are described below
+
+#This mongoDB holds information about plots of lands
+#Each plot of land is triangular in shape, and has its city, price, and code.
+#code is a unique identifier for the plot.
+# the corners of the triangles are specified as points A, B, and C
+#The document structure for a city follows the prototype:
+{ city:"Edwardsville",
+ price: 6294,
+ code: 20,
+ ax: 669,
+ ay: 771,
+ bx: 22,
+ by: 477,
+ cx: 34,
+ cy: 886 }
+
+#The following code will create a database containing 77000 records.  Simply copy and paste it into a mongo shell.  DO NOT DO THIS ON TURNIP!, you will explode the database.  Use this on your own local machines.
+var cities = ["Edwardsville","Maryville", "Collinsville", "St. Louis"]
+var numRecords = [ 15000, 20000, 17000, 25000] 
+var count = 1
+for (var j =0; j < cities.length; j++ ) for (var i = 0; i < numRecords[j]; i++) db.plots.insert( {city:cities[j], price:Math.floor(Math.random()*10000), code:count++,  ax:Math.floor(Math.random()*1000), ay:Math.floor(Math.random()*1000), bx:Math.floor(Math.random()*1000), by:Math.floor(Math.random()*1000), cx:Math.floor(Math.random()*1000), cy:Math.floor(Math.random()*1000)} )
+
+#Note the javascript code to create a random integer 0-100 inclusive (used above):
+Math.floor(Math.random()*101)
+
+
+#Query 1: 
+Write a map/reduce query to COUNT the number of plots in the DB that cost more than $9000
+
+#Query 2:
+Write a map/reduce query to report the total cost of land parcels grouped by city.
+for example: Edwardsville :$xxxxx, St. Louis: $yyyyyy, Maryville: $zzzzz, Collinsville: $qqqqqqq
+
+#Query 3:
+Write a map/reduce query to compute the area of all plots that cost more than $9000 
+The area of triangle is:  Math.abs( ((ax*(by-cy))+(bx*(cy-ay))+(cx*(ay-by)))/2 )
+
+#Query 4:
+Write a map/reduce function to compute the most expensive plot grouped by city (similar to Query 2)
+
+-------------------------------------------------
+Extra Credit:
+Write the above queries using the db.plots.aggregate() interface
+Queries 1, 2, and 4 are worth 2 test points (on Exam 2)
+Query 3 is a bit of a monster.  It is worth 6 test points (on Exam 2)
+
+Extra credit points are ALL OR NOTHING!.  You may answer a subset of the queries, but to get the points, the query MUST WORK CORRECTLY
+
+-------------------------------------------------
+
+Deliverables:
+Your group MUST turn in 1 ascii TEXT file (.txt).  This text file MUST have unix line endings, no unicode characters, or anything else fancy. The file should contain the names and emails of all team members. You should probably create the file on turnip (or home) or some other linux box to ensure this.
+
+1 file should be turned in per team.
+
+Your queries should be CLEARLY LABELED, ie, "query 1:", "extra credit query 1:"
+The label should be on its own line, followed by the query
+
+To recieve points, I MUST be able to simply copy and paster your query into the mongo shell and have it work!
+
+Each map reduce query MUST end with a find() statement to show the results.  For example, they should all follow the prototype below:
+
+Query 1:
+var mapper1 = function() {
+};
+var reducer1 = function( keyval, areasArray ) {
+};
+db.test.mapReduce( mapper1, reducer1,{out:"MYUSERNAME_query1"} )
+db.MYUSERNAME_query1.find()
+^^^^^^^^^^^^
+That way, I can simply copy and past the entire block of code into the shell, hit enter, and see the answer
+
+-------------------------------------------------
+Grading:
+Each query is worth 10 points.  Partial credit will be given where applicable.
+
+-------------------------------------------------
