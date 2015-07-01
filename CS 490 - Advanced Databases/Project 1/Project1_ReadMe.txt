@@ -1,1 +1,0 @@
-Matt LievensBrian OlsenRead me:We did our program in Python on Windows. Due to the fact that we implemented it on Windows the longs that our data-maker produces are only 4 bytes instead of the 8 that your program expects.
