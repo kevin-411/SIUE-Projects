@@ -1,0 +1,26 @@
+RoomView.vb
+	- should be passed room number when it is called
+	- need department (could determine, if all classes are same department, use that department, otherwise put N/A)
+	- need department office
+	- need teacher of each class
+	- implement clicking on a class/teacher??
+	- How I opened it: Dim room As New RoomView("EB1010")		room.ShowDialog()
+
+
+
+
+Welcome screen
+	- change name of form
+
+
+
+
+KioskSelection
+	- how to pass the selcted kiosk? int, string
+	-
+
+
+Misc.
+	- on all forms: set property 'TopMost' to true
+			set property 'startPosition' to center of parent (except KioskSelection which should be centerScreen)
+			set properties 'maximizeBox' and 'minimizeBox' to false

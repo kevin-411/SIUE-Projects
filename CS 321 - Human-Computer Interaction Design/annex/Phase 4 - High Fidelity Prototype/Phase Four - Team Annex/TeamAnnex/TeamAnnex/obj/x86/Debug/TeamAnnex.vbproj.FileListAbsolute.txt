@@ -1,0 +1,163 @@
+C:\Users\Rick\AppData\Local\Temporary Projects\TeamAnnex\bin\Debug\TeamAnnex.exe
+C:\Users\Rick\AppData\Local\Temporary Projects\TeamAnnex\bin\Debug\TeamAnnex.pdb
+C:\Users\Rick\AppData\Local\Temporary Projects\TeamAnnex\bin\Debug\TeamAnnex.xml
+C:\Users\Rick\AppData\Local\Temporary Projects\TeamAnnex\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Rick\AppData\Local\Temporary Projects\TeamAnnex\obj\x86\Debug\TeamAnnex.Form1.resources
+C:\Users\Rick\AppData\Local\Temporary Projects\TeamAnnex\obj\x86\Debug\TeamAnnex.Resources.resources
+C:\Users\Rick\AppData\Local\Temporary Projects\TeamAnnex\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Rick\AppData\Local\Temporary Projects\TeamAnnex\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Rick\AppData\Local\Temporary Projects\TeamAnnex\obj\x86\Debug\TeamAnnex.exe
+C:\Users\Rick\AppData\Local\Temporary Projects\TeamAnnex\obj\x86\Debug\TeamAnnex.xml
+C:\Users\Rick\AppData\Local\Temporary Projects\TeamAnnex\obj\x86\Debug\TeamAnnex.pdb
+C:\Users\Rick\documents\visual studio 2010\Projects\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.exe
+C:\Users\Rick\documents\visual studio 2010\Projects\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.xml
+C:\Users\Rick\documents\visual studio 2010\Projects\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.pdb
+C:\Users\Rick\documents\visual studio 2010\Projects\TeamAnnex\TeamAnnex\bin\Debug\TeamAnnex.exe
+C:\Users\Rick\documents\visual studio 2010\Projects\TeamAnnex\TeamAnnex\bin\Debug\TeamAnnex.pdb
+C:\Users\Rick\documents\visual studio 2010\Projects\TeamAnnex\TeamAnnex\bin\Debug\TeamAnnex.xml
+C:\Users\Rick\documents\visual studio 2010\Projects\TeamAnnex\TeamAnnex\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Rick\documents\visual studio 2010\Projects\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.Form1.resources
+C:\Users\Rick\documents\visual studio 2010\Projects\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.Resources.resources
+C:\Users\Rick\documents\visual studio 2010\Projects\TeamAnnex\TeamAnnex\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Rick\documents\visual studio 2010\Projects\TeamAnnex\TeamAnnex\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Rick\Documents\Visual Studio 2010\Projects\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.FloorLayout.resources
+C:\Users\Rick\Documents\Visual Studio 2010\Projects\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.Faculty_Staff.resources
+C:\Users\Rick\Documents\Visual Studio 2010\Projects\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.SingleFacultyView.resources
+C:\Users\Rick\Documents\Visual Studio 2010\Projects\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.RoomView.resources
+C:\Users\Brian\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.exe
+C:\Users\Brian\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.xml
+C:\Users\Brian\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.pdb
+C:\Users\Brian\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\bin\Debug\TeamAnnex.exe
+C:\Users\Brian\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\bin\Debug\TeamAnnex.pdb
+C:\Users\Brian\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\bin\Debug\TeamAnnex.xml
+C:\Users\Brian\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Brian\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.DatabaseUseExample.resources
+C:\Users\Brian\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.Faculty_Staff.resources
+C:\Users\Brian\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.FloorLayout.resources
+C:\Users\Brian\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.Resources.resources
+C:\Users\Brian\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.RoomView.resources
+C:\Users\Brian\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.SingleFacultyView.resources
+C:\Users\Brian\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Brian\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Rick\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.exe
+C:\Users\Rick\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.xml
+C:\Users\Rick\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.pdb
+C:\Users\Rick\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\bin\Debug\TeamAnnex.exe
+C:\Users\Rick\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\bin\Debug\TeamAnnex.pdb
+C:\Users\Rick\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\bin\Debug\TeamAnnex.xml
+C:\Users\Rick\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Rick\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.DatabaseUseExample.resources
+C:\Users\Rick\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.Faculty_Staff.resources
+C:\Users\Rick\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.FloorLayout.resources
+C:\Users\Rick\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.Resources.resources
+C:\Users\Rick\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.RoomView.resources
+C:\Users\Rick\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.SingleFacultyView.resources
+C:\Users\Rick\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Rick\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Joshua\Documents\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.exe
+C:\Users\Joshua\Documents\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.xml
+C:\Users\Joshua\Documents\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.pdb
+C:\Users\Joshua\Documents\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\bin\Debug\TeamAnnex.exe
+C:\Users\Joshua\Documents\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\bin\Debug\TeamAnnex.pdb
+C:\Users\Joshua\Documents\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\bin\Debug\TeamAnnex.xml
+C:\Users\Joshua\Documents\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.DatabaseUseExample.resources
+C:\Users\Joshua\Documents\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.Faculty_Staff.resources
+C:\Users\Joshua\Documents\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.FloorLayout.resources
+C:\Users\Joshua\Documents\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.Resources.resources
+C:\Users\Joshua\Documents\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.RoomView.resources
+C:\Users\Joshua\Documents\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.SingleFacultyView.resources
+C:\Users\Joshua\Documents\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.vbproj.GenerateResource.Cache
+C:\Users\Joshua\Desktop\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.exe
+C:\Users\Joshua\Desktop\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.xml
+C:\Users\Joshua\Desktop\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.pdb
+C:\Users\Joshua\Desktop\TeamAnnex\TeamAnnex\bin\Debug\TeamAnnex.exe
+C:\Users\Joshua\Desktop\TeamAnnex\TeamAnnex\bin\Debug\TeamAnnex.pdb
+C:\Users\Joshua\Desktop\TeamAnnex\TeamAnnex\bin\Debug\TeamAnnex.xml
+C:\Users\Joshua\Desktop\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.DatabaseUseExample.resources
+C:\Users\Joshua\Desktop\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.Faculty_Staff.resources
+C:\Users\Joshua\Desktop\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.FloorLayout.resources
+C:\Users\Joshua\Desktop\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.Form1.resources
+C:\Users\Joshua\Desktop\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.Resources.resources
+C:\Users\Joshua\Desktop\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.RoomView.resources
+C:\Users\Joshua\Desktop\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.SingleFacultyView.resources
+C:\Users\Joshua\Desktop\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.vbproj.GenerateResource.Cache
+C:\Users\Joshua\Desktop\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.KioskSelection.resources
+C:\Users\Rick\Desktop\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.exe
+C:\Users\Rick\Desktop\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.xml
+C:\Users\Rick\Desktop\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.pdb
+C:\Users\Rick\Desktop\TeamAnnex\TeamAnnex\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Rick\Desktop\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.DatabaseUseExample.resources
+C:\Users\Rick\Desktop\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.Faculty_Staff.resources
+C:\Users\Rick\Desktop\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.FloorLayout.resources
+C:\Users\Rick\Desktop\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.Form1.resources
+C:\Users\Rick\Desktop\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.KioskSelection.resources
+C:\Users\Rick\Desktop\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.Resources.resources
+C:\Users\Rick\Desktop\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.RoomView.resources
+C:\Users\Rick\Desktop\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.SingleFacultyView.resources
+C:\Users\Rick\Desktop\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.ViewAllRooms.resources
+C:\Users\Rick\Desktop\TeamAnnex\TeamAnnex\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Rick\Desktop\TeamAnnex\TeamAnnex\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Rick\Desktop\TeamAnnex\TeamAnnex\bin\Debug\TeamAnnex.exe
+C:\Users\Rick\Desktop\TeamAnnex\TeamAnnex\bin\Debug\TeamAnnex.pdb
+C:\Users\Rick\Desktop\TeamAnnex\TeamAnnex\bin\Debug\TeamAnnex.xml
+C:\Users\Joshua\Documents\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.WelcomeScreen.resources
+C:\Users\Joshua\Documents\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.KioskSelection.resources
+C:\Users\Joshua\Documents\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.ViewAllRooms.resources
+C:\Users\Brian\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.WelcomeScreen.resources
+C:\Users\Brian\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.KioskSelection.resources
+C:\Users\Brian\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.ViewAllRooms.resources
+C:\Users\Rick\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.WelcomeScreen.resources
+C:\Users\Rick\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.KioskSelection.resources
+C:\Users\Rick\Dropbox\CS321\Phase 4 - High Fidelity Prototype\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.ViewAllRooms.resources
+C:\Users\Brian\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.exe
+C:\Users\Brian\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.xml
+C:\Users\Brian\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.pdb
+C:\Users\Brian\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\bin\Debug\TeamAnnex.exe
+C:\Users\Brian\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\bin\Debug\TeamAnnex.pdb
+C:\Users\Brian\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\bin\Debug\TeamAnnex.xml
+C:\Users\Brian\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Brian\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.Faculty_Staff.resources
+C:\Users\Brian\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.FloorLayout.resources
+C:\Users\Brian\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.WelcomeScreen.resources
+C:\Users\Brian\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.KioskSelection.resources
+C:\Users\Brian\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.Resources.resources
+C:\Users\Brian\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.RoomView.resources
+C:\Users\Brian\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.SingleFacultyView.resources
+C:\Users\Brian\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.ViewAllRooms.resources
+C:\Users\Brian\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Brian\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Joshua\Documents\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.exe
+C:\Users\Joshua\Documents\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.xml
+C:\Users\Joshua\Documents\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.pdb
+C:\Users\Joshua\Documents\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\bin\Debug\TeamAnnex.exe
+C:\Users\Joshua\Documents\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\bin\Debug\TeamAnnex.pdb
+C:\Users\Joshua\Documents\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\bin\Debug\TeamAnnex.xml
+C:\Users\Joshua\Documents\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.Faculty_Staff.resources
+C:\Users\Joshua\Documents\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.FloorLayout.resources
+C:\Users\Joshua\Documents\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.WelcomeScreen.resources
+C:\Users\Joshua\Documents\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.KioskSelection.resources
+C:\Users\Joshua\Documents\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.Resources.resources
+C:\Users\Joshua\Documents\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.RoomView.resources
+C:\Users\Joshua\Documents\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.SingleFacultyView.resources
+C:\Users\Joshua\Documents\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.ViewAllRooms.resources
+C:\Users\Joshua\Documents\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.vbproj.GenerateResource.Cache
+C:\Users\Rick\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.exe
+C:\Users\Rick\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.xml
+C:\Users\Rick\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.pdb
+C:\Users\Rick\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\bin\Debug\TeamAnnex.exe
+C:\Users\Rick\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\bin\Debug\TeamAnnex.pdb
+C:\Users\Rick\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\bin\Debug\TeamAnnex.xml
+C:\Users\Rick\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Rick\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.DatabaseUseExample.resources
+C:\Users\Rick\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.Faculty_Staff.resources
+C:\Users\Rick\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.FloorLayout.resources
+C:\Users\Rick\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.WelcomeScreen.resources
+C:\Users\Rick\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.KioskSelection.resources
+C:\Users\Rick\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.Resources.resources
+C:\Users\Rick\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.RoomView.resources
+C:\Users\Rick\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.SingleFacultyView.resources
+C:\Users\Rick\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.ViewAllRooms.resources
+C:\Users\Rick\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Rick\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Joshua\Documents\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.Directions.resources
+C:\Users\Brian\Dropbox\CS321\Phase 4 - High Fidelity Prototype\Phase Four - Team Annex\TeamAnnex\TeamAnnex\obj\x86\Debug\TeamAnnex.Directions.resources

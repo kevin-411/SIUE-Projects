@@ -1,0 +1,13 @@
+INTENT: A new professor wants to find their office.
+TRIGGER: The professor’s told to meet up with the department chair for help.
+The professor enters the engineering building
+IF: The chair gave him instructions of where to go
+He walks up the stairs to the second floor as he was told to do so by the chair
+ELSE IF: He calls in to the secretary’s office to ask for directions
+He walks up the stairs to the second floor as he was told to do so by the secretary
+ ELSE: 
+	He gets a little lost by wondering around
+Eventually he figures out that the secretary’s office is located on the second floor.
+He then goes into the offices and finds the secretary’s office
+She directs him towards the department chair’s office 
+He approaches the chair’s office and from there the chair will direct him to his office and how him around.

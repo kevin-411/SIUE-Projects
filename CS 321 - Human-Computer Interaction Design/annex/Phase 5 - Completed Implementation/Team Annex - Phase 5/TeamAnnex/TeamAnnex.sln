@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TeamAnnex", "TeamAnnex\TeamAnnex.vbproj", "{463A877F-7B8A-472B-8F9E-AC2CD0672D1D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{463A877F-7B8A-472B-8F9E-AC2CD0672D1D}.Debug|x86.ActiveCfg = Debug|x86
+		{463A877F-7B8A-472B-8F9E-AC2CD0672D1D}.Debug|x86.Build.0 = Debug|x86
+		{463A877F-7B8A-472B-8F9E-AC2CD0672D1D}.Release|x86.ActiveCfg = Release|x86
+		{463A877F-7B8A-472B-8F9E-AC2CD0672D1D}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

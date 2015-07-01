@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TeamAnnex.Database">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="TeamAnnex.Database.Faculty_Key" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Database.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="TeamAnnex.Database.ClassesTaughtBy_Key" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Database.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="TeamAnnex.Database.Room_Key" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Database.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAFAAgAAAAAAAAAAgAQBAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Database.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamAnnex.Navigation">
+    <Position X="0.5" Y="0.75" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="TeamAnnex.Navigation.Edge" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Navigation.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="TeamAnnex.Navigation.Node" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Navigation.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="TeamAnnex.Navigation.Room" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Navigation.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>CACMAACgAIAAGCAgEBIEAACAAAQAgIAAJEAAAAAAYCA=</HashCode>
+      <FileName>Navigation.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeamAnnex.Directions">
+    <Position X="7.5" Y="0.5" Width="2" />
+    <AssociationLine Name="Navigation" Type="TeamAnnex.Navigation">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="0.11" Y="0.06" Height="0.182" Width="0.964" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>CAQAAAEAAgAAEASACBAAAAAAQQIAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Directions.vb</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Navigation" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

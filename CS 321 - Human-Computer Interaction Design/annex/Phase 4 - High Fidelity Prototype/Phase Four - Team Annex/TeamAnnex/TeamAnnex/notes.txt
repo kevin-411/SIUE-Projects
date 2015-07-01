@@ -1,0 +1,19 @@
+RoomView.vb
+	- need department (could determine, if all classes are same department, use that department, otherwise put N/A)
+	- need department office
+	- need teacher of each class
+	- implement clicking on a class/teacher??
+
+
+Faculty_Staff
+	- implement all stuff from database
+
+
+SingleStaff....
+	- implement all stuff from database
+
+
+
+
+Misc.
+	- 

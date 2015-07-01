@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{34654421-E24A-4102-8D64-4455D092C1A5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Project_321._1.My.MyApplication</StartupObject>
+    <RootNamespace>Project_321._1</RootNamespace>
+    <AssemblyName>Project 321.1</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Project 321.1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Project 321.1.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>Off</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Quiz.Designer.vb">
+      <DependentUpon>Quiz.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Quiz.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Results.Designer.vb">
+      <DependentUpon>Results.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Results.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.Designer.vb">
+      <DependentUpon>Settings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PeriodicTableForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PeriodicTableForm.Designer.vb">
+      <DependentUpon>PeriodicTableForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Quiz.resx">
+      <DependentUpon>Quiz.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Results.resx">
+      <DependentUpon>Results.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PeriodicTableForm.resx">
+      <DependentUpon>PeriodicTableForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="settings.resx">
+      <DependentUpon>Settings.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="bin\Debug\Images\Thumbs.db" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\actinium.bmp" />
+    <None Include="bin\Debug\Images\aluminium.bmp" />
+    <None Include="bin\Debug\Images\americium.bmp" />
+    <None Include="bin\Debug\Images\antimony.bmp" />
+    <None Include="bin\Debug\Images\argon.bmp" />
+    <None Include="bin\Debug\Images\arsenic.bmp" />
+    <None Include="bin\Debug\Images\astatine.bmp" />
+    <None Include="bin\Debug\Images\barium.bmp" />
+    <None Include="bin\Debug\Images\berkelium.bmp" />
+    <None Include="bin\Debug\Images\beryllium.bmp" />
+    <None Include="bin\Debug\Images\bismuth.bmp" />
+    <None Include="bin\Debug\Images\bohrium.bmp" />
+    <None Include="bin\Debug\Images\boron.bmp" />
+    <None Include="bin\Debug\Images\bromine.bmp" />
+    <None Include="bin\Debug\Images\cadmium.bmp" />
+    <None Include="bin\Debug\Images\caesium.bmp" />
+    <None Include="bin\Debug\Images\calcium.bmp" />
+    <None Include="bin\Debug\Images\californium.bmp" />
+    <None Include="bin\Debug\Images\carbon.bmp" />
+    <None Include="bin\Debug\Images\cerium.bmp" />
+    <None Include="bin\Debug\Images\chlorine.bmp" />
+    <None Include="bin\Debug\Images\chromium.bmp" />
+    <None Include="bin\Debug\Images\cobalt.bmp" />
+    <None Include="bin\Debug\Images\copernicium.bmp" />
+    <None Include="bin\Debug\Images\copper.bmp" />
+    <None Include="bin\Debug\Images\curium.bmp" />
+    <None Include="bin\Debug\Images\darmstadtium.bmp" />
+    <None Include="bin\Debug\Images\dubnium.bmp" />
+    <None Include="bin\Debug\Images\dysprosium.bmp" />
+    <None Include="bin\Debug\Images\einsteinium.bmp" />
+    <None Include="bin\Debug\Images\erbium.bmp" />
+    <None Include="bin\Debug\Images\europium.bmp" />
+    <None Include="bin\Debug\Images\fermium.bmp" />
+    <None Include="bin\Debug\Images\flerovium.bmp" />
+    <None Include="bin\Debug\Images\fluorine.bmp" />
+    <None Include="bin\Debug\Images\francium.bmp" />
+    <None Include="bin\Debug\Images\gadolinium.bmp" />
+    <None Include="bin\Debug\Images\gallium.bmp" />
+    <None Include="bin\Debug\Images\germanium.bmp" />
+    <None Include="bin\Debug\Images\gold.bmp" />
+    <None Include="bin\Debug\Images\hafnium.bmp" />
+    <None Include="bin\Debug\Images\hassium.bmp" />
+    <None Include="bin\Debug\Images\helium.bmp" />
+    <None Include="bin\Debug\Images\holmium.bmp" />
+    <None Include="bin\Debug\Images\hydrogen.bmp" />
+    <None Include="bin\Debug\Images\indium.bmp" />
+    <None Include="bin\Debug\Images\iodine.bmp" />
+    <None Include="bin\Debug\Images\iridium.bmp" />
+    <None Include="bin\Debug\Images\iron.bmp" />
+    <None Include="bin\Debug\Images\krypton.bmp" />
+    <None Include="bin\Debug\Images\lanthanum.bmp" />
+    <None Include="bin\Debug\Images\lawrencium.bmp" />
+    <None Include="bin\Debug\Images\lead.bmp" />
+    <None Include="bin\Debug\Images\lithium.bmp" />
+    <None Include="bin\Debug\Images\livermorium.bmp" />
+    <None Include="bin\Debug\Images\lutetium.bmp" />
+    <None Include="bin\Debug\Images\magnesium.bmp" />
+    <None Include="bin\Debug\Images\manganese.bmp" />
+    <None Include="bin\Debug\Images\meitnerium.bmp" />
+    <None Include="bin\Debug\Images\mendelevium.bmp" />
+    <None Include="bin\Debug\Images\mercury.bmp" />
+    <None Include="bin\Debug\Images\molybdenum.bmp" />
+    <None Include="bin\Debug\Images\neodymium.bmp" />
+    <None Include="bin\Debug\Images\neon.bmp" />
+    <None Include="bin\Debug\Images\neptunium.bmp" />
+    <None Include="bin\Debug\Images\nickel.bmp" />
+    <None Include="bin\Debug\Images\niobium.bmp" />
+    <None Include="bin\Debug\Images\nitrogen.bmp" />
+    <None Include="bin\Debug\Images\nobelium.bmp" />
+    <None Include="bin\Debug\Images\osmium.bmp" />
+    <None Include="bin\Debug\Images\oxygen.bmp" />
+    <None Include="bin\Debug\Images\palladium.bmp" />
+    <None Include="bin\Debug\Images\phosphorus.bmp" />
+    <None Include="bin\Debug\Images\platinum.bmp" />
+    <None Include="bin\Debug\Images\plutonium.bmp" />
+    <None Include="bin\Debug\Images\polonium.bmp" />
+    <None Include="bin\Debug\Images\potassium.bmp" />
+    <None Include="bin\Debug\Images\praseodymium.bmp" />
+    <None Include="bin\Debug\Images\promethium.bmp" />
+    <None Include="bin\Debug\Images\protactinium.bmp" />
+    <None Include="bin\Debug\Images\radium.bmp" />
+    <None Include="bin\Debug\Images\radon.bmp" />
+    <None Include="bin\Debug\Images\rhenium.bmp" />
+    <None Include="bin\Debug\Images\rhodium.bmp" />
+    <None Include="bin\Debug\Images\roentgenium.bmp" />
+    <None Include="bin\Debug\Images\rubidium.bmp" />
+    <None Include="bin\Debug\Images\ruthenium.bmp" />
+    <None Include="bin\Debug\Images\rutherfordium.bmp" />
+    <None Include="bin\Debug\Images\samarium.bmp" />
+    <None Include="bin\Debug\Images\scandium.bmp" />
+    <None Include="bin\Debug\Images\seaborgium.bmp" />
+    <None Include="bin\Debug\Images\selenium.bmp" />
+    <None Include="bin\Debug\Images\silicon.bmp" />
+    <None Include="bin\Debug\Images\silver.bmp" />
+    <None Include="bin\Debug\Images\sodium.bmp" />
+    <None Include="bin\Debug\Images\strontium.bmp" />
+    <None Include="bin\Debug\Images\sulfur.bmp" />
+    <None Include="bin\Debug\Images\tantalum.bmp" />
+    <None Include="bin\Debug\Images\technetium.bmp" />
+    <None Include="bin\Debug\Images\tellurium.bmp" />
+    <None Include="bin\Debug\Images\terbium.bmp" />
+    <None Include="bin\Debug\Images\thallium.bmp" />
+    <None Include="bin\Debug\Images\thorium.bmp" />
+    <None Include="bin\Debug\Images\thulium.bmp" />
+    <None Include="bin\Debug\Images\tin.bmp" />
+    <None Include="bin\Debug\Images\titanium.bmp" />
+    <None Include="bin\Debug\Images\tungsten.bmp" />
+    <None Include="bin\Debug\Images\ununoctium.bmp" />
+    <None Include="bin\Debug\Images\ununpentium.bmp" />
+    <None Include="bin\Debug\Images\ununseptium.bmp" />
+    <None Include="bin\Debug\Images\ununtrium.bmp" />
+    <None Include="bin\Debug\Images\uranium.bmp" />
+    <None Include="bin\Debug\Images\vanadium.bmp" />
+    <None Include="bin\Debug\Images\xenon.bmp" />
+    <None Include="bin\Debug\Images\ytterbium.bmp" />
+    <None Include="bin\Debug\Images\yttrium.bmp" />
+    <None Include="bin\Debug\Images\zinc.bmp" />
+    <None Include="bin\Debug\Images\zirconium.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

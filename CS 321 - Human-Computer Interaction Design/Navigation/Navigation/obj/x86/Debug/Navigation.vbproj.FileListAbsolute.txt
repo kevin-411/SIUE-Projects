@@ -1,0 +1,11 @@
+C:\Users\Brian\documents\visual studio 2010\Projects\Navigation\Navigation\bin\Debug\Navigation.exe
+C:\Users\Brian\documents\visual studio 2010\Projects\Navigation\Navigation\bin\Debug\Navigation.pdb
+C:\Users\Brian\documents\visual studio 2010\Projects\Navigation\Navigation\bin\Debug\Navigation.xml
+C:\Users\Brian\documents\visual studio 2010\Projects\Navigation\Navigation\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Brian\documents\visual studio 2010\Projects\Navigation\Navigation\obj\x86\Debug\Navigation.Form1.resources
+C:\Users\Brian\documents\visual studio 2010\Projects\Navigation\Navigation\obj\x86\Debug\Navigation.Resources.resources
+C:\Users\Brian\documents\visual studio 2010\Projects\Navigation\Navigation\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Brian\documents\visual studio 2010\Projects\Navigation\Navigation\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Brian\documents\visual studio 2010\Projects\Navigation\Navigation\obj\x86\Debug\Navigation.exe
+C:\Users\Brian\documents\visual studio 2010\Projects\Navigation\Navigation\obj\x86\Debug\Navigation.xml
+C:\Users\Brian\documents\visual studio 2010\Projects\Navigation\Navigation\obj\x86\Debug\Navigation.pdb

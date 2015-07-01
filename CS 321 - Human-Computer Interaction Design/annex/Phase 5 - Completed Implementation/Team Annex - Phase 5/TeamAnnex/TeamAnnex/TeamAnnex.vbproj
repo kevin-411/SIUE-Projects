@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{463A877F-7B8A-472B-8F9E-AC2CD0672D1D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>TeamAnnex.My.MyApplication</StartupObject>
+    <RootNamespace>TeamAnnex</RootNamespace>
+    <AssemblyName>TeamAnnex</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>TeamAnnex.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>TeamAnnex.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Database.vb" />
+    <Compile Include="Direction.vb" />
+    <Compile Include="Directions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Faculty_Staff.Designer.vb">
+      <DependentUpon>Faculty_Staff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Faculty_Staff.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FloorLayout.Designer.vb">
+      <DependentUpon>FloorLayout.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FloorLayout.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Navigation.vb" />
+    <Compile Include="WelcomeScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WelcomeScreen.Designer.vb">
+      <DependentUpon>WelcomeScreen.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KioskSelection.Designer.vb">
+      <DependentUpon>KioskSelection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="KioskSelection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RoomView.Designer.vb">
+      <DependentUpon>RoomView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RoomView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SingleFacultyView.Designer.vb">
+      <DependentUpon>SingleFacultyView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SingleFacultyView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAllRooms.Designer.vb">
+      <DependentUpon>ViewAllRooms.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAllRooms.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Directions.resx">
+      <DependentUpon>Directions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Faculty_Staff.resx">
+      <DependentUpon>Faculty_Staff.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FloorLayout.resx">
+      <DependentUpon>FloorLayout.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WelcomeScreen.resx">
+      <DependentUpon>WelcomeScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KioskSelection.resx">
+      <DependentUpon>KioskSelection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoomView.resx">
+      <DependentUpon>RoomView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SingleFacultyView.resx">
+      <DependentUpon>SingleFacultyView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAllRooms.resx">
+      <DependentUpon>ViewAllRooms.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SIUE_Engineering_Main.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FirstFloor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FirstFloor_Annex.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ThirdFloor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ThirdFloor_Annex.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fujinoki.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Klein.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\McKenney.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tornaritis.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\White.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rm1010Button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClassButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LabButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Legend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NextButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OfficeButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PreviousButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SIUE_Engineering_background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\FloorPlanImages\LowerLevel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\FloorPlanImages\SecondFloor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\FloorPlanImages\LowerLevel_Annex.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\FloorPlanImages\SecondFloor_Annex.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClassroomButton.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,10 @@
+Things to change:
+	- can you make it where all forms open in the center of its parent (direction form, )
+	- on directions: either show the room number of the destination or highlight it on the map
+	- on view rooms: it says whose office it is on the button, but it doesn't show the same info as when
+		you click on that person from the faculty/staff page
+	- loading the room info and such would probably go faster if we use the release version instead of the debug.
+		However, for the release version, we would need to copy the needed info to the release folder(pictures, database, etc.?).
+
+There was a couple of times that some of the info looked incorrect, but I think that that is just the database being incomplete.
+Other than that, looks great!!
