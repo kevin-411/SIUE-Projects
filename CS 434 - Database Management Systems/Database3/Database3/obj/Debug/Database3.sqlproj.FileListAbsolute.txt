@@ -1,0 +1,10 @@
+C:\Users\Brian\documents\visual studio 2010\Projects\Database3\Database3\bin\Debug\Database3.dacpac
+C:\Users\Brian\documents\visual studio 2010\Projects\Database3\Database3\bin\Debug\Database3.dll
+C:\Users\Brian\documents\visual studio 2010\Projects\Database3\Database3\bin\Debug\Database3.pdb
+C:\Users\Brian\documents\visual studio 2010\Projects\Database3\Database3\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Brian\documents\visual studio 2010\Projects\Database3\Database3\obj\Debug\Model.xml
+C:\Users\Brian\documents\visual studio 2010\Projects\Database3\Database3\obj\Debug\refactor.xml
+C:\Users\Brian\documents\visual studio 2010\Projects\Database3\Database3\obj\Debug\postdeploy.sql
+C:\Users\Brian\documents\visual studio 2010\Projects\Database3\Database3\obj\Debug\predeploy.sql
+C:\Users\Brian\documents\visual studio 2010\Projects\Database3\Database3\obj\Debug\Database3.dll
+C:\Users\Brian\documents\visual studio 2010\Projects\Database3\Database3\obj\Debug\Database3.pdb

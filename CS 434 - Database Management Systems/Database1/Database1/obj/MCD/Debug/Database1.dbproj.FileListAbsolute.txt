@@ -1,0 +1,8 @@
+c:\users\brian\documents\visual studio 2010\Projects\Database1\Database1\sql\debug\Database1_Script.PreDeployment.sql
+c:\users\brian\documents\visual studio 2010\Projects\Database1\Database1\sql\debug\Database1_Script.PostDeployment.sql
+c:\users\brian\documents\visual studio 2010\Projects\Database1\Database1\sql\debug\Database1_Database.sqlsettings
+c:\users\brian\documents\visual studio 2010\Projects\Database1\Database1\sql\debug\Database1_Database.sqldeployment
+c:\users\brian\documents\visual studio 2010\Projects\Database1\Database1\sql\debug\Database1_Database.sqlcmdvars
+c:\users\brian\documents\visual studio 2010\Projects\Database1\Database1\sql\debug\Database1.deploymanifest
+c:\users\brian\documents\visual studio 2010\Projects\Database1\Database1\sql\debug\Database1.dbschema
+c:\users\brian\documents\visual studio 2010\Projects\Database1\Database1\obj\MCD\Debug\Database1.dbschema
