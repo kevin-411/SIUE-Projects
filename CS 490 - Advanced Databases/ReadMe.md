@@ -40,3 +40,4 @@ This year's SIG Spatial competition explores this map generalization problem and
 	4. [ OutputFilePath ] &ndash; Value to specify the location and name of the simplified lines file.
 
 
+Now the lines file that is fed out by the program is the minimum amount of lines that don't violate topological constraints of the contest.
