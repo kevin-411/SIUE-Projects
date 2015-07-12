@@ -25,15 +25,11 @@ For instance, notice the picture above shows the picture below only outlines the
 Once this occurs my program would then continue to link overlapping clouds in different time segments and associate the two individual regions as a single moving region. This moving region is stored as a binary file containing timestamps for each recorded region in time, as well as a boundary box to make a quick search for previous connecting regions and avoiding the need to instantiate all regions in order to associate individual static regions. 
 
 In the end we have a multitude of static regions that can be interpolated (see video below) to account for the times in between. We call these sets of static regions a moving region. After we have the appended storms it is saved into the Hadoop Distributed File System.</p>
-			
-<div width="70%" class="center">
-<video controls autoplay loop>
-  <source src="images/research/movie.mp4" type="video/mp4">
-  <source src="images/research/movie.webm" type="video/webm">
-  Your browser does not support the video tag.
-</video>
-</div>
-			
+
+<center>				
+[![ScreenShot](preview.jpg)](https://video-ord1-1.xx.fbcdn.net/hvideo-xap1/v/t42.1790-2/1050650_10200821849965954_937693170_n.mp4?efg=eyJybHIiOjMwMCwicmxhIjo1MTJ9&rl=300&vabr=136&oh=cdd2a2a01b032dce7082791838e00b4e&oe=55A2F8F4)
+</center>
+
 My next responsibility was to perform a multi node hadoop cluster install. If you're not familiar 
-with ![hadoop technology](http://hadoop.apache.org/), it is an open source framework that facilitates parallel storage and retrieval over massive amounts of data also called <a href="http://en.wikipedia.org/wiki/Batch_processing" target="_blank">batch processing</a>. We can send special jobs called <a href = "http://hadoop.apache.org/docs/r1.2.1/mapred_tutorial.html" target="_blank">mappers and reducers</a> out to the cluster and perform programs that return data or some subset of the data we need depending on our operation. With this database we are able to use to store a massive amount of moving regions efficiently. I will provide a list of steps I went through to accomplish this set up and a list of references I used. You must note that this process 
+with [hadoop technology](http://hadoop.apache.org/), it is an open source framework that facilitates parallel storage and retrieval over massive amounts of data also called <a href="http://en.wikipedia.org/wiki/Batch_processing" target="_blank">batch processing</a>. We can send special jobs called <a href = "http://hadoop.apache.org/docs/r1.2.1/mapred_tutorial.html" target="_blank">mappers and reducers</a> out to the cluster and perform programs that return data or some subset of the data we need depending on our operation. With this database we are able to use to store a massive amount of moving regions efficiently. I will provide a list of steps I went through to accomplish this set up and a list of references I used. You must note that this process 
 is constantly changing and depending on what flavor of Linux you use and the version of hadoop you are using.
