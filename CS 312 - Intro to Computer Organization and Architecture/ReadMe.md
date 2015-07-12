@@ -1,19 +1,25 @@
-#LearnOBA: Senior Project#
+#MIPS Processor Simulator#
 
-###**Class:** CS 425 & CS 499 &ndash; Senior Project: Software Design &amp Software Implementation.###
+###**Class:** CS 312 &ndash; Introduction to Organization and Architecture.###
 
-**Program Description:** LearnOBA ([Learning Outcomes Based Assessment](http://en.wikipedia.org/wiki/Outcome-based_education "LearnOBA")) is a grading system that was designed to assist educators with maintaining a grade book that guided them to strictly adhere to the Learning Outcomes Bases Assessment paradigm.
+**Program Description:** Processor simulator that reads in binary files and parses them into assembly code instructions.Another important thing is it checks for hazards that are found in a pipeline processor (e.g. Read before write, write before read, etc..).
 
-**Comments:** The primary challenge with this project was getting the final builds multi-platform (OS X, Windows, and Linux). We wrote the software in Java to avoid redundant writing of code but still ran into many compliance issues in the end.
+**Comments:** This was one of the first projects where I started thinking like an object oriented programmer. To keep some order we decided to make an object to encapsulate [the various instructions types](http://en.wikipedia.org/wiki/MIPS_instruction_set#MIPS_I_instruction_formats) while abstracting the processor. I made an Instruction class that was originally supposed to be the superclass for the R, I, and J instructions but I had some issues getting it to work. Under the MIPS Project 2 folder you can see my attempt commented out in the instruction.h file. In the end I had to settle with making a single class that set flags to indicate which type of instruction it was. I was still very happy I finally had a solid example of how to use polymorphism to simplify the organization of my code. The memory.h header contains data abstractions for the buffers, cache and queues used in this architecture. Finally, main.cpp is the driver and handles I/O of the binary files to ascii output files. The dis.txt output files are a listing of [MIPS assembly language instructions](http://en.wikipedia.org/wiki/MIPS_instruction_set#MIPS_assembly_language). The pipeline.txt files display a snapshot of the state of the registers, buffers and cache at a given cycle.
 
-![](loba.png)
+Here is an abstract flow chart of how the processor would handle our MIPS instructions.
+![](processor.jpg)
 
-**To run:** This program was written in Java and we have compiled distributions for each of the popular operating system :). One thing to note, we only tested the Ubuntu Linux distribution. Make sure you have the latest Java version installed on your machine to run this!!
+**To run:** I have only run this on a windows machine, but there should be no issues on Linux, probably not Mac.
 
 1. Download the distribution based on the operating system you use.
-	1. [LearnOBA.exe (Windows)](https://drive.google.com/file/d/0Bwi6Jnp9m7pQRzcwa1gyOW9TSk0/view?usp=sharing).
-	2. [LearnOBA.dmg (Mac)](https://drive.google.com/file/d/0Bwi6Jnp9m7pQcU5JZFpEWVhtYjA/view?usp=sharing).
-	3. [LearnOBA.tar (Linux)](https://drive.google.com/file/d/0Bwi6Jnp9m7pQOHcwUnJOOFJUaHM/view?usp=sharing).
-1. Open [LOBA-MANUAL R 1.0.pdf](https://github.com/brianolsen87/SIUE-Projects/blob/master/CS%20425%20%26%20499%20Senior%20Project%20-%20Software%20Design%20%26%20Implementation/LearnOBA/resources/LOBA-MANUAL%20R%201.0.pdf)
+	1. Download [Sim Program Executable.zip](https://drive.google.com/file/d/0Bwi6Jnp9m7pQcm5XaHB0bEd3dmc/view?usp=sharing).
+	2. Unzip the file and go into the Sim Program Executable folder.
+	3. Execute mipssim.exe with the arguments -i [inputfile] -o [outputfile] where [inputfile] maps to one of the .bin files and [outputfile] is the name to be added to the _dis.txt and _pipeline.txt files.(ex. mipssim.exe -i t1.bin -o t1). <br/> **NOTE**: -o [outputfile] parameter is optional and will use the name of the binary file if not present.
 
-1. Follow the installation instructions listed in the PDF. The manual will also function as a guide to use the software.
+This will output two files. One file ending with "_dis.txt"is simply the processed instruction being displayed as a binary string and human readable MIPS instruction. The file ending with "_pipeline.txt" displays the states of each piece of the processor at different clock cycles.
+
+For more information look at the files explaining the assignment. It was broken up into two assignments.
+
+- [Project 1](https://github.com/brianolsen87/SIUE-Projects/blob/master/CS%20312%20-%20Intro%20to%20Computer%20Organization%20and%20Architecture/MIPS%20Sim%20Program%20Part%201%20Submission/Project_1.pdf) (interpreting the instructions).
+- [Project 2](https://github.com/brianolsen87/SIUE-Projects/blob/master/CS%20312%20-%20Intro%20to%20Computer%20Organization%20and%20Architecture/MIPS%20Sim%20Program%20Part%202%20Submission/project2.pdf) (simulating the pipeline and caching).
+
