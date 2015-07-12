@@ -1,3 +1,4 @@
+[<< Return to SIUE - Projects](https://github.com/brianolsen87/SIUE-Projects)
 #Word Finder#
 
 ###**Class:** CS 275 &ndash; Interaction Programming.###
