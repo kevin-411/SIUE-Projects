@@ -26,6 +26,8 @@ Once this occurs my program would then continue to link overlapping clouds in di
 
 In the end we have a multitude of static regions that can be interpolated (see video below) to account for the times in between. We call these sets of static regions a moving region. After we have the appended storms it is saved into the Hadoop Distributed File System.</p>
 
+![](workflow.png)	
+
 <center>				
 [![ScreenShot](preview.jpg)](https://video-ord1-1.xx.fbcdn.net/hvideo-xap1/v/t42.1790-2/1050650_10200821849965954_937693170_n.mp4?efg=eyJybHIiOjMwMCwicmxhIjo1MTJ9&rl=300&vabr=136&oh=cdd2a2a01b032dce7082791838e00b4e&oe=55A2F8F4)
 </center>
